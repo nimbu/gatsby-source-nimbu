@@ -1,16 +1,40 @@
 {
-  "name": "gatsby-starter-plugin",
-  "version": "1.0.0",
-  "description": "A minimal boilerplate for the essential files Gatsby looks for in a plugin",
+  "name": "gatsby-source-nimbu",
+  "version": "0.0.1",
+  "description": "Gatsby source plugin for building websites using Nimbu as a data source.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "echo \"No build script setup\""
+    "build": "babel src --out-dir . --ignore \"**/__tests__\"",
+    "prepare": "cross-env NODE_ENV=production npm run build",
+    "watch": "npm run build -- --watch"
   },
   "keywords": [
     "gatsby",
-    "gatsby-plugin"
+    "gatsby-plugin",
+    "nimbu"
   ],
-  "author": "Kyle Gill <kyle.robert.gill@gmail.com>",
-  "license": "0BSD"
+  "author": "Zenjoy Engineering <hallo@zenjoy.be>",
+  "license": "MIT",
+  "peerDependencies": {
+    "gatsby": "^2.0.0"
+  },
+  "dependencies": {
+    "babel-preset-gatsby-package": "^0.5.3",
+    "chalk": "^4.1.0",
+    "gatsby-node-helpers": "^0.3.0",
+    "gatsby-source-filesystem": "^2.3.35",
+    "nimbu-client": "^1.0.7",
+    "p-iteration": "^1.1.8"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "babel-jest": "^26.6.1",
+    "cross-env": "^7.0.2",
+    "jest": "^26.6.1"
+  },
+  "engines": {
+    "node": ">=10.13.0"
+  }
 }

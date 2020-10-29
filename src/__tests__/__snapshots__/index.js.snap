@@ -1,0 +1,5008 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`gatsby-source-nimbu Generates nodes 1`] = `
+Object {
+  "Nimbu__Article__5721c6a53de07424ee0077f4": Object {
+    "author": Object {
+      "__type": "Reference",
+      "className": "users",
+      "id": "4ea5cbdda11b467212000001",
+    },
+    "blog___NODE": "Nimbu__Blog__5721c624d1798f032d01fdfb",
+    "children": Array [],
+    "created_at": "2016-04-28T08:15:33.178Z",
+    "fullpath": "/speelblog/test-post",
+    "header": null,
+    "id": "Nimbu__Article__5721c6a53de07424ee0077f4",
+    "internal": Object {
+      "contentDigest": "b2962c2f03e9de1a4e005205814ebdb7",
+      "type": "NimbuArticle",
+    },
+    "locales": Array [
+      "en",
+    ],
+    "next_article": null,
+    "nimbuId": "5721c6a53de07424ee0077f4",
+    "og_fb_publisher": null,
+    "og_image": null,
+    "og_tw_creator": null,
+    "parent": "__SOURCE__",
+    "previous_article": Object {
+      "__type": "Reference",
+      "className": "articles",
+      "id": "5721c7dad1798f3d2700afca",
+    },
+    "public_url": "https://speeltuin.nimbu.io/speelblog/test-post",
+    "publish_at": "2016-04-28T08:14:02.000+00:00",
+    "seo_description": null,
+    "seo_keywords": null,
+    "seo_title": null,
+    "slug": "test-post",
+    "slugified_tags": null,
+    "status": "published",
+    "tags": null,
+    "text_content": "<p>Curabitur blandit tempus porttitor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor.</p>
+<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum.</p>
+<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Cras mattis consectetur purus sit amet fermentum. Nullam quis risus eget urna mollis ornare vel eu leo. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nulla vitae elit libero, a pharetra augue.</p>
+<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Sed posuere consectetur est at lobortis.</p>",
+    "text_excerpt": null,
+    "thumbnail": Object {
+      "__type": "File",
+      "content_type": "image/jpeg",
+      "filename": "hiv.jpg",
+      "height": 360,
+      "localFile___NODE": undefined,
+      "size": 18420,
+      "url": "https://cdn.nimbu.io/s/oa8td8r/blog/4251224179/thumbnail/hiv.jpg?e0h2o0a",
+      "version": "e0h2o0a",
+      "width": 504,
+    },
+    "title": "Test Post!",
+    "translations": Object {
+      "de": Object {
+        "fullpath": "/de/speelblog/test-post",
+        "public_url": "https://speeltuin.nimbu.io/de/speelblog/test-post",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "test-post",
+        "slugified_tags": null,
+        "tags": null,
+        "text_content": "<p>Curabitur blandit tempus porttitor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor.</p>
+<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum.</p>
+<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Cras mattis consectetur purus sit amet fermentum. Nullam quis risus eget urna mollis ornare vel eu leo. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nulla vitae elit libero, a pharetra augue.</p>
+<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Sed posuere consectetur est at lobortis.</p>",
+        "text_excerpt": null,
+        "title": "Test Post!",
+      },
+      "en": Object {
+        "fullpath": "/speelblog/test-post",
+        "public_url": "https://speeltuin.nimbu.io/speelblog/test-post",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "test-post",
+        "slugified_tags": null,
+        "tags": null,
+        "text_content": "<p>Curabitur blandit tempus porttitor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor.</p>
+<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum.</p>
+<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Cras mattis consectetur purus sit amet fermentum. Nullam quis risus eget urna mollis ornare vel eu leo. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nulla vitae elit libero, a pharetra augue.</p>
+<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Sed posuere consectetur est at lobortis.</p>",
+        "text_excerpt": null,
+        "title": "Test Post!",
+      },
+      "fr": Object {
+        "fullpath": "/fr/speelblog/test-post",
+        "public_url": "https://speeltuin.nimbu.io/fr/speelblog/test-post",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "test-post",
+        "slugified_tags": null,
+        "tags": null,
+        "text_content": "<p>Curabitur blandit tempus porttitor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor.</p>
+<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum.</p>
+<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Cras mattis consectetur purus sit amet fermentum. Nullam quis risus eget urna mollis ornare vel eu leo. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nulla vitae elit libero, a pharetra augue.</p>
+<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Sed posuere consectetur est at lobortis.</p>",
+        "text_excerpt": null,
+        "title": "Test Post!",
+      },
+    },
+    "updated_at": "2018-08-06T09:36:53.040Z",
+    "url": "https://api.nimbu.io/blogs/speelblog/articles/test-post",
+  },
+  "Nimbu__Article__5721c7dad1798f3d2700afca": Object {
+    "author": Object {
+      "__type": "Reference",
+      "className": "users",
+      "id": "4ea5cbdda11b467212000001",
+    },
+    "blog___NODE": "Nimbu__Blog__5721c624d1798f032d01fdfb",
+    "children": Array [],
+    "created_at": "2016-04-28T08:20:42.981Z",
+    "fullpath": "/speelblog/euro-for-hammer-ims-with-non-nuclear-measuring-alternative-for-manufacturing-industries",
+    "header": Object {
+      "__type": "File",
+      "content_type": "image/jpeg",
+      "filename": "katie-emslie-565439-unsplash.jpg",
+      "height": 4480,
+      "localFile___NODE": undefined,
+      "size": 3449899,
+      "url": "https://cdn.nimbu.io/s/oa8td8r/blog/2797078272/katie-emslie-565439-unsplash.jpg?waadu3a",
+      "version": "waadu3a",
+      "width": 6720,
+    },
+    "id": "Nimbu__Article__5721c7dad1798f3d2700afca",
+    "internal": Object {
+      "contentDigest": "96219dfd1f6f7f2fbb65becc3ee6b5c0",
+      "type": "NimbuArticle",
+    },
+    "locales": Array [
+      "en",
+    ],
+    "next_article": Object {
+      "__type": "Reference",
+      "className": "articles",
+      "id": "5721c6a53de07424ee0077f4",
+    },
+    "nimbuId": "5721c7dad1798f3d2700afca",
+    "og_fb_publisher": null,
+    "og_image": null,
+    "og_tw_creator": null,
+    "parent": "__SOURCE__",
+    "previous_article": null,
+    "public_url": "https://speeltuin.nimbu.io/speelblog/euro-for-hammer-ims-with-non-nuclear-measuring-alternative-for-manufacturing-industries",
+    "publish_at": "2016-04-28T08:20:14.000+00:00",
+    "seo_description": null,
+    "seo_keywords": null,
+    "seo_title": null,
+    "slug": "euro-for-hammer-ims-with-non-nuclear-measuring-alternative-for-manufacturing-industries",
+    "slugified_tags": "test,test2",
+    "status": "published",
+    "tags": "test,test2",
+    "text_content": "<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Curabitur blandit tempus porttitor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas sed diam eget risus varius blandit sit amet non magna. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>",
+    "text_excerpt": null,
+    "thumbnail": null,
+    "title": "euro for Hammer-IMS with non-nuclear measuring alternative for manufacturing industries",
+    "translations": Object {
+      "de": Object {
+        "fullpath": "/de/speelblog/euro-for-hammer-ims-with-non-nuclear-measuring-alternative-for-manufacturing-industries",
+        "public_url": "https://speeltuin.nimbu.io/de/speelblog/euro-for-hammer-ims-with-non-nuclear-measuring-alternative-for-manufacturing-industries",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "euro-for-hammer-ims-with-non-nuclear-measuring-alternative-for-manufacturing-industries",
+        "slugified_tags": "test,test2",
+        "tags": "test,test2",
+        "text_content": "<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Curabitur blandit tempus porttitor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas sed diam eget risus varius blandit sit amet non magna. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>",
+        "text_excerpt": null,
+        "title": "euro for Hammer-IMS with non-nuclear measuring alternative for manufacturing industries",
+      },
+      "en": Object {
+        "fullpath": "/speelblog/euro-for-hammer-ims-with-non-nuclear-measuring-alternative-for-manufacturing-industries",
+        "public_url": "https://speeltuin.nimbu.io/speelblog/euro-for-hammer-ims-with-non-nuclear-measuring-alternative-for-manufacturing-industries",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "euro-for-hammer-ims-with-non-nuclear-measuring-alternative-for-manufacturing-industries",
+        "slugified_tags": "test,test2",
+        "tags": "test,test2",
+        "text_content": "<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Curabitur blandit tempus porttitor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas sed diam eget risus varius blandit sit amet non magna. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>",
+        "text_excerpt": null,
+        "title": "euro for Hammer-IMS with non-nuclear measuring alternative for manufacturing industries",
+      },
+      "fr": Object {
+        "fullpath": "/fr/speelblog/euro-for-hammer-ims-with-non-nuclear-measuring-alternative-for-manufacturing-industries",
+        "public_url": "https://speeltuin.nimbu.io/fr/speelblog/euro-for-hammer-ims-with-non-nuclear-measuring-alternative-for-manufacturing-industries",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "euro-for-hammer-ims-with-non-nuclear-measuring-alternative-for-manufacturing-industries",
+        "slugified_tags": "test,test2",
+        "tags": "test,test2",
+        "text_content": "<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Curabitur blandit tempus porttitor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas sed diam eget risus varius blandit sit amet non magna. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>",
+        "text_excerpt": null,
+        "title": "euro for Hammer-IMS with non-nuclear measuring alternative for manufacturing industries",
+      },
+    },
+    "updated_at": "2018-08-06T08:42:27.552Z",
+    "url": "https://api.nimbu.io/blogs/speelblog/articles/euro-for-hammer-ims-with-non-nuclear-measuring-alternative-for-manufacturing-industries",
+  },
+  "Nimbu__Article__5721cc1bd1798f325c000036": Object {
+    "author": Object {
+      "__type": "Reference",
+      "className": "users",
+      "id": "4ea5cbdda11b467212000001",
+    },
+    "blog___NODE": "Nimbu__Blog__5721c624d1798f032d01fdfb",
+    "children": Array [],
+    "created_at": "2016-04-28T08:38:51.802Z",
+    "fullpath": "/speelblog/800-000-euro-for-hammer-ims-with-non-nuclear-measuring-alternative-for-manufacturing-industries",
+    "header": null,
+    "id": "Nimbu__Article__5721cc1bd1798f325c000036",
+    "internal": Object {
+      "contentDigest": "2c7ea7e53cc2268089e4e28eb4b9f2b9",
+      "type": "NimbuArticle",
+    },
+    "locales": Array [
+      "en",
+    ],
+    "next_article": null,
+    "nimbuId": "5721cc1bd1798f325c000036",
+    "og_fb_publisher": null,
+    "og_image": null,
+    "og_tw_creator": null,
+    "parent": "__SOURCE__",
+    "previous_article": null,
+    "public_url": "https://speeltuin.nimbu.io/speelblog/800-000-euro-for-hammer-ims-with-non-nuclear-measuring-alternative-for-manufacturing-industries",
+    "publish_at": null,
+    "seo_description": null,
+    "seo_keywords": null,
+    "seo_title": null,
+    "slug": "800-000-euro-for-hammer-ims-with-non-nuclear-measuring-alternative-for-manufacturing-industries",
+    "slugified_tags": null,
+    "status": "draft",
+    "tags": null,
+    "text_content": "<p>800.000 euro for Hammer-IMS with non-nuclear measuring alternative for manufacturing industries</p>",
+    "text_excerpt": null,
+    "thumbnail": null,
+    "title": "800.000 euro for Hammer-IMS with non-nuclear measuring alternative for manufacturing industries",
+    "translations": Object {
+      "de": Object {
+        "fullpath": "/de/speelblog/800-000-euro-for-hammer-ims-with-non-nuclear-measuring-alternative-for-manufacturing-industries",
+        "public_url": "https://speeltuin.nimbu.io/de/speelblog/800-000-euro-for-hammer-ims-with-non-nuclear-measuring-alternative-for-manufacturing-industries",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "800-000-euro-for-hammer-ims-with-non-nuclear-measuring-alternative-for-manufacturing-industries",
+        "slugified_tags": null,
+        "tags": null,
+        "text_content": "<p>800.000 euro for Hammer-IMS with non-nuclear measuring alternative for manufacturing industries</p>",
+        "text_excerpt": null,
+        "title": "800.000 euro for Hammer-IMS with non-nuclear measuring alternative for manufacturing industries",
+      },
+      "en": Object {
+        "fullpath": "/speelblog/800-000-euro-for-hammer-ims-with-non-nuclear-measuring-alternative-for-manufacturing-industries",
+        "public_url": "https://speeltuin.nimbu.io/speelblog/800-000-euro-for-hammer-ims-with-non-nuclear-measuring-alternative-for-manufacturing-industries",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "800-000-euro-for-hammer-ims-with-non-nuclear-measuring-alternative-for-manufacturing-industries",
+        "slugified_tags": null,
+        "tags": null,
+        "text_content": "<p>800.000 euro for Hammer-IMS with non-nuclear measuring alternative for manufacturing industries</p>",
+        "text_excerpt": null,
+        "title": "800.000 euro for Hammer-IMS with non-nuclear measuring alternative for manufacturing industries",
+      },
+      "fr": Object {
+        "fullpath": "/fr/speelblog/800-000-euro-for-hammer-ims-with-non-nuclear-measuring-alternative-for-manufacturing-industries",
+        "public_url": "https://speeltuin.nimbu.io/fr/speelblog/800-000-euro-for-hammer-ims-with-non-nuclear-measuring-alternative-for-manufacturing-industries",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "800-000-euro-for-hammer-ims-with-non-nuclear-measuring-alternative-for-manufacturing-industries",
+        "slugified_tags": null,
+        "tags": null,
+        "text_content": "<p>800.000 euro for Hammer-IMS with non-nuclear measuring alternative for manufacturing industries</p>",
+        "text_excerpt": null,
+        "title": "800.000 euro for Hammer-IMS with non-nuclear measuring alternative for manufacturing industries",
+      },
+    },
+    "updated_at": "2017-08-03T14:01:17.348Z",
+    "url": "https://api.nimbu.io/blogs/speelblog/articles/800-000-euro-for-hammer-ims-with-non-nuclear-measuring-alternative-for-manufacturing-industries",
+  },
+  "Nimbu__Blog__5721c624d1798f032d01fdfb": Object {
+    "articles___NODE": Array [
+      "Nimbu__Article__5721cc1bd1798f325c000036",
+      "Nimbu__Article__5721c7dad1798f3d2700afca",
+      "Nimbu__Article__5721c6a53de07424ee0077f4",
+    ],
+    "children": Array [],
+    "created_at": "2016-04-28T08:13:24.142Z",
+    "description": null,
+    "fullpath": "/speelblog",
+    "header": null,
+    "id": "Nimbu__Blog__5721c624d1798f032d01fdfb",
+    "internal": Object {
+      "contentDigest": "7722dd5eeea133a809dfcb8ade3d94fb",
+      "type": "NimbuBlog",
+    },
+    "name": "Speelblog",
+    "nimbuId": "5721c624d1798f032d01fdfb",
+    "parent": "__SOURCE__",
+    "public_url": "https://speeltuin.nimbu.io/speelblog",
+    "seo_description": null,
+    "seo_keywords": null,
+    "seo_title": null,
+    "slug": "speelblog",
+    "translations": Object {
+      "de": Object {
+        "description": null,
+        "fullpath": "/de/speelblog",
+        "name": "Speelblog",
+        "public_url": "https://speeltuin.nimbu.io/de/speelblog",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "speelblog",
+      },
+      "en": Object {
+        "description": null,
+        "fullpath": "/speelblog",
+        "name": "Speelblog",
+        "public_url": "https://speeltuin.nimbu.io/speelblog",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "speelblog",
+      },
+      "fr": Object {
+        "description": null,
+        "fullpath": "/fr/speelblog",
+        "name": "Speelblog",
+        "public_url": "https://speeltuin.nimbu.io/fr/speelblog",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "speelblog",
+      },
+    },
+    "updated_at": "2016-04-28T08:13:24.142Z",
+    "url": "https://api.nimbu.io/blogs/speelblog",
+  },
+  "Nimbu__Menu__54a9a5b7676f6e7ca5a02300": Object {
+    "children": Array [],
+    "created_at": "2015-01-04T20:42:31.154Z",
+    "id": "Nimbu__Menu__54a9a5b7676f6e7ca5a02300",
+    "internal": Object {
+      "contentDigest": "bc05a70b3d64ecd638aac39625ae476b",
+      "type": "NimbuMenu",
+    },
+    "items": Array [
+      Object {
+        "children": Array [
+          Object {
+            "created_at": "2015-01-04T20:42:31.154Z",
+            "depth": 1,
+            "fullpath": "shop/contact",
+            "kind": "page",
+            "name": "Contact",
+            "position": 1,
+            "slug": "contact",
+            "target_fullpath": "contact",
+            "target_page": "5be59b63d1798f3d8800852a",
+            "target_url": "/contact",
+            "translations": Object {
+              "de": Object {
+                "name": "Contact",
+                "target_url": "/contact",
+              },
+              "en": Object {
+                "name": "Contact",
+                "target_url": "/contact",
+              },
+              "fr": Object {
+                "name": "Contact",
+                "target_url": "/contact",
+              },
+            },
+            "updated_at": "2020-03-10T08:50:32.585Z",
+          },
+        ],
+        "created_at": "2015-01-04T20:42:31.153Z",
+        "depth": 0,
+        "fullpath": "shop",
+        "kind": "page",
+        "name": "Shop",
+        "position": 0,
+        "slug": "shop",
+        "target_fullpath": "shop",
+        "target_page": "5c6ab788d1798f3e40008256",
+        "target_url": "/shop",
+        "translations": Object {
+          "de": Object {
+            "name": "Shop",
+            "target_url": "/shop",
+          },
+          "en": Object {
+            "name": "Shop",
+            "target_url": "/shop",
+          },
+          "fr": Object {
+            "name": "Shop",
+            "target_url": "/shop",
+          },
+        },
+        "updated_at": "2020-03-10T08:50:32.584Z",
+      },
+      Object {
+        "created_at": "2019-07-23T13:50:34.452Z",
+        "depth": 0,
+        "fullpath": "contact",
+        "kind": "page",
+        "name": "contact",
+        "position": 2,
+        "slug": "contact",
+        "target_fullpath": "homepage",
+        "target_page": "54a9a220726177525bda2c00",
+        "target_url": "/",
+        "translations": Object {
+          "de": Object {
+            "name": "contact",
+            "target_url": "/",
+          },
+          "en": Object {
+            "name": "contact",
+            "target_url": "/",
+          },
+          "fr": Object {
+            "name": "contact",
+            "target_url": "/",
+          },
+        },
+        "updated_at": "2020-03-10T08:50:32.585Z",
+      },
+      Object {
+        "created_at": "2015-01-04T20:42:31.154Z",
+        "depth": 0,
+        "fullpath": "navigatie2",
+        "kind": "page",
+        "name": "navigatie2",
+        "position": 3,
+        "slug": "navigatie2",
+        "target_fullpath": "navigatie2",
+        "target_page": "54a9a3a37261772de1c20000",
+        "target_url": "/navigatie2",
+        "translations": Object {
+          "de": Object {
+            "name": "navigatie2",
+            "target_url": "/navigatie2",
+          },
+          "en": Object {
+            "name": "navigatie2",
+            "target_url": "/navigatie2",
+          },
+          "fr": Object {
+            "name": "navigatie2",
+            "target_url": "/navigatie2",
+          },
+        },
+        "updated_at": "2020-03-10T10:43:11.246Z",
+      },
+      Object {
+        "created_at": "2020-03-10T08:50:32.579Z",
+        "depth": 0,
+        "fullpath": "test_env_bjorn",
+        "kind": "page",
+        "name": "Test_Env_Bjorn",
+        "position": 4,
+        "slug": "test_env_bjorn",
+        "target_fullpath": "bjorn_env",
+        "target_page": "5e677b0b8bf747740600016e",
+        "target_url": "/bjorn_env",
+        "translations": Object {
+          "de": Object {
+            "name": "Test_Env_Bjorn",
+            "target_url": "/bjorn_env",
+          },
+          "en": Object {
+            "name": "Test_Env_Bjorn",
+            "target_url": "/bjorn_env",
+          },
+          "fr": Object {
+            "name": "Test_Env_Bjorn",
+            "target_url": "/bjorn_env",
+          },
+        },
+        "updated_at": "2020-03-10T11:34:59.603Z",
+      },
+    ],
+    "name": "main",
+    "nimbuId": "54a9a5b7676f6e7ca5a02300",
+    "parent": "__SOURCE__",
+    "slug": "main",
+    "updated_at": "2020-03-10T11:34:59.603Z",
+    "url": "https://api.nimbu.io/menus/main",
+  },
+  "Nimbu__Menu__5c7cf9afd1798f6f89000528": Object {
+    "children": Array [],
+    "created_at": "2019-03-04T10:10:55.305Z",
+    "id": "Nimbu__Menu__5c7cf9afd1798f6f89000528",
+    "internal": Object {
+      "contentDigest": "b2a39daca90467a7c16353f03f4ad494",
+      "type": "NimbuMenu",
+    },
+    "items": Array [
+      Object {
+        "created_at": "2019-03-04T10:10:55.304Z",
+        "depth": 0,
+        "fullpath": null,
+        "kind": "url",
+        "name": "My account",
+        "position": 0,
+        "slug": null,
+        "target_url": "/account",
+        "translations": Object {
+          "de": Object {
+            "name": "My account",
+            "target_url": "/account",
+          },
+          "en": Object {
+            "name": "My account",
+            "target_url": "/account",
+          },
+          "fr": Object {
+            "name": "My account",
+            "target_url": "/account",
+          },
+        },
+        "updated_at": "2019-03-08T13:30:35.678Z",
+      },
+      Object {
+        "created_at": "2019-03-04T10:10:55.305Z",
+        "depth": 0,
+        "fullpath": null,
+        "kind": "url",
+        "name": "My adresses",
+        "position": 1,
+        "slug": null,
+        "target_url": "/account/addresses",
+        "translations": Object {
+          "de": Object {
+            "name": "My adresses",
+            "target_url": "/account/addresses",
+          },
+          "en": Object {
+            "name": "My adresses",
+            "target_url": "/account/addresses",
+          },
+          "fr": Object {
+            "name": "My adresses",
+            "target_url": "/account/addresses",
+          },
+        },
+        "updated_at": "2019-03-11T09:03:29.647Z",
+      },
+      Object {
+        "created_at": "2019-03-08T13:30:35.680Z",
+        "depth": 0,
+        "fullpath": null,
+        "kind": "url",
+        "name": "My orders",
+        "position": 2,
+        "slug": null,
+        "target_url": "/account/orders",
+        "translations": Object {
+          "de": Object {
+            "name": "My orders",
+            "target_url": "/account/orders",
+          },
+          "en": Object {
+            "name": "My orders",
+            "target_url": "/account/orders",
+          },
+          "fr": Object {
+            "name": "My orders",
+            "target_url": "/account/orders",
+          },
+        },
+        "updated_at": "2019-03-08T13:30:35.680Z",
+      },
+      Object {
+        "created_at": "2019-03-04T10:10:55.304Z",
+        "depth": 0,
+        "fullpath": null,
+        "kind": "url",
+        "name": "Logout",
+        "position": 3,
+        "slug": null,
+        "target_url": "/logout",
+        "translations": Object {
+          "de": Object {
+            "name": "Logout",
+            "target_url": "/logout",
+          },
+          "en": Object {
+            "name": "Logout",
+            "target_url": "/logout",
+          },
+          "fr": Object {
+            "name": "Logout",
+            "target_url": "/logout",
+          },
+        },
+        "updated_at": "2019-03-08T13:30:35.680Z",
+      },
+    ],
+    "name": "Account",
+    "nimbuId": "5c7cf9afd1798f6f89000528",
+    "parent": "__SOURCE__",
+    "slug": "account",
+    "updated_at": "2019-03-11T09:03:29.648Z",
+    "url": "https://api.nimbu.io/menus/account",
+  },
+  "Nimbu__Page__54a9a220726177525bda2c00": Object {
+    "channel": null,
+    "children": Array [],
+    "created_at": "2015-01-04T20:27:12.392Z",
+    "depth": 0,
+    "fixed_locale": null,
+    "fullpath": "/homepage",
+    "homepage": true,
+    "id": "Nimbu__Page__54a9a220726177525bda2c00",
+    "internal": Object {
+      "contentDigest": "f3e5bc5c864948156564748057671865",
+      "type": "NimbuPage",
+    },
+    "items": Object {
+      "Blokken": Object {
+        "content": null,
+        "created_at": "2018-02-13T13:14:06.781Z",
+        "repeatables": Array [
+          Object {
+            "created_at": "2018-03-05T18:44:21.097Z",
+            "id": "5a9d9005d1798f37b6017f7c",
+            "items": Object {
+              "Background Image": Object {
+                "content": null,
+                "created_at": "2018-03-05T18:44:21.096Z",
+                "file": null,
+                "slug": "Background Image",
+                "translations": Object {
+                  "de": Object {
+                    "content": null,
+                  },
+                  "en": Object {
+                    "content": null,
+                  },
+                  "fr": Object {
+                    "content": null,
+                  },
+                },
+                "type": "file",
+                "updated_at": "2019-05-23T08:10:43.309Z",
+              },
+              "Background Overlay Color": Object {
+                "content": "Black",
+                "created_at": "2018-03-05T18:44:21.095Z",
+                "slug": "Background Overlay Color",
+                "translations": Object {
+                  "de": Object {
+                    "content": "Black",
+                  },
+                  "en": Object {
+                    "content": "Black",
+                  },
+                  "fr": Object {
+                    "content": "Black",
+                  },
+                },
+                "type": "select",
+                "updated_at": "2019-05-23T08:10:43.309Z",
+              },
+              "Background Overlay Opacity": Object {
+                "content": "normal",
+                "created_at": "2018-03-05T18:44:21.095Z",
+                "slug": "Background Overlay Opacity",
+                "translations": Object {
+                  "de": Object {
+                    "content": "normal",
+                  },
+                  "en": Object {
+                    "content": "normal",
+                  },
+                  "fr": Object {
+                    "content": "normal",
+                  },
+                },
+                "type": "select",
+                "updated_at": "2019-05-23T08:10:43.309Z",
+              },
+              "Button Link": Object {
+                "content": null,
+                "created_at": "2019-02-06T10:48:21.282Z",
+                "slug": "Button Link",
+                "translations": Object {
+                  "de": Object {
+                    "content": null,
+                  },
+                  "en": Object {
+                    "content": null,
+                  },
+                  "fr": Object {
+                    "content": null,
+                  },
+                },
+                "type": "field",
+                "updated_at": "2019-05-23T08:10:43.309Z",
+              },
+              "Button Text": Object {
+                "content": null,
+                "created_at": "2019-02-06T10:48:21.279Z",
+                "slug": "Button Text",
+                "translations": Object {
+                  "de": Object {
+                    "content": null,
+                  },
+                  "en": Object {
+                    "content": null,
+                  },
+                  "fr": Object {
+                    "content": null,
+                  },
+                },
+                "type": "field",
+                "updated_at": "2019-05-23T08:10:43.309Z",
+              },
+              "Image Alt": Object {
+                "content": null,
+                "created_at": "2019-02-06T10:48:21.285Z",
+                "slug": "Image Alt",
+                "translations": Object {
+                  "de": Object {
+                    "content": null,
+                  },
+                  "en": Object {
+                    "content": null,
+                  },
+                  "fr": Object {
+                    "content": null,
+                  },
+                },
+                "type": "field",
+                "updated_at": "2019-05-23T08:10:43.309Z",
+              },
+              "Subtitle": Object {
+                "content": "subtitle",
+                "created_at": "2018-03-05T18:44:21.097Z",
+                "slug": "Subtitle",
+                "translations": Object {
+                  "de": Object {
+                    "content": "subtitle",
+                  },
+                  "en": Object {
+                    "content": "subtitle",
+                  },
+                  "fr": Object {
+                    "content": "subtitle",
+                  },
+                },
+                "type": "field",
+                "updated_at": "2019-05-23T08:10:43.309Z",
+              },
+              "Title": Object {
+                "content": "Title",
+                "created_at": "2018-03-05T18:44:21.096Z",
+                "slug": "Title",
+                "translations": Object {
+                  "de": Object {
+                    "content": "Title",
+                  },
+                  "en": Object {
+                    "content": "Title",
+                  },
+                  "fr": Object {
+                    "content": "Title",
+                  },
+                },
+                "type": "field",
+                "updated_at": "2019-05-23T08:10:43.309Z",
+              },
+            },
+            "position": 0,
+            "slug": "header",
+            "updated_at": "2019-05-23T08:10:43.309Z",
+          },
+          Object {
+            "created_at": "2019-03-11T10:02:07.354Z",
+            "id": "5c86321fd1798f1684001aeb",
+            "items": Object {
+              "Content": Object {
+                "content": "<figure class=\\"video-embed\\"><iframe style=\\"width: 500px; height: 281px;\\" src=\\"//www.youtube.com/embed/JBp6YJ7tUnk\\" frameborder=\\"0\\" allowfullscreen=\\"\\"></iframe></figure>
+<figure><img src=\\"https://cdn.nimbu.io/s/oa8td8r/assets/bnr_header_fr.jpg\\" data-image=\\"5d3ac6d48bf7477d9f001ea0\\"></figure>
+<p>Voorbeeldtekst</p>
+<p><a href=\\"ecopower.be\\">testen link</a></p>
+<ol><li>asdfasdf<ol><li>asdfas<ol><li>asdfasdf<ol><li>asdfds</li></ol></li><li>asdfas</li></ol></li><li>sdfgsdf</li></ol></li><li>dfgsdfgs</li></ol>
+<p>testerdetest</p><p></p><ul><li>one</li><li>two</li><li>three</li></ul>
+<figure><script type=\\"text/javascript\\" src=\\"https://mails.sacriana.com/t/r/p/thtjdu/10/1/0/1/0/\\"></script></figure>",
+                "created_at": "2019-03-11T10:02:07.352Z",
+                "slug": "Content",
+                "translations": Object {
+                  "de": Object {
+                    "content": "<figure class=\\"video-embed\\"><iframe style=\\"width: 500px; height: 281px;\\" src=\\"//www.youtube.com/embed/JBp6YJ7tUnk\\" frameborder=\\"0\\" allowfullscreen=\\"\\"></iframe></figure>
+<figure><img src=\\"https://cdn.nimbu.io/s/oa8td8r/assets/bnr_header_fr.jpg\\" data-image=\\"5d3ac6d48bf7477d9f001ea0\\"></figure>
+<p>Voorbeeldtekst</p>
+<p><a href=\\"ecopower.be\\">testen link</a></p>
+<ol><li>asdfasdf<ol><li>asdfas<ol><li>asdfasdf<ol><li>asdfds</li></ol></li><li>asdfas</li></ol></li><li>sdfgsdf</li></ol></li><li>dfgsdfgs</li></ol>
+<p>testerdetest</p><p></p><ul><li>one</li><li>two</li><li>three</li></ul>
+<figure><script type=\\"text/javascript\\" src=\\"https://mails.sacriana.com/t/r/p/thtjdu/10/1/0/1/0/\\"></script></figure>",
+                  },
+                  "en": Object {
+                    "content": "<figure class=\\"video-embed\\"><iframe style=\\"width: 500px; height: 281px;\\" src=\\"//www.youtube.com/embed/JBp6YJ7tUnk\\" frameborder=\\"0\\" allowfullscreen=\\"\\"></iframe></figure>
+<figure><img src=\\"https://cdn.nimbu.io/s/oa8td8r/assets/bnr_header_fr.jpg\\" data-image=\\"5d3ac6d48bf7477d9f001ea0\\"></figure>
+<p>Voorbeeldtekst</p>
+<p><a href=\\"ecopower.be\\">testen link</a></p>
+<ol><li>asdfasdf<ol><li>asdfas<ol><li>asdfasdf<ol><li>asdfds</li></ol></li><li>asdfas</li></ol></li><li>sdfgsdf</li></ol></li><li>dfgsdfgs</li></ol>
+<p>testerdetest</p><p></p><ul><li>one</li><li>two</li><li>three</li></ul>
+<figure><script type=\\"text/javascript\\" src=\\"https://mails.sacriana.com/t/r/p/thtjdu/10/1/0/1/0/\\"></script></figure>",
+                  },
+                  "fr": Object {
+                    "content": "<figure class=\\"video-embed\\"><iframe style=\\"width: 500px; height: 281px;\\" src=\\"//www.youtube.com/embed/JBp6YJ7tUnk\\" frameborder=\\"0\\" allowfullscreen=\\"\\"></iframe></figure>
+<figure><img src=\\"https://cdn.nimbu.io/s/oa8td8r/assets/bnr_header_fr.jpg\\" data-image=\\"5d3ac6d48bf7477d9f001ea0\\"></figure>
+<p>Voorbeeldtekst</p>
+<p><a href=\\"ecopower.be\\">testen link</a></p>
+<ol><li>asdfasdf<ol><li>asdfas<ol><li>asdfasdf<ol><li>asdfds</li></ol></li><li>asdfas</li></ol></li><li>sdfgsdf</li></ol></li><li>dfgsdfgs</li></ol>
+<p>testerdetest</p><p></p><ul><li>one</li><li>two</li><li>three</li></ul>
+<figure><script type=\\"text/javascript\\" src=\\"https://mails.sacriana.com/t/r/p/thtjdu/10/1/0/1/0/\\"></script></figure>",
+                  },
+                },
+                "type": "text",
+                "updated_at": "2020-01-21T08:48:33.310Z",
+              },
+              "Spacing options": Object {
+                "content": "Both",
+                "created_at": "2019-03-11T10:02:07.353Z",
+                "slug": "Spacing options",
+                "translations": Object {
+                  "de": Object {
+                    "content": "Both",
+                  },
+                  "en": Object {
+                    "content": "Both",
+                  },
+                  "fr": Object {
+                    "content": "Both",
+                  },
+                },
+                "type": "select",
+                "updated_at": "2019-03-11T10:02:07.353Z",
+              },
+              "Text Width": Object {
+                "content": "Default",
+                "created_at": "2019-03-11T10:02:07.352Z",
+                "slug": "Text Width",
+                "translations": Object {
+                  "de": Object {
+                    "content": "Default",
+                  },
+                  "en": Object {
+                    "content": "Default",
+                  },
+                  "fr": Object {
+                    "content": "Default",
+                  },
+                },
+                "type": "select",
+                "updated_at": "2019-03-11T10:02:07.352Z",
+              },
+              "Theme": Object {
+                "content": "Secundary",
+                "created_at": "2019-03-11T10:02:07.353Z",
+                "slug": "Theme",
+                "translations": Object {
+                  "de": Object {
+                    "content": "Secundary",
+                  },
+                  "en": Object {
+                    "content": "Secundary",
+                  },
+                  "fr": Object {
+                    "content": "Secundary",
+                  },
+                },
+                "type": "select",
+                "updated_at": "2019-11-19T14:54:50.672Z",
+              },
+            },
+            "position": 1,
+            "slug": "text",
+            "updated_at": "2020-01-21T08:48:33.310Z",
+          },
+          Object {
+            "created_at": "2020-03-10T08:19:53.833Z",
+            "id": "5e674da98bf7477c190026bf",
+            "items": Object {
+              "Content": Object {
+                "content": "<p>hello world</p>",
+                "created_at": "2020-03-10T08:19:53.832Z",
+                "slug": "Content",
+                "translations": Object {
+                  "de": Object {
+                    "content": "<p>hello world</p>",
+                  },
+                  "en": Object {
+                    "content": "<p>hello world</p>",
+                  },
+                  "fr": Object {
+                    "content": "<p>hello world</p>",
+                  },
+                },
+                "type": "text",
+                "updated_at": "2020-03-10T08:19:53.832Z",
+              },
+              "Spacing options": Object {
+                "content": "Both",
+                "created_at": "2020-03-10T08:19:53.832Z",
+                "slug": "Spacing options",
+                "translations": Object {
+                  "de": Object {
+                    "content": "Both",
+                  },
+                  "en": Object {
+                    "content": "Both",
+                  },
+                  "fr": Object {
+                    "content": "Both",
+                  },
+                },
+                "type": "select",
+                "updated_at": "2020-03-10T08:19:53.832Z",
+              },
+              "Text Width": Object {
+                "content": "Default",
+                "created_at": "2020-03-10T08:19:53.832Z",
+                "slug": "Text Width",
+                "translations": Object {
+                  "de": Object {
+                    "content": "Default",
+                  },
+                  "en": Object {
+                    "content": "Default",
+                  },
+                  "fr": Object {
+                    "content": "Default",
+                  },
+                },
+                "type": "select",
+                "updated_at": "2020-03-10T08:19:53.832Z",
+              },
+              "Theme": Object {
+                "content": "Auto",
+                "created_at": "2020-03-10T08:19:53.833Z",
+                "slug": "Theme",
+                "translations": Object {
+                  "de": Object {
+                    "content": "Auto",
+                  },
+                  "en": Object {
+                    "content": "Auto",
+                  },
+                  "fr": Object {
+                    "content": "Auto",
+                  },
+                },
+                "type": "select",
+                "updated_at": "2020-03-10T08:19:53.833Z",
+              },
+            },
+            "position": 3,
+            "slug": "text",
+            "updated_at": "2020-03-10T08:19:53.833Z",
+          },
+        ],
+        "slug": "Blokken",
+        "translations": Object {
+          "de": Object {
+            "content": null,
+          },
+          "en": Object {
+            "content": null,
+          },
+          "fr": Object {
+            "content": null,
+          },
+        },
+        "type": "canvas",
+        "updated_at": "2019-05-23T08:10:43.359Z",
+      },
+    },
+    "locales": Array [],
+    "nimbuId": "54a9a220726177525bda2c00",
+    "nimbuParent": null,
+    "og_image": null,
+    "parent": "__SOURCE__",
+    "parent_path": null,
+    "public_url": "https://speeltuin.nimbu.io/",
+    "published": true,
+    "security_mechanism": "none",
+    "seo_description": null,
+    "seo_keywords": null,
+    "seo_title": null,
+    "slug": "homepage",
+    "template": "page.liquid",
+    "title": "Homepage",
+    "translations": Object {
+      "de": Object {
+        "fullpath": "/homepage",
+        "public_url": "https://speeltuin.nimbu.io/de/",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "homepage",
+        "title": "Homepage",
+      },
+      "en": Object {
+        "fullpath": "/homepage",
+        "public_url": "https://speeltuin.nimbu.io/",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "homepage",
+        "title": "Homepage",
+      },
+      "fr": Object {
+        "fullpath": "/homepage",
+        "public_url": "https://speeltuin.nimbu.io/fr/",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "homepage",
+        "title": "Homepage",
+      },
+    },
+    "updated_at": "2020-08-20T06:39:58.617Z",
+    "url": "https://api.nimbu.io/pages/homepage",
+  },
+  "Nimbu__Page__54a9a393676f6e433c713300": Object {
+    "channel": null,
+    "children": Array [],
+    "created_at": "2015-01-04T20:33:23.316Z",
+    "depth": 1,
+    "fixed_locale": null,
+    "fullpath": "/homepage/navigatie1",
+    "homepage": false,
+    "id": "Nimbu__Page__54a9a393676f6e433c713300",
+    "internal": Object {
+      "contentDigest": "f7fa44442fb2a7b6918e279837c11ee8",
+      "type": "NimbuPage",
+    },
+    "items": Object {
+      "Blokken": Object {
+        "content": null,
+        "created_at": "2018-02-13T13:14:06.818Z",
+        "repeatables": Array [],
+        "slug": "Blokken",
+        "translations": Object {
+          "de": Object {
+            "content": null,
+          },
+          "en": Object {
+            "content": null,
+          },
+          "fr": Object {
+            "content": null,
+          },
+        },
+        "type": "canvas",
+        "updated_at": "2019-05-23T08:10:43.400Z",
+      },
+    },
+    "locales": Array [],
+    "nimbuId": "54a9a393676f6e433c713300",
+    "nimbuParent": "54a9a220726177525bda2c00",
+    "og_image": null,
+    "parent": "__SOURCE__",
+    "parent_path": "/homepage",
+    "public_url": "https://speeltuin.nimbu.io/homepage/navigatie1",
+    "published": true,
+    "security_mechanism": "none",
+    "seo_description": null,
+    "seo_keywords": null,
+    "seo_title": null,
+    "slug": "navigatie1",
+    "template": "page.liquid",
+    "title": "navigatie1",
+    "translations": Object {
+      "de": Object {
+        "fullpath": "/homepage/navigatie1",
+        "public_url": "https://speeltuin.nimbu.io/de/homepage/navigatie1",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "navigatie1",
+        "title": "navigatie1",
+      },
+      "en": Object {
+        "fullpath": "/homepage/navigatie1",
+        "public_url": "https://speeltuin.nimbu.io/homepage/navigatie1",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "navigatie1",
+        "title": "navigatie1",
+      },
+      "fr": Object {
+        "fullpath": "/homepage/navigatie1",
+        "public_url": "https://speeltuin.nimbu.io/fr/homepage/navigatie1",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "navigatie1",
+        "title": "navigatie1",
+      },
+    },
+    "updated_at": "2020-08-20T06:39:58.672Z",
+    "url": "https://api.nimbu.io/pages/homepage/navigatie1",
+  },
+  "Nimbu__Page__54a9a3a37261772de1c20000": Object {
+    "channel": null,
+    "children": Array [],
+    "created_at": "2015-01-04T20:33:39.862Z",
+    "depth": 0,
+    "fixed_locale": null,
+    "fullpath": "/navigatie2",
+    "homepage": false,
+    "id": "Nimbu__Page__54a9a3a37261772de1c20000",
+    "internal": Object {
+      "contentDigest": "35b4ff1a54f58d6f1a97877312f7d3f9",
+      "type": "NimbuPage",
+    },
+    "items": Object {
+      "Blokken": Object {
+        "content": null,
+        "created_at": "2018-02-13T13:14:06.858Z",
+        "repeatables": Array [],
+        "slug": "Blokken",
+        "translations": Object {
+          "de": Object {
+            "content": null,
+          },
+          "en": Object {
+            "content": null,
+          },
+          "fr": Object {
+            "content": null,
+          },
+        },
+        "type": "canvas",
+        "updated_at": "2019-05-23T08:10:43.415Z",
+      },
+    },
+    "locales": Array [],
+    "nimbuId": "54a9a3a37261772de1c20000",
+    "nimbuParent": null,
+    "og_image": null,
+    "parent": "__SOURCE__",
+    "parent_path": null,
+    "public_url": "https://speeltuin.nimbu.io/navigatie2",
+    "published": true,
+    "security_mechanism": "none",
+    "seo_description": null,
+    "seo_keywords": null,
+    "seo_title": null,
+    "slug": "navigatie2",
+    "template": "page.liquid",
+    "title": "navigatie2",
+    "translations": Object {
+      "de": Object {
+        "fullpath": "/navigatie2",
+        "public_url": "https://speeltuin.nimbu.io/de/navigatie2",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "navigatie2",
+        "title": "navigatie2",
+      },
+      "en": Object {
+        "fullpath": "/navigatie2",
+        "public_url": "https://speeltuin.nimbu.io/navigatie2",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "navigatie2",
+        "title": "navigatie2",
+      },
+      "fr": Object {
+        "fullpath": "/navigatie2",
+        "public_url": "https://speeltuin.nimbu.io/fr/navigatie2",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "navigatie2",
+        "title": "navigatie2",
+      },
+    },
+    "updated_at": "2020-08-20T06:39:58.690Z",
+    "url": "https://api.nimbu.io/pages/navigatie2",
+  },
+  "Nimbu__Page__54a9a3c5726177525b3c2e00": Object {
+    "channel": null,
+    "children": Array [],
+    "created_at": "2015-01-04T20:34:14.045Z",
+    "depth": 3,
+    "fixed_locale": null,
+    "fullpath": "/homepage/navigatie1/subnavigatie1/navigatie3",
+    "homepage": false,
+    "id": "Nimbu__Page__54a9a3c5726177525b3c2e00",
+    "internal": Object {
+      "contentDigest": "7430b132c61125bc9d5c7688583e989f",
+      "type": "NimbuPage",
+    },
+    "items": Object {
+      "Blokken": Object {
+        "content": null,
+        "created_at": "2018-02-13T13:14:07.000Z",
+        "repeatables": Array [],
+        "slug": "Blokken",
+        "translations": Object {
+          "de": Object {
+            "content": null,
+          },
+          "en": Object {
+            "content": null,
+          },
+          "fr": Object {
+            "content": null,
+          },
+        },
+        "type": "canvas",
+        "updated_at": "2019-05-23T08:10:43.507Z",
+      },
+    },
+    "locales": Array [],
+    "nimbuId": "54a9a3c5726177525b3c2e00",
+    "nimbuParent": "54a9a3d9676f6e38f50c3500",
+    "og_image": null,
+    "parent": "__SOURCE__",
+    "parent_path": "/homepage/navigatie1/subnavigatie1",
+    "public_url": "https://speeltuin.nimbu.io/homepage/navigatie1/subnavigatie1/navigatie3",
+    "published": true,
+    "security_mechanism": "none",
+    "seo_description": null,
+    "seo_keywords": null,
+    "seo_title": null,
+    "slug": "navigatie3",
+    "template": "page.liquid",
+    "title": "navigatie3",
+    "translations": Object {
+      "de": Object {
+        "fullpath": "/homepage/navigatie1/subnavigatie1/navigatie3",
+        "public_url": "https://speeltuin.nimbu.io/de/homepage/navigatie1/subnavigatie1/navigatie3",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "navigatie3",
+        "title": "navigatie3",
+      },
+      "en": Object {
+        "fullpath": "/homepage/navigatie1/subnavigatie1/navigatie3",
+        "public_url": "https://speeltuin.nimbu.io/homepage/navigatie1/subnavigatie1/navigatie3",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "navigatie3",
+        "title": "navigatie3",
+      },
+      "fr": Object {
+        "fullpath": "/homepage/navigatie1/subnavigatie1/navigatie3",
+        "public_url": "https://speeltuin.nimbu.io/fr/homepage/navigatie1/subnavigatie1/navigatie3",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "navigatie3",
+        "title": "navigatie3",
+      },
+    },
+    "updated_at": "2020-08-20T06:39:58.883Z",
+    "url": "https://api.nimbu.io/pages/homepage/navigatie1/subnavigatie1/navigatie3",
+  },
+  "Nimbu__Page__54a9a3d9676f6e38f50c3500": Object {
+    "channel": null,
+    "children": Array [],
+    "created_at": "2015-01-04T20:34:33.384Z",
+    "depth": 2,
+    "fixed_locale": null,
+    "fullpath": "/homepage/navigatie1/subnavigatie1",
+    "homepage": false,
+    "id": "Nimbu__Page__54a9a3d9676f6e38f50c3500",
+    "internal": Object {
+      "contentDigest": "778f40d0954690af2cb6fa00d323581a",
+      "type": "NimbuPage",
+    },
+    "items": Object {
+      "Blokken": Object {
+        "content": null,
+        "created_at": "2018-02-13T13:14:06.961Z",
+        "repeatables": Array [],
+        "slug": "Blokken",
+        "translations": Object {
+          "de": Object {
+            "content": null,
+          },
+          "en": Object {
+            "content": null,
+          },
+          "fr": Object {
+            "content": null,
+          },
+        },
+        "type": "canvas",
+        "updated_at": "2019-05-23T08:10:43.486Z",
+      },
+    },
+    "locales": Array [],
+    "nimbuId": "54a9a3d9676f6e38f50c3500",
+    "nimbuParent": "54a9a393676f6e433c713300",
+    "og_image": null,
+    "parent": "__SOURCE__",
+    "parent_path": "/homepage/navigatie1",
+    "public_url": "https://speeltuin.nimbu.io/homepage/navigatie1/subnavigatie1",
+    "published": true,
+    "security_mechanism": "none",
+    "seo_description": null,
+    "seo_keywords": null,
+    "seo_title": null,
+    "slug": "subnavigatie1",
+    "template": "page.liquid",
+    "title": "subnavigatie1",
+    "translations": Object {
+      "de": Object {
+        "fullpath": "/homepage/navigatie1/subnavigatie1",
+        "public_url": "https://speeltuin.nimbu.io/de/homepage/navigatie1/subnavigatie1",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "subnavigatie1",
+        "title": "subnavigatie1",
+      },
+      "en": Object {
+        "fullpath": "/homepage/navigatie1/subnavigatie1",
+        "public_url": "https://speeltuin.nimbu.io/homepage/navigatie1/subnavigatie1",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "subnavigatie1",
+        "title": "subnavigatie1",
+      },
+      "fr": Object {
+        "fullpath": "/homepage/navigatie1/subnavigatie1",
+        "public_url": "https://speeltuin.nimbu.io/fr/homepage/navigatie1/subnavigatie1",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "subnavigatie1",
+        "title": "subnavigatie1",
+      },
+    },
+    "updated_at": "2020-08-20T06:39:58.840Z",
+    "url": "https://api.nimbu.io/pages/homepage/navigatie1/subnavigatie1",
+  },
+  "Nimbu__Page__54a9a3e4676f6e2b04400c00": Object {
+    "channel": null,
+    "children": Array [],
+    "created_at": "2015-01-04T20:34:44.840Z",
+    "depth": 1,
+    "fixed_locale": null,
+    "fullpath": "/navigatie2/subnavigatie2",
+    "homepage": false,
+    "id": "Nimbu__Page__54a9a3e4676f6e2b04400c00",
+    "internal": Object {
+      "contentDigest": "6a4a0c347a6fc9f26dc03dd58e3e0a0e",
+      "type": "NimbuPage",
+    },
+    "items": Object {
+      "Blokken": Object {
+        "content": null,
+        "created_at": "2018-02-13T13:14:07.039Z",
+        "repeatables": Array [],
+        "slug": "Blokken",
+        "translations": Object {
+          "de": Object {
+            "content": null,
+          },
+          "en": Object {
+            "content": null,
+          },
+          "fr": Object {
+            "content": null,
+          },
+        },
+        "type": "canvas",
+        "updated_at": "2019-05-23T08:10:43.536Z",
+      },
+    },
+    "locales": Array [],
+    "nimbuId": "54a9a3e4676f6e2b04400c00",
+    "nimbuParent": "54a9a3a37261772de1c20000",
+    "og_image": null,
+    "parent": "__SOURCE__",
+    "parent_path": "/navigatie2",
+    "public_url": "https://speeltuin.nimbu.io/navigatie2/subnavigatie2",
+    "published": true,
+    "security_mechanism": "none",
+    "seo_description": null,
+    "seo_keywords": null,
+    "seo_title": null,
+    "slug": "subnavigatie2",
+    "template": "page.liquid",
+    "title": "subnavigatie2",
+    "translations": Object {
+      "de": Object {
+        "fullpath": "/navigatie2/subnavigatie2",
+        "public_url": "https://speeltuin.nimbu.io/de/navigatie2/subnavigatie2",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "subnavigatie2",
+        "title": "subnavigatie2",
+      },
+      "en": Object {
+        "fullpath": "/navigatie2/subnavigatie2",
+        "public_url": "https://speeltuin.nimbu.io/navigatie2/subnavigatie2",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "subnavigatie2",
+        "title": "subnavigatie2",
+      },
+      "fr": Object {
+        "fullpath": "/navigatie2/subnavigatie2",
+        "public_url": "https://speeltuin.nimbu.io/fr/navigatie2/subnavigatie2",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "subnavigatie2",
+        "title": "subnavigatie2",
+      },
+    },
+    "updated_at": "2020-08-20T06:39:58.948Z",
+    "url": "https://api.nimbu.io/pages/navigatie2/subnavigatie2",
+  },
+  "Nimbu__Page__54a9a3f0676f6e7857a41e00": Object {
+    "channel": null,
+    "children": Array [],
+    "created_at": "2015-01-04T20:34:56.086Z",
+    "depth": 0,
+    "fixed_locale": null,
+    "fullpath": "/subnavigatie3",
+    "homepage": false,
+    "id": "Nimbu__Page__54a9a3f0676f6e7857a41e00",
+    "internal": Object {
+      "contentDigest": "f4f5d756bd215afcec105cf710678812",
+      "type": "NimbuPage",
+    },
+    "items": Object {
+      "Blokken": Object {
+        "content": null,
+        "created_at": "2018-02-13T13:14:06.891Z",
+        "repeatables": Array [],
+        "slug": "Blokken",
+        "translations": Object {
+          "de": Object {
+            "content": null,
+          },
+          "en": Object {
+            "content": null,
+          },
+          "fr": Object {
+            "content": null,
+          },
+        },
+        "type": "canvas",
+        "updated_at": "2019-05-23T08:10:43.432Z",
+      },
+    },
+    "locales": Array [],
+    "nimbuId": "54a9a3f0676f6e7857a41e00",
+    "nimbuParent": null,
+    "og_image": null,
+    "parent": "__SOURCE__",
+    "parent_path": null,
+    "public_url": "https://speeltuin.nimbu.io/subnavigatie3",
+    "published": true,
+    "security_mechanism": "none",
+    "seo_description": null,
+    "seo_keywords": null,
+    "seo_title": null,
+    "slug": "subnavigatie3",
+    "template": "page.liquid",
+    "title": "subnavigatie3",
+    "translations": Object {
+      "de": Object {
+        "fullpath": "/subnavigatie3",
+        "public_url": "https://speeltuin.nimbu.io/de/subnavigatie3",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "subnavigatie3",
+        "title": "subnavigatie3",
+      },
+      "en": Object {
+        "fullpath": "/subnavigatie3",
+        "public_url": "https://speeltuin.nimbu.io/subnavigatie3",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "subnavigatie3",
+        "title": "subnavigatie3",
+      },
+      "fr": Object {
+        "fullpath": "/subnavigatie3",
+        "public_url": "https://speeltuin.nimbu.io/fr/subnavigatie3",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "subnavigatie3",
+        "title": "subnavigatie3",
+      },
+    },
+    "updated_at": "2020-08-20T06:39:58.706Z",
+    "url": "https://api.nimbu.io/pages/subnavigatie3",
+  },
+  "Nimbu__Page__55c9fec78bf7477bc900003b": Object {
+    "channel": null,
+    "children": Array [],
+    "created_at": "2015-08-11T13:55:19.425Z",
+    "depth": 0,
+    "fixed_locale": null,
+    "fullpath": "/testpagina",
+    "homepage": false,
+    "id": "Nimbu__Page__55c9fec78bf7477bc900003b",
+    "internal": Object {
+      "contentDigest": "3c94da89791237901ed63bfd08b26adf",
+      "type": "NimbuPage",
+    },
+    "items": Object {
+      "Blokken": Object {
+        "content": null,
+        "created_at": "2018-02-13T13:14:06.924Z",
+        "repeatables": Array [],
+        "slug": "Blokken",
+        "translations": Object {
+          "de": Object {
+            "content": null,
+          },
+          "en": Object {
+            "content": null,
+          },
+          "fr": Object {
+            "content": null,
+          },
+        },
+        "type": "canvas",
+        "updated_at": "2019-05-23T08:10:43.447Z",
+      },
+    },
+    "locales": Array [],
+    "nimbuId": "55c9fec78bf7477bc900003b",
+    "nimbuParent": null,
+    "og_image": null,
+    "parent": "__SOURCE__",
+    "parent_path": null,
+    "public_url": "https://speeltuin.nimbu.io/testpagina",
+    "published": true,
+    "security_mechanism": "none",
+    "seo_description": null,
+    "seo_keywords": null,
+    "seo_title": null,
+    "slug": "testpagina",
+    "template": "page.liquid",
+    "title": "Testpagina",
+    "translations": Object {
+      "de": Object {
+        "fullpath": "/testpagina",
+        "public_url": "https://speeltuin.nimbu.io/de/testpagina",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "testpagina",
+        "title": "Testpagina",
+      },
+      "en": Object {
+        "fullpath": "/testpagina",
+        "public_url": "https://speeltuin.nimbu.io/testpagina",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "testpagina",
+        "title": "Testpagina",
+      },
+      "fr": Object {
+        "fullpath": "/testpagina",
+        "public_url": "https://speeltuin.nimbu.io/fr/testpagina",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "testpagina",
+        "title": "Testpagina",
+      },
+    },
+    "updated_at": "2020-08-20T06:39:58.726Z",
+    "url": "https://api.nimbu.io/pages/testpagina",
+  },
+  "Nimbu__Page__58f9b59b3de0745d44002e9c": Object {
+    "channel": null,
+    "children": Array [],
+    "created_at": "2017-04-21T07:32:43.753Z",
+    "depth": 0,
+    "fixed_locale": null,
+    "fullpath": "/vue-test",
+    "homepage": false,
+    "id": "Nimbu__Page__58f9b59b3de0745d44002e9c",
+    "internal": Object {
+      "contentDigest": "770af75b9ed2751ce0a536cfcfa99ee3",
+      "type": "NimbuPage",
+    },
+    "items": Object {},
+    "locales": Array [],
+    "nimbuId": "58f9b59b3de0745d44002e9c",
+    "nimbuParent": null,
+    "og_image": null,
+    "parent": "__SOURCE__",
+    "parent_path": null,
+    "public_url": "https://speeltuin.nimbu.io/vue-test",
+    "published": true,
+    "security_mechanism": "none",
+    "seo_description": null,
+    "seo_keywords": null,
+    "seo_title": null,
+    "slug": "vue-test",
+    "template": "vue.liquid",
+    "title": "Vue test",
+    "translations": Object {
+      "de": Object {
+        "fullpath": "/vue-test",
+        "public_url": "https://speeltuin.nimbu.io/de/vue-test",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "vue-test",
+        "title": "Vue test",
+      },
+      "en": Object {
+        "fullpath": "/vue-test",
+        "public_url": "https://speeltuin.nimbu.io/vue-test",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "vue-test",
+        "title": "Vue test",
+      },
+      "fr": Object {
+        "fullpath": "/vue-test",
+        "public_url": "https://speeltuin.nimbu.io/fr/vue-test",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "vue-test",
+        "title": "Vue test",
+      },
+    },
+    "updated_at": "2020-03-10T07:56:10.029Z",
+    "url": "https://api.nimbu.io/pages/vue-test",
+  },
+  "Nimbu__Page__5bc4989c3de0740c3200039a": Object {
+    "channel": "test",
+    "children": Array [],
+    "created_at": "2018-10-15T13:39:40.879Z",
+    "depth": 1,
+    "fixed_locale": null,
+    "fullpath": "/navigatie2/channel_template",
+    "homepage": false,
+    "id": "Nimbu__Page__5bc4989c3de0740c3200039a",
+    "internal": Object {
+      "contentDigest": "379c4c0f930cd733b7dfde29f3b81ec4",
+      "type": "NimbuPage",
+    },
+    "items": Object {
+      "Blokken": Object {
+        "content": null,
+        "created_at": "2018-10-15T13:39:40.879Z",
+        "repeatables": Array [],
+        "slug": "Blokken",
+        "translations": Object {
+          "de": Object {
+            "content": null,
+          },
+          "en": Object {
+            "content": null,
+          },
+          "fr": Object {
+            "content": null,
+          },
+        },
+        "type": "canvas",
+        "updated_at": "2019-05-23T08:10:43.556Z",
+      },
+    },
+    "locales": Array [],
+    "nimbuId": "5bc4989c3de0740c3200039a",
+    "nimbuParent": "54a9a3a37261772de1c20000",
+    "og_image": null,
+    "parent": "__SOURCE__",
+    "parent_path": "/navigatie2",
+    "public_url": "https://speeltuin.nimbu.io/navigatie2/channel_template",
+    "published": true,
+    "security_mechanism": "none",
+    "seo_description": null,
+    "seo_keywords": null,
+    "seo_title": null,
+    "slug": "channel_template",
+    "template": "page.liquid",
+    "title": "Channel Page",
+    "translations": Object {
+      "de": Object {
+        "fullpath": "/navigatie2/channel_template",
+        "public_url": "https://speeltuin.nimbu.io/de/navigatie2/channel_template",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "channel_template",
+        "title": "Channel Page",
+      },
+      "en": Object {
+        "fullpath": "/navigatie2/channel_template",
+        "public_url": "https://speeltuin.nimbu.io/navigatie2/channel_template",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "channel_template",
+        "title": "Channel Page",
+      },
+      "fr": Object {
+        "fullpath": "/navigatie2/channel_template",
+        "public_url": "https://speeltuin.nimbu.io/fr/navigatie2/channel_template",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "channel_template",
+        "title": "Channel Page",
+      },
+    },
+    "updated_at": "2020-08-20T06:39:58.971Z",
+    "url": "https://api.nimbu.io/pages/navigatie2/channel_template",
+  },
+  "Nimbu__Page__5be59b63d1798f3d8800852a": Object {
+    "channel": null,
+    "children": Array [],
+    "created_at": "2018-11-09T14:36:19.417Z",
+    "depth": 0,
+    "fixed_locale": null,
+    "fullpath": "/contact",
+    "homepage": false,
+    "id": "Nimbu__Page__5be59b63d1798f3d8800852a",
+    "internal": Object {
+      "contentDigest": "71f605cb2a6df72f6dc185c63cfe7f32",
+      "type": "NimbuPage",
+    },
+    "items": Object {
+      "Blokken": Object {
+        "content": null,
+        "created_at": "2018-11-09T14:36:19.417Z",
+        "repeatables": Array [
+          Object {
+            "created_at": "2018-11-09T14:36:30.201Z",
+            "id": "5be59b6ed1798f0d12003663",
+            "items": Object {
+              "Content": Object {
+                "content": null,
+                "created_at": "2019-02-06T10:48:21.835Z",
+                "slug": "Content",
+                "translations": Object {
+                  "de": Object {
+                    "content": null,
+                  },
+                  "en": Object {
+                    "content": null,
+                  },
+                  "fr": Object {
+                    "content": null,
+                  },
+                },
+                "type": "text",
+                "updated_at": "2019-02-06T10:48:21.835Z",
+              },
+              "Map coordinates": Object {
+                "content": null,
+                "created_at": "2018-11-09T14:36:30.199Z",
+                "slug": "Map coordinates",
+                "translations": Object {
+                  "de": Object {
+                    "content": null,
+                  },
+                  "en": Object {
+                    "content": null,
+                  },
+                  "fr": Object {
+                    "content": null,
+                  },
+                },
+                "type": "field",
+                "updated_at": "2018-11-09T14:36:30.199Z",
+              },
+              "Spacing options": Object {
+                "content": "Both",
+                "created_at": "2018-11-09T14:36:30.200Z",
+                "slug": "Spacing options",
+                "translations": Object {
+                  "de": Object {
+                    "content": "Both",
+                  },
+                  "en": Object {
+                    "content": "Both",
+                  },
+                  "fr": Object {
+                    "content": "Both",
+                  },
+                },
+                "type": "select",
+                "updated_at": "2019-02-06T10:48:21.842Z",
+              },
+              "Theme": Object {
+                "content": null,
+                "created_at": "2019-02-06T10:48:21.838Z",
+                "fallback_content": "Auto",
+                "slug": "Theme",
+                "translations": Object {
+                  "de": Object {
+                    "content": null,
+                    "fallback_content": "Auto",
+                  },
+                  "en": Object {
+                    "content": null,
+                    "fallback_content": "Auto",
+                  },
+                  "fr": Object {
+                    "content": null,
+                    "fallback_content": "Auto",
+                  },
+                },
+                "type": "select",
+                "updated_at": "2019-02-06T10:48:21.838Z",
+              },
+            },
+            "position": 0,
+            "slug": "contact_with_map",
+            "updated_at": "2019-02-06T11:12:31.176Z",
+          },
+        ],
+        "slug": "Blokken",
+        "translations": Object {
+          "de": Object {
+            "content": null,
+          },
+          "en": Object {
+            "content": null,
+          },
+          "fr": Object {
+            "content": null,
+          },
+        },
+        "type": "canvas",
+        "updated_at": "2019-05-23T08:10:43.581Z",
+      },
+    },
+    "locales": Array [],
+    "nimbuId": "5be59b63d1798f3d8800852a",
+    "nimbuParent": null,
+    "og_image": null,
+    "parent": "__SOURCE__",
+    "parent_path": null,
+    "public_url": "https://speeltuin.nimbu.io/contact",
+    "published": true,
+    "security_mechanism": "none",
+    "seo_description": null,
+    "seo_keywords": null,
+    "seo_title": null,
+    "slug": "contact",
+    "template": "page.liquid",
+    "title": "Contact",
+    "translations": Object {
+      "de": Object {
+        "fullpath": "/contact",
+        "public_url": "https://speeltuin.nimbu.io/de/contact",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "contact",
+        "title": "Contact",
+      },
+      "en": Object {
+        "fullpath": "/contact",
+        "public_url": "https://speeltuin.nimbu.io/contact",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "contact",
+        "title": "Contact",
+      },
+      "fr": Object {
+        "fullpath": "/contact",
+        "public_url": "https://speeltuin.nimbu.io/fr/contact",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "contact",
+        "title": "Contact",
+      },
+    },
+    "updated_at": "2020-08-20T06:39:58.744Z",
+    "url": "https://api.nimbu.io/pages/contact",
+  },
+  "Nimbu__Page__5c5abd62d1798f102f0136b0": Object {
+    "channel": null,
+    "children": Array [],
+    "created_at": "2019-02-06T10:56:34.777Z",
+    "depth": 0,
+    "fixed_locale": null,
+    "fullpath": "/test-starterskit",
+    "homepage": false,
+    "id": "Nimbu__Page__5c5abd62d1798f102f0136b0",
+    "internal": Object {
+      "contentDigest": "21c47ffc7cd650cf082da20a96bf2219",
+      "type": "NimbuPage",
+    },
+    "items": Object {
+      "Blokken": Object {
+        "content": null,
+        "created_at": "2019-02-06T10:56:34.777Z",
+        "repeatables": Array [
+          Object {
+            "created_at": "2019-02-06T11:01:20.708Z",
+            "id": "5c5abe80d1798f0ff001593b",
+            "items": Object {
+              "Background Image": Object {
+                "content": null,
+                "created_at": "2019-02-06T11:01:20.706Z",
+                "file": null,
+                "slug": "Background Image",
+                "translations": Object {
+                  "de": Object {
+                    "content": null,
+                  },
+                  "en": Object {
+                    "content": null,
+                  },
+                  "fr": Object {
+                    "content": null,
+                  },
+                },
+                "type": "file",
+                "updated_at": "2019-05-23T08:10:43.618Z",
+              },
+              "Background Overlay Color": Object {
+                "content": "Black",
+                "created_at": "2019-02-06T11:01:20.707Z",
+                "slug": "Background Overlay Color",
+                "translations": Object {
+                  "de": Object {
+                    "content": "Black",
+                  },
+                  "en": Object {
+                    "content": "Black",
+                  },
+                  "fr": Object {
+                    "content": "Black",
+                  },
+                },
+                "type": "select",
+                "updated_at": "2019-05-23T08:10:43.618Z",
+              },
+              "Background Overlay Opacity": Object {
+                "content": "normal",
+                "created_at": "2019-02-06T11:01:20.708Z",
+                "slug": "Background Overlay Opacity",
+                "translations": Object {
+                  "de": Object {
+                    "content": "normal",
+                  },
+                  "en": Object {
+                    "content": "normal",
+                  },
+                  "fr": Object {
+                    "content": "normal",
+                  },
+                },
+                "type": "select",
+                "updated_at": "2019-05-23T08:10:43.618Z",
+              },
+              "Button Link": Object {
+                "content": null,
+                "created_at": "2019-02-06T11:01:20.705Z",
+                "slug": "Button Link",
+                "translations": Object {
+                  "de": Object {
+                    "content": null,
+                  },
+                  "en": Object {
+                    "content": null,
+                  },
+                  "fr": Object {
+                    "content": null,
+                  },
+                },
+                "type": "field",
+                "updated_at": "2019-05-23T08:10:43.618Z",
+              },
+              "Button Text": Object {
+                "content": null,
+                "created_at": "2019-02-06T11:01:20.705Z",
+                "slug": "Button Text",
+                "translations": Object {
+                  "de": Object {
+                    "content": null,
+                  },
+                  "en": Object {
+                    "content": null,
+                  },
+                  "fr": Object {
+                    "content": null,
+                  },
+                },
+                "type": "field",
+                "updated_at": "2019-05-23T08:10:43.618Z",
+              },
+              "Image Alt": Object {
+                "content": null,
+                "created_at": "2019-02-06T11:01:20.706Z",
+                "slug": "Image Alt",
+                "translations": Object {
+                  "de": Object {
+                    "content": null,
+                  },
+                  "en": Object {
+                    "content": null,
+                  },
+                  "fr": Object {
+                    "content": null,
+                  },
+                },
+                "type": "field",
+                "updated_at": "2019-05-23T08:10:43.618Z",
+              },
+              "Subtitle": Object {
+                "content": null,
+                "created_at": "2019-02-06T11:01:20.704Z",
+                "slug": "Subtitle",
+                "translations": Object {
+                  "de": Object {
+                    "content": null,
+                  },
+                  "en": Object {
+                    "content": null,
+                  },
+                  "fr": Object {
+                    "content": null,
+                  },
+                },
+                "type": "field",
+                "updated_at": "2019-05-23T08:10:43.618Z",
+              },
+              "Title": Object {
+                "content": "Test pagina starterskit",
+                "created_at": "2019-02-06T11:01:20.703Z",
+                "slug": "Title",
+                "translations": Object {
+                  "de": Object {
+                    "content": "Test pagina starterskit",
+                  },
+                  "en": Object {
+                    "content": "Test pagina starterskit",
+                  },
+                  "fr": Object {
+                    "content": "Test pagina starterskit",
+                  },
+                },
+                "type": "field",
+                "updated_at": "2019-05-23T08:10:43.618Z",
+              },
+            },
+            "position": 0,
+            "slug": "header",
+            "updated_at": "2019-05-23T08:10:43.619Z",
+          },
+          Object {
+            "created_at": "2019-09-20T12:36:17.751Z",
+            "id": "5d84c7c02c06e877d20002d7",
+            "items": Object {
+              "Items": Object {
+                "content": null,
+                "created_at": "2019-09-20T12:36:17.749Z",
+                "repeatables": Array [
+                  Object {
+                    "created_at": "2019-09-20T12:36:17.747Z",
+                    "id": "5d84c7c02c06e877d20002d8",
+                    "items": Object {
+                      "Button Link": Object {
+                        "content": "#",
+                        "created_at": "2019-09-20T12:44:23.395Z",
+                        "slug": "Button Link",
+                        "translations": Object {
+                          "de": Object {
+                            "content": "#",
+                          },
+                          "en": Object {
+                            "content": "#",
+                          },
+                          "fr": Object {
+                            "content": "#",
+                          },
+                        },
+                        "type": "field",
+                        "updated_at": "2019-09-20T13:01:43.120Z",
+                      },
+                      "Button Text": Object {
+                        "content": "Test",
+                        "created_at": "2019-09-20T12:44:23.393Z",
+                        "slug": "Button Text",
+                        "translations": Object {
+                          "de": Object {
+                            "content": "Test",
+                          },
+                          "en": Object {
+                            "content": "Test",
+                          },
+                          "fr": Object {
+                            "content": "Test",
+                          },
+                        },
+                        "type": "field",
+                        "updated_at": "2019-09-20T13:01:43.120Z",
+                      },
+                      "Content": Object {
+                        "content": "<p>We have heard only twice.&nbsp;</p>",
+                        "created_at": "2019-09-20T12:36:17.746Z",
+                        "slug": "Content",
+                        "translations": Object {
+                          "de": Object {
+                            "content": "<p>We have heard only twice.&nbsp;</p>",
+                          },
+                          "en": Object {
+                            "content": "<p>We have heard only twice.&nbsp;</p>",
+                          },
+                          "fr": Object {
+                            "content": "<p>We have heard only twice.&nbsp;</p>",
+                          },
+                        },
+                        "type": "text",
+                        "updated_at": "2019-09-20T13:02:34.796Z",
+                      },
+                      "Image": Object {
+                        "content": "https://cdn.nimbu.io/s/oa8td8r/pages/voa923d/1_klein.jpg?efn05fq",
+                        "created_at": "2019-09-20T12:36:17.746Z",
+                        "file": Object {
+                          "__type": "File",
+                          "checksum": "3cb8084e828da58951e2be0c47331f406daa2281",
+                          "content_type": "image/jpeg",
+                          "filename": "1_klein.jpg",
+                          "height": 600,
+                          "size": 315264,
+                          "url": "https://cdn.nimbu.io/s/oa8td8r/pages/voa923d/1_klein.jpg?efn05fq",
+                          "version": "efn05fq",
+                          "width": 800,
+                        },
+                        "slug": "Image",
+                        "translations": Object {
+                          "de": Object {
+                            "content": "https://cdn.nimbu.io/s/oa8td8r/pages/voa923d/1_klein.jpg?efn05fq",
+                          },
+                          "en": Object {
+                            "content": "https://cdn.nimbu.io/s/oa8td8r/pages/voa923d/1_klein.jpg?efn05fq",
+                          },
+                          "fr": Object {
+                            "content": "https://cdn.nimbu.io/s/oa8td8r/pages/voa923d/1_klein.jpg?efn05fq",
+                          },
+                        },
+                        "type": "file",
+                        "updated_at": "2019-09-20T12:36:17.746Z",
+                      },
+                      "Image alt": Object {
+                        "content": null,
+                        "created_at": "2019-09-20T12:36:17.747Z",
+                        "slug": "Image alt",
+                        "translations": Object {
+                          "de": Object {
+                            "content": null,
+                          },
+                          "en": Object {
+                            "content": null,
+                          },
+                          "fr": Object {
+                            "content": null,
+                          },
+                        },
+                        "type": "field",
+                        "updated_at": "2019-09-20T12:36:17.747Z",
+                      },
+                      "Title": Object {
+                        "content": "Testcard 1",
+                        "created_at": "2019-09-20T12:36:17.746Z",
+                        "slug": "Title",
+                        "translations": Object {
+                          "de": Object {
+                            "content": "Testcard 1",
+                          },
+                          "en": Object {
+                            "content": "Testcard 1",
+                          },
+                          "fr": Object {
+                            "content": "Testcard 1",
+                          },
+                        },
+                        "type": "field",
+                        "updated_at": "2019-09-20T12:36:17.746Z",
+                      },
+                    },
+                    "position": 0,
+                    "slug": "Card",
+                    "updated_at": "2019-09-20T13:02:34.796Z",
+                  },
+                  Object {
+                    "created_at": "2019-09-20T12:36:17.748Z",
+                    "id": "5d84c7c02c06e877d20002de",
+                    "items": Object {
+                      "Button Link": Object {
+                        "content": null,
+                        "created_at": "2019-09-20T12:44:23.400Z",
+                        "slug": "Button Link",
+                        "translations": Object {
+                          "de": Object {
+                            "content": null,
+                          },
+                          "en": Object {
+                            "content": null,
+                          },
+                          "fr": Object {
+                            "content": null,
+                          },
+                        },
+                        "type": "field",
+                        "updated_at": "2019-09-20T13:01:43.125Z",
+                      },
+                      "Button Text": Object {
+                        "content": null,
+                        "created_at": "2019-09-20T12:44:23.398Z",
+                        "slug": "Button Text",
+                        "translations": Object {
+                          "de": Object {
+                            "content": null,
+                          },
+                          "en": Object {
+                            "content": null,
+                          },
+                          "fr": Object {
+                            "content": null,
+                          },
+                        },
+                        "type": "field",
+                        "updated_at": "2019-09-20T13:01:43.124Z",
+                      },
+                      "Content": Object {
+                        "content": "<p>Her sister, however, assured her of her being perfectly well; and their conversation, which had been passing while Mr. and Mrs. Gardiner were engaged with their children, was now put an end to by the approach of the whole party.</p>",
+                        "created_at": "2019-09-20T12:36:17.747Z",
+                        "slug": "Content",
+                        "translations": Object {
+                          "de": Object {
+                            "content": "<p>Her sister, however, assured her of her being perfectly well; and their conversation, which had been passing while Mr. and Mrs. Gardiner were engaged with their children, was now put an end to by the approach of the whole party.</p>",
+                          },
+                          "en": Object {
+                            "content": "<p>Her sister, however, assured her of her being perfectly well; and their conversation, which had been passing while Mr. and Mrs. Gardiner were engaged with their children, was now put an end to by the approach of the whole party.</p>",
+                          },
+                          "fr": Object {
+                            "content": "<p>Her sister, however, assured her of her being perfectly well; and their conversation, which had been passing while Mr. and Mrs. Gardiner were engaged with their children, was now put an end to by the approach of the whole party.</p>",
+                          },
+                        },
+                        "type": "text",
+                        "updated_at": "2019-09-20T12:36:17.747Z",
+                      },
+                      "Image": Object {
+                        "content": "https://cdn.nimbu.io/s/oa8td8r/pages/al4b01i/4_klein.jpg?hcc7n2r",
+                        "created_at": "2019-09-20T12:36:17.748Z",
+                        "file": Object {
+                          "__type": "File",
+                          "checksum": "c7b1a334a88c1e9c52257d2e4571c05b9ac81a60",
+                          "content_type": "image/jpeg",
+                          "filename": "4_klein.jpg",
+                          "height": 600,
+                          "size": 226174,
+                          "url": "https://cdn.nimbu.io/s/oa8td8r/pages/al4b01i/4_klein.jpg?hcc7n2r",
+                          "version": "hcc7n2r",
+                          "width": 800,
+                        },
+                        "slug": "Image",
+                        "translations": Object {
+                          "de": Object {
+                            "content": "https://cdn.nimbu.io/s/oa8td8r/pages/al4b01i/4_klein.jpg?hcc7n2r",
+                          },
+                          "en": Object {
+                            "content": "https://cdn.nimbu.io/s/oa8td8r/pages/al4b01i/4_klein.jpg?hcc7n2r",
+                          },
+                          "fr": Object {
+                            "content": "https://cdn.nimbu.io/s/oa8td8r/pages/al4b01i/4_klein.jpg?hcc7n2r",
+                          },
+                        },
+                        "type": "file",
+                        "updated_at": "2019-09-20T12:36:17.748Z",
+                      },
+                      "Image alt": Object {
+                        "content": null,
+                        "created_at": "2019-09-20T12:36:17.748Z",
+                        "slug": "Image alt",
+                        "translations": Object {
+                          "de": Object {
+                            "content": null,
+                          },
+                          "en": Object {
+                            "content": null,
+                          },
+                          "fr": Object {
+                            "content": null,
+                          },
+                        },
+                        "type": "field",
+                        "updated_at": "2019-09-20T12:36:17.748Z",
+                      },
+                      "Title": Object {
+                        "content": "Testcard 2",
+                        "created_at": "2019-09-20T12:36:17.747Z",
+                        "slug": "Title",
+                        "translations": Object {
+                          "de": Object {
+                            "content": "Testcard 2",
+                          },
+                          "en": Object {
+                            "content": "Testcard 2",
+                          },
+                          "fr": Object {
+                            "content": "Testcard 2",
+                          },
+                        },
+                        "type": "field",
+                        "updated_at": "2019-09-20T12:36:17.747Z",
+                      },
+                    },
+                    "position": 1,
+                    "slug": "Card",
+                    "updated_at": "2019-09-20T13:01:43.125Z",
+                  },
+                  Object {
+                    "created_at": "2019-09-20T12:36:17.749Z",
+                    "id": "5d84c7c02c06e877d20002e3",
+                    "items": Object {
+                      "Button Link": Object {
+                        "content": "#",
+                        "created_at": "2019-09-20T12:44:23.405Z",
+                        "slug": "Button Link",
+                        "translations": Object {
+                          "de": Object {
+                            "content": "#",
+                          },
+                          "en": Object {
+                            "content": "#",
+                          },
+                          "fr": Object {
+                            "content": "#",
+                          },
+                        },
+                        "type": "field",
+                        "updated_at": "2019-09-20T13:03:02.605Z",
+                      },
+                      "Button Text": Object {
+                        "content": "Test",
+                        "created_at": "2019-09-20T12:44:23.403Z",
+                        "slug": "Button Text",
+                        "translations": Object {
+                          "de": Object {
+                            "content": "Test",
+                          },
+                          "en": Object {
+                            "content": "Test",
+                          },
+                          "fr": Object {
+                            "content": "Test",
+                          },
+                        },
+                        "type": "field",
+                        "updated_at": "2019-09-20T13:03:02.605Z",
+                      },
+                      "Content": Object {
+                        "content": "<p>They all exclaimed against such terrific ideas; and Mr. Gardiner, after general assurances of his affection for her and all her family, told her that he meant to be in London the very next day, and would assist Mr. Bennet in every endeavour for recovering Lydia.</p>",
+                        "created_at": "2019-09-20T12:36:17.749Z",
+                        "slug": "Content",
+                        "translations": Object {
+                          "de": Object {
+                            "content": "<p>They all exclaimed against such terrific ideas; and Mr. Gardiner, after general assurances of his affection for her and all her family, told her that he meant to be in London the very next day, and would assist Mr. Bennet in every endeavour for recovering Lydia.</p>",
+                          },
+                          "en": Object {
+                            "content": "<p>They all exclaimed against such terrific ideas; and Mr. Gardiner, after general assurances of his affection for her and all her family, told her that he meant to be in London the very next day, and would assist Mr. Bennet in every endeavour for recovering Lydia.</p>",
+                          },
+                          "fr": Object {
+                            "content": "<p>They all exclaimed against such terrific ideas; and Mr. Gardiner, after general assurances of his affection for her and all her family, told her that he meant to be in London the very next day, and would assist Mr. Bennet in every endeavour for recovering Lydia.</p>",
+                          },
+                        },
+                        "type": "text",
+                        "updated_at": "2019-09-20T12:36:17.749Z",
+                      },
+                      "Image": Object {
+                        "content": "https://cdn.nimbu.io/s/oa8td8r/pages/22x5vvh/5_klein.jpg?fu9kni0",
+                        "created_at": "2019-09-20T12:36:17.749Z",
+                        "file": Object {
+                          "__type": "File",
+                          "checksum": "4794252e86f00e68c46b4a73b63e3c29a2ed83c3",
+                          "content_type": "image/jpeg",
+                          "filename": "5_klein.jpg",
+                          "height": 600,
+                          "size": 357362,
+                          "url": "https://cdn.nimbu.io/s/oa8td8r/pages/22x5vvh/5_klein.jpg?fu9kni0",
+                          "version": "fu9kni0",
+                          "width": 800,
+                        },
+                        "slug": "Image",
+                        "translations": Object {
+                          "de": Object {
+                            "content": "https://cdn.nimbu.io/s/oa8td8r/pages/22x5vvh/5_klein.jpg?fu9kni0",
+                          },
+                          "en": Object {
+                            "content": "https://cdn.nimbu.io/s/oa8td8r/pages/22x5vvh/5_klein.jpg?fu9kni0",
+                          },
+                          "fr": Object {
+                            "content": "https://cdn.nimbu.io/s/oa8td8r/pages/22x5vvh/5_klein.jpg?fu9kni0",
+                          },
+                        },
+                        "type": "file",
+                        "updated_at": "2019-09-20T12:36:17.749Z",
+                      },
+                      "Image alt": Object {
+                        "content": null,
+                        "created_at": "2019-09-20T12:36:17.749Z",
+                        "slug": "Image alt",
+                        "translations": Object {
+                          "de": Object {
+                            "content": null,
+                          },
+                          "en": Object {
+                            "content": null,
+                          },
+                          "fr": Object {
+                            "content": null,
+                          },
+                        },
+                        "type": "field",
+                        "updated_at": "2019-09-20T12:36:17.749Z",
+                      },
+                      "Title": Object {
+                        "content": "Testcard 3",
+                        "created_at": "2019-09-20T12:36:17.748Z",
+                        "slug": "Title",
+                        "translations": Object {
+                          "de": Object {
+                            "content": "Testcard 3",
+                          },
+                          "en": Object {
+                            "content": "Testcard 3",
+                          },
+                          "fr": Object {
+                            "content": "Testcard 3",
+                          },
+                        },
+                        "type": "field",
+                        "updated_at": "2019-09-20T12:36:17.748Z",
+                      },
+                    },
+                    "position": 2,
+                    "slug": "Card",
+                    "updated_at": "2019-09-20T13:03:02.606Z",
+                  },
+                ],
+                "slug": "Items",
+                "translations": Object {
+                  "de": Object {
+                    "content": null,
+                  },
+                  "en": Object {
+                    "content": null,
+                  },
+                  "fr": Object {
+                    "content": null,
+                  },
+                },
+                "type": "canvas",
+                "updated_at": "2019-09-20T12:36:17.749Z",
+              },
+              "Spacing options": Object {
+                "content": "Both",
+                "created_at": "2019-09-20T12:36:17.745Z",
+                "slug": "Spacing options",
+                "translations": Object {
+                  "de": Object {
+                    "content": "Both",
+                  },
+                  "en": Object {
+                    "content": "Both",
+                  },
+                  "fr": Object {
+                    "content": "Both",
+                  },
+                },
+                "type": "select",
+                "updated_at": "2019-09-20T12:36:17.745Z",
+              },
+              "Theme": Object {
+                "content": "Secundary",
+                "created_at": "2019-09-20T12:36:17.745Z",
+                "slug": "Theme",
+                "translations": Object {
+                  "de": Object {
+                    "content": "Secundary",
+                  },
+                  "en": Object {
+                    "content": "Secundary",
+                  },
+                  "fr": Object {
+                    "content": "Secundary",
+                  },
+                },
+                "type": "select",
+                "updated_at": "2019-09-20T12:38:36.170Z",
+              },
+            },
+            "position": 1,
+            "slug": "cards",
+            "updated_at": "2019-09-20T12:38:36.170Z",
+          },
+          Object {
+            "created_at": "2019-02-07T07:39:52.055Z",
+            "id": "5c5be0c8d1798f7bc2001814",
+            "items": Object {
+              "Button Link": Object {
+                "content": "/",
+                "created_at": "2019-02-07T07:39:52.054Z",
+                "slug": "Button Link",
+                "translations": Object {
+                  "de": Object {
+                    "content": "/",
+                  },
+                  "en": Object {
+                    "content": "/",
+                  },
+                  "fr": Object {
+                    "content": "/",
+                  },
+                },
+                "type": "field",
+                "updated_at": "2019-02-07T07:39:52.054Z",
+              },
+              "Button Text": Object {
+                "content": "push me",
+                "created_at": "2019-02-07T07:39:52.053Z",
+                "slug": "Button Text",
+                "translations": Object {
+                  "de": Object {
+                    "content": "push me",
+                  },
+                  "en": Object {
+                    "content": "push me",
+                  },
+                  "fr": Object {
+                    "content": "push me",
+                  },
+                },
+                "type": "field",
+                "updated_at": "2019-02-07T07:39:52.053Z",
+              },
+              "Content": Object {
+                "content": "<h2>TRY THIS&nbsp;</h2>",
+                "created_at": "2019-02-07T07:39:52.053Z",
+                "slug": "Content",
+                "translations": Object {
+                  "de": Object {
+                    "content": "<h2>TRY THIS&nbsp;</h2>",
+                  },
+                  "en": Object {
+                    "content": "<h2>TRY THIS&nbsp;</h2>",
+                  },
+                  "fr": Object {
+                    "content": "<h2>TRY THIS&nbsp;</h2>",
+                  },
+                },
+                "type": "text",
+                "updated_at": "2019-02-07T07:39:52.053Z",
+              },
+              "Spacing options": Object {
+                "content": "Both",
+                "created_at": "2019-02-07T07:39:52.054Z",
+                "slug": "Spacing options",
+                "translations": Object {
+                  "de": Object {
+                    "content": "Both",
+                  },
+                  "en": Object {
+                    "content": "Both",
+                  },
+                  "fr": Object {
+                    "content": "Both",
+                  },
+                },
+                "type": "select",
+                "updated_at": "2019-02-07T07:39:52.054Z",
+              },
+              "Theme": Object {
+                "content": "Tertiary",
+                "created_at": "2019-02-07T07:39:52.054Z",
+                "slug": "Theme",
+                "translations": Object {
+                  "de": Object {
+                    "content": "Tertiary",
+                  },
+                  "en": Object {
+                    "content": "Tertiary",
+                  },
+                  "fr": Object {
+                    "content": "Tertiary",
+                  },
+                },
+                "type": "select",
+                "updated_at": "2019-02-07T07:39:52.054Z",
+              },
+            },
+            "position": 2,
+            "slug": "call_to_action",
+            "updated_at": "2019-09-20T12:36:17.758Z",
+          },
+        ],
+        "slug": "Blokken",
+        "translations": Object {
+          "de": Object {
+            "content": null,
+          },
+          "en": Object {
+            "content": null,
+          },
+          "fr": Object {
+            "content": null,
+          },
+        },
+        "type": "canvas",
+        "updated_at": "2019-05-23T08:10:43.639Z",
+      },
+    },
+    "locales": Array [],
+    "nimbuId": "5c5abd62d1798f102f0136b0",
+    "nimbuParent": null,
+    "og_image": null,
+    "parent": "__SOURCE__",
+    "parent_path": null,
+    "public_url": "https://speeltuin.nimbu.io/test-starterskit",
+    "published": true,
+    "security_mechanism": "none",
+    "seo_description": null,
+    "seo_keywords": null,
+    "seo_title": null,
+    "slug": "test-starterskit",
+    "template": "page.liquid",
+    "title": "Test starterskit",
+    "translations": Object {
+      "de": Object {
+        "fullpath": "/test-starterskit",
+        "public_url": "https://speeltuin.nimbu.io/de/test-starterskit",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "test-starterskit",
+        "title": "Test starterskit",
+      },
+      "en": Object {
+        "fullpath": "/test-starterskit",
+        "public_url": "https://speeltuin.nimbu.io/test-starterskit",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "test-starterskit",
+        "title": "Test starterskit",
+      },
+      "fr": Object {
+        "fullpath": "/test-starterskit",
+        "public_url": "https://speeltuin.nimbu.io/fr/test-starterskit",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "test-starterskit",
+        "title": "Test starterskit",
+      },
+    },
+    "updated_at": "2020-08-20T06:39:58.801Z",
+    "url": "https://api.nimbu.io/pages/test-starterskit",
+  },
+  "Nimbu__Page__5c6ab788d1798f3e40008256": Object {
+    "channel": null,
+    "children": Array [],
+    "created_at": "2019-02-18T13:47:52.117Z",
+    "depth": 0,
+    "fixed_locale": null,
+    "fullpath": "/shop",
+    "homepage": false,
+    "id": "Nimbu__Page__5c6ab788d1798f3e40008256",
+    "internal": Object {
+      "contentDigest": "b93cbdf6634f7c046cfa6fa260bbeed5",
+      "type": "NimbuPage",
+    },
+    "items": Object {
+      "Background Image": Object {
+        "content": "https://cdn.nimbu.io/s/oa8td8r/pages/vzqs4zl/honeymoon-suite-gallery-11.jpg",
+        "created_at": "2019-02-18T13:51:55.858Z",
+        "file": Object {
+          "__type": "File",
+          "content_type": "image/jpeg",
+          "filename": "honeymoon-suite-gallery-11.jpg",
+          "height": 960,
+          "size": 215161,
+          "url": "https://cdn.nimbu.io/s/oa8td8r/pages/vzqs4zl/honeymoon-suite-gallery-11.jpg",
+          "width": 1440,
+        },
+        "slug": "Background Image",
+        "translations": Object {
+          "de": Object {
+            "content": "https://cdn.nimbu.io/s/oa8td8r/pages/vzqs4zl/honeymoon-suite-gallery-11.jpg",
+          },
+          "en": Object {
+            "content": "https://cdn.nimbu.io/s/oa8td8r/pages/vzqs4zl/honeymoon-suite-gallery-11.jpg",
+          },
+          "fr": Object {
+            "content": "https://cdn.nimbu.io/s/oa8td8r/pages/vzqs4zl/honeymoon-suite-gallery-11.jpg",
+          },
+        },
+        "type": "file",
+        "updated_at": "2019-02-18T13:53:40.485Z",
+      },
+      "Background Overlay Color": Object {
+        "content": "Black",
+        "created_at": "2019-02-18T13:51:55.862Z",
+        "slug": "Background Overlay Color",
+        "translations": Object {
+          "de": Object {
+            "content": "Black",
+          },
+          "en": Object {
+            "content": "Black",
+          },
+          "fr": Object {
+            "content": "Black",
+          },
+        },
+        "type": "select",
+        "updated_at": "2019-02-18T13:54:15.298Z",
+      },
+      "Background Overlay Opacity": Object {
+        "content": "normal",
+        "created_at": "2019-02-18T13:51:55.864Z",
+        "slug": "Background Overlay Opacity",
+        "translations": Object {
+          "de": Object {
+            "content": "normal",
+          },
+          "en": Object {
+            "content": "normal",
+          },
+          "fr": Object {
+            "content": "normal",
+          },
+        },
+        "type": "select",
+        "updated_at": "2019-02-18T13:53:40.486Z",
+      },
+      "Button Link": Object {
+        "content": null,
+        "created_at": "2019-02-18T13:51:55.856Z",
+        "slug": "Button Link",
+        "translations": Object {
+          "de": Object {
+            "content": null,
+          },
+          "en": Object {
+            "content": null,
+          },
+          "fr": Object {
+            "content": null,
+          },
+        },
+        "type": "field",
+        "updated_at": "2019-02-18T13:53:40.485Z",
+      },
+      "Button Text": Object {
+        "content": null,
+        "created_at": "2019-02-18T13:51:55.854Z",
+        "slug": "Button Text",
+        "translations": Object {
+          "de": Object {
+            "content": null,
+          },
+          "en": Object {
+            "content": null,
+          },
+          "fr": Object {
+            "content": null,
+          },
+        },
+        "type": "field",
+        "updated_at": "2019-02-18T13:53:40.484Z",
+      },
+      "Collections": Object {
+        "created_at": "2019-02-18T14:35:19.584Z",
+        "reference_ids": Array [
+          "5c6ac1c9d1798f6f8600a58e",
+          "5c6ac1d7d1798f6d28006233",
+        ],
+        "reference_slugs": Array [
+          "collection-1",
+          "collection-2",
+        ],
+        "reference_titles": Array [
+          "Collection 1",
+          "Collection 2",
+        ],
+        "reference_type": "collections",
+        "slug": "Collections",
+        "type": "reference",
+        "updated_at": "2019-02-18T14:44:24.239Z",
+      },
+      "Image Alt": Object {
+        "content": null,
+        "created_at": "2019-02-18T13:51:55.860Z",
+        "slug": "Image Alt",
+        "translations": Object {
+          "de": Object {
+            "content": null,
+          },
+          "en": Object {
+            "content": null,
+          },
+          "fr": Object {
+            "content": null,
+          },
+        },
+        "type": "field",
+        "updated_at": "2019-02-18T13:53:40.485Z",
+      },
+      "Spacing options": Object {
+        "content": "Both",
+        "created_at": "2019-02-18T14:17:29.701Z",
+        "slug": "Spacing options",
+        "translations": Object {
+          "de": Object {
+            "content": "Both",
+          },
+          "en": Object {
+            "content": "Both",
+          },
+          "fr": Object {
+            "content": "Both",
+          },
+        },
+        "type": "select",
+        "updated_at": "2019-02-18T14:44:24.237Z",
+      },
+      "Subtitle": Object {
+        "content": "Cras mattis consectetur purus sit amet fermentum.",
+        "created_at": "2019-02-18T13:51:55.852Z",
+        "slug": "Subtitle",
+        "translations": Object {
+          "de": Object {
+            "content": "Cras mattis consectetur purus sit amet fermentum.",
+          },
+          "en": Object {
+            "content": "Cras mattis consectetur purus sit amet fermentum.",
+          },
+          "fr": Object {
+            "content": "Cras mattis consectetur purus sit amet fermentum.",
+          },
+        },
+        "type": "field",
+        "updated_at": "2019-02-18T13:53:40.483Z",
+      },
+      "Theme": Object {
+        "content": "Auto",
+        "created_at": "2019-02-18T14:17:29.704Z",
+        "slug": "Theme",
+        "translations": Object {
+          "de": Object {
+            "content": "Auto",
+          },
+          "en": Object {
+            "content": "Auto",
+          },
+          "fr": Object {
+            "content": "Auto",
+          },
+        },
+        "type": "select",
+        "updated_at": "2019-02-18T14:44:24.238Z",
+      },
+      "Title": Object {
+        "content": "Shop",
+        "created_at": "2019-02-18T13:51:55.850Z",
+        "slug": "Title",
+        "translations": Object {
+          "de": Object {
+            "content": "Shop",
+          },
+          "en": Object {
+            "content": "Shop",
+          },
+          "fr": Object {
+            "content": "Shop",
+          },
+        },
+        "type": "field",
+        "updated_at": "2019-02-18T13:53:40.483Z",
+      },
+    },
+    "locales": Array [],
+    "nimbuId": "5c6ab788d1798f3e40008256",
+    "nimbuParent": null,
+    "og_image": null,
+    "parent": "__SOURCE__",
+    "parent_path": null,
+    "public_url": "https://speeltuin.nimbu.io/shop",
+    "published": true,
+    "security_mechanism": "none",
+    "seo_description": null,
+    "seo_keywords": null,
+    "seo_title": null,
+    "slug": "shop",
+    "template": "shop/index.liquid",
+    "title": "shop",
+    "translations": Object {
+      "de": Object {
+        "fullpath": "/shop",
+        "public_url": "https://speeltuin.nimbu.io/de/shop",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "shop",
+        "title": "shop",
+      },
+      "en": Object {
+        "fullpath": "/shop",
+        "public_url": "https://speeltuin.nimbu.io/shop",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "shop",
+        "title": "shop",
+      },
+      "fr": Object {
+        "fullpath": "/shop",
+        "public_url": "https://speeltuin.nimbu.io/fr/shop",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "shop",
+        "title": "shop",
+      },
+    },
+    "updated_at": "2020-03-10T07:56:10.177Z",
+    "url": "https://api.nimbu.io/pages/shop",
+  },
+  "Nimbu__Page__5c77f082d1798f5c14003f64": Object {
+    "channel": null,
+    "children": Array [],
+    "created_at": "2019-02-28T14:30:26.173Z",
+    "depth": 0,
+    "fixed_locale": null,
+    "fullpath": "/test",
+    "homepage": false,
+    "id": "Nimbu__Page__5c77f082d1798f5c14003f64",
+    "internal": Object {
+      "contentDigest": "7bb0e943bf7d66edb789b5bfb2e64239",
+      "type": "NimbuPage",
+    },
+    "items": Object {
+      "Blokken": Object {
+        "content": null,
+        "created_at": "2019-02-28T14:30:26.173Z",
+        "repeatables": Array [
+          Object {
+            "created_at": "2019-10-26T14:30:45.473Z",
+            "id": "5db458958bf7473a1e00d1d8",
+            "items": Object {
+              "Background Image": Object {
+                "content": "https://cdn.nimbu.io/s/oa8td8r/pages/8vrogsc/samen%20krachtig.jpg?cavi4x3",
+                "created_at": "2019-10-26T14:30:45.472Z",
+                "file": Object {
+                  "__type": "File",
+                  "checksum": "626c26e751840b26c4f7a61a36e46bc6b7cb91cb",
+                  "content_type": "image/jpeg",
+                  "filename": "samen krachtig.jpg",
+                  "height": 480,
+                  "size": 33219,
+                  "url": "https://cdn.nimbu.io/s/oa8td8r/pages/8vrogsc/samen%20krachtig.jpg?cavi4x3",
+                  "version": "cavi4x3",
+                  "width": 720,
+                },
+                "slug": "Background Image",
+                "translations": Object {
+                  "de": Object {
+                    "content": "https://cdn.nimbu.io/s/oa8td8r/pages/8vrogsc/samen%20krachtig.jpg?cavi4x3",
+                  },
+                  "en": Object {
+                    "content": "https://cdn.nimbu.io/s/oa8td8r/pages/8vrogsc/samen%20krachtig.jpg?cavi4x3",
+                  },
+                  "fr": Object {
+                    "content": "https://cdn.nimbu.io/s/oa8td8r/pages/8vrogsc/samen%20krachtig.jpg?cavi4x3",
+                  },
+                },
+                "type": "file",
+                "updated_at": "2019-10-26T14:30:45.472Z",
+              },
+              "Background Overlay Color": Object {
+                "content": "Secundary",
+                "created_at": "2019-10-26T14:30:45.472Z",
+                "slug": "Background Overlay Color",
+                "translations": Object {
+                  "de": Object {
+                    "content": "Secundary",
+                  },
+                  "en": Object {
+                    "content": "Secundary",
+                  },
+                  "fr": Object {
+                    "content": "Secundary",
+                  },
+                },
+                "type": "select",
+                "updated_at": "2019-10-26T14:30:45.472Z",
+              },
+              "Background Overlay Opacity": Object {
+                "content": "light",
+                "created_at": "2019-10-26T14:30:45.472Z",
+                "slug": "Background Overlay Opacity",
+                "translations": Object {
+                  "de": Object {
+                    "content": "light",
+                  },
+                  "en": Object {
+                    "content": "light",
+                  },
+                  "fr": Object {
+                    "content": "light",
+                  },
+                },
+                "type": "select",
+                "updated_at": "2019-10-26T14:30:45.472Z",
+              },
+              "Button Link": Object {
+                "content": null,
+                "created_at": "2019-10-26T14:30:45.472Z",
+                "slug": "Button Link",
+                "translations": Object {
+                  "de": Object {
+                    "content": null,
+                  },
+                  "en": Object {
+                    "content": null,
+                  },
+                  "fr": Object {
+                    "content": null,
+                  },
+                },
+                "type": "field",
+                "updated_at": "2019-10-26T14:30:45.472Z",
+              },
+              "Button Text": Object {
+                "content": null,
+                "created_at": "2019-10-26T14:30:45.471Z",
+                "slug": "Button Text",
+                "translations": Object {
+                  "de": Object {
+                    "content": null,
+                  },
+                  "en": Object {
+                    "content": null,
+                  },
+                  "fr": Object {
+                    "content": null,
+                  },
+                },
+                "type": "field",
+                "updated_at": "2019-10-26T14:30:45.471Z",
+              },
+              "Image Alt": Object {
+                "content": null,
+                "created_at": "2019-10-26T14:30:45.472Z",
+                "slug": "Image Alt",
+                "translations": Object {
+                  "de": Object {
+                    "content": null,
+                  },
+                  "en": Object {
+                    "content": null,
+                  },
+                  "fr": Object {
+                    "content": null,
+                  },
+                },
+                "type": "field",
+                "updated_at": "2019-10-26T14:30:45.472Z",
+              },
+              "Subtitle": Object {
+                "content": "subtitle",
+                "created_at": "2019-10-26T14:30:45.471Z",
+                "slug": "Subtitle",
+                "translations": Object {
+                  "de": Object {
+                    "content": "subtitle",
+                  },
+                  "en": Object {
+                    "content": "subtitle",
+                  },
+                  "fr": Object {
+                    "content": "subtitle",
+                  },
+                },
+                "type": "field",
+                "updated_at": "2019-10-26T14:30:45.471Z",
+              },
+              "Title": Object {
+                "content": "Test pagina",
+                "created_at": "2019-10-26T14:30:45.471Z",
+                "slug": "Title",
+                "translations": Object {
+                  "de": Object {
+                    "content": "Test pagina",
+                  },
+                  "en": Object {
+                    "content": "Test pagina",
+                  },
+                  "fr": Object {
+                    "content": "Test pagina",
+                  },
+                },
+                "type": "field",
+                "updated_at": "2019-10-26T14:30:45.471Z",
+              },
+            },
+            "position": 3,
+            "slug": "header",
+            "updated_at": "2019-10-26T14:30:45.473Z",
+          },
+        ],
+        "slug": "Blokken",
+        "translations": Object {
+          "de": Object {
+            "content": null,
+          },
+          "en": Object {
+            "content": null,
+          },
+          "fr": Object {
+            "content": null,
+          },
+        },
+        "type": "canvas",
+        "updated_at": "2019-05-23T08:10:43.670Z",
+      },
+    },
+    "locales": Array [],
+    "nimbuId": "5c77f082d1798f5c14003f64",
+    "nimbuParent": null,
+    "og_image": null,
+    "parent": "__SOURCE__",
+    "parent_path": null,
+    "public_url": "https://speeltuin.nimbu.io/test",
+    "published": true,
+    "security_mechanism": "none",
+    "seo_description": null,
+    "seo_keywords": null,
+    "seo_title": null,
+    "slug": "test",
+    "template": "page.liquid",
+    "title": "Test",
+    "translations": Object {
+      "de": Object {
+        "fullpath": "/test",
+        "public_url": "https://speeltuin.nimbu.io/de/test",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "test",
+        "title": "Test",
+      },
+      "en": Object {
+        "fullpath": "/test",
+        "public_url": "https://speeltuin.nimbu.io/test",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "test",
+        "title": "Test",
+      },
+      "fr": Object {
+        "fullpath": "/test",
+        "public_url": "https://speeltuin.nimbu.io/fr/test",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "test",
+        "title": "Test",
+      },
+    },
+    "updated_at": "2020-08-20T06:39:58.863Z",
+    "url": "https://api.nimbu.io/pages/test",
+  },
+  "Nimbu__Page__5ce64c178bf74726d600ed43": Object {
+    "channel": null,
+    "children": Array [],
+    "created_at": "2019-05-23T07:30:31.408Z",
+    "depth": 0,
+    "fixed_locale": null,
+    "fullpath": "/gallery",
+    "homepage": false,
+    "id": "Nimbu__Page__5ce64c178bf74726d600ed43",
+    "internal": Object {
+      "contentDigest": "18276f14842d07d85b5dc0acdc077580",
+      "type": "NimbuPage",
+    },
+    "items": Object {
+      "Blokken": Object {
+        "content": null,
+        "created_at": "2019-05-23T07:30:31.408Z",
+        "repeatables": Array [
+          Object {
+            "created_at": "2019-05-23T08:11:14.864Z",
+            "id": "5ce655a28bf747524a00773f",
+            "items": Object {
+              "Gallery": Object {
+                "created_at": "2019-05-23T08:11:14.863Z",
+                "reference_id": "5ce6508a2c06e8685d00fae0",
+                "reference_slug": "testgallerij",
+                "reference_title": "Testgallerij",
+                "reference_type": "galleries",
+                "slug": "Gallery",
+                "type": "reference",
+                "updated_at": "2019-05-23T08:11:14.863Z",
+              },
+              "Spacing options": Object {
+                "content": "Both",
+                "created_at": "2019-05-23T08:11:14.864Z",
+                "slug": "Spacing options",
+                "translations": Object {
+                  "de": Object {
+                    "content": "Both",
+                  },
+                  "en": Object {
+                    "content": "Both",
+                  },
+                  "fr": Object {
+                    "content": "Both",
+                  },
+                },
+                "type": "select",
+                "updated_at": "2019-05-23T08:11:14.864Z",
+              },
+              "Theme": Object {
+                "content": "Automatic",
+                "created_at": "2019-05-23T08:11:14.864Z",
+                "slug": "Theme",
+                "translations": Object {
+                  "de": Object {
+                    "content": "Automatic",
+                  },
+                  "en": Object {
+                    "content": "Automatic",
+                  },
+                  "fr": Object {
+                    "content": "Automatic",
+                  },
+                },
+                "type": "select",
+                "updated_at": "2019-05-23T08:11:14.864Z",
+              },
+              "Type": Object {
+                "content": "Slider",
+                "created_at": "2019-05-23T08:11:14.863Z",
+                "slug": "Type",
+                "translations": Object {
+                  "de": Object {
+                    "content": "Slider",
+                  },
+                  "en": Object {
+                    "content": "Slider",
+                  },
+                  "fr": Object {
+                    "content": "Slider",
+                  },
+                },
+                "type": "select",
+                "updated_at": "2019-05-23T08:11:14.863Z",
+              },
+            },
+            "position": 0,
+            "slug": "Gallery",
+            "updated_at": "2019-05-23T08:11:14.864Z",
+          },
+          Object {
+            "created_at": "2019-05-23T08:34:49.407Z",
+            "id": "5ce65b292c06e84713010045",
+            "items": Object {
+              "Gallery": Object {
+                "created_at": "2019-05-23T08:34:49.406Z",
+                "reference_id": "5ce6508a2c06e8685d00fae0",
+                "reference_slug": "testgallerij",
+                "reference_title": "Testgallerij",
+                "reference_type": "galleries",
+                "slug": "Gallery",
+                "type": "reference",
+                "updated_at": "2019-05-23T08:34:49.406Z",
+              },
+              "Spacing options": Object {
+                "content": "Both",
+                "created_at": "2019-05-23T08:34:49.406Z",
+                "slug": "Spacing options",
+                "translations": Object {
+                  "de": Object {
+                    "content": "Both",
+                  },
+                  "en": Object {
+                    "content": "Both",
+                  },
+                  "fr": Object {
+                    "content": "Both",
+                  },
+                },
+                "type": "select",
+                "updated_at": "2019-05-23T08:34:49.406Z",
+              },
+              "Theme": Object {
+                "content": "Automatic",
+                "created_at": "2019-05-23T08:34:49.407Z",
+                "slug": "Theme",
+                "translations": Object {
+                  "de": Object {
+                    "content": "Automatic",
+                  },
+                  "en": Object {
+                    "content": "Automatic",
+                  },
+                  "fr": Object {
+                    "content": "Automatic",
+                  },
+                },
+                "type": "select",
+                "updated_at": "2019-05-23T08:34:49.407Z",
+              },
+              "Type": Object {
+                "content": "Grid",
+                "created_at": "2019-05-23T08:34:49.406Z",
+                "slug": "Type",
+                "translations": Object {
+                  "de": Object {
+                    "content": "Grid",
+                  },
+                  "en": Object {
+                    "content": "Grid",
+                  },
+                  "fr": Object {
+                    "content": "Grid",
+                  },
+                },
+                "type": "select",
+                "updated_at": "2019-05-23T08:34:49.406Z",
+              },
+            },
+            "position": 1,
+            "slug": "Gallery",
+            "updated_at": "2019-05-23T08:34:49.407Z",
+          },
+        ],
+        "slug": "Blokken",
+        "translations": Object {
+          "de": Object {
+            "content": null,
+          },
+          "en": Object {
+            "content": null,
+          },
+          "fr": Object {
+            "content": null,
+          },
+        },
+        "type": "canvas",
+        "updated_at": "2019-05-23T08:10:43.685Z",
+      },
+    },
+    "locales": Array [],
+    "nimbuId": "5ce64c178bf74726d600ed43",
+    "nimbuParent": null,
+    "og_image": null,
+    "parent": "__SOURCE__",
+    "parent_path": null,
+    "public_url": "https://speeltuin.nimbu.io/gallery",
+    "published": true,
+    "security_mechanism": "none",
+    "seo_description": null,
+    "seo_keywords": null,
+    "seo_title": null,
+    "slug": "gallery",
+    "template": "page.liquid",
+    "title": "Gallery",
+    "translations": Object {
+      "de": Object {
+        "fullpath": "/gallery",
+        "public_url": "https://speeltuin.nimbu.io/de/gallery",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "gallery",
+        "title": "Gallery",
+      },
+      "en": Object {
+        "fullpath": "/gallery",
+        "public_url": "https://speeltuin.nimbu.io/gallery",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "gallery",
+        "title": "Gallery",
+      },
+      "fr": Object {
+        "fullpath": "/gallery",
+        "public_url": "https://speeltuin.nimbu.io/fr/gallery",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "gallery",
+        "title": "Gallery",
+      },
+    },
+    "updated_at": "2020-08-20T06:39:58.911Z",
+    "url": "https://api.nimbu.io/pages/gallery",
+  },
+  "Nimbu__Page__5dca75078bf74735c9000165": Object {
+    "channel": null,
+    "children": Array [],
+    "created_at": "2019-11-12T09:01:59.754Z",
+    "depth": 3,
+    "fixed_locale": null,
+    "fullpath": "/homepage/navigatie1/subnavigatie1/dubbel",
+    "homepage": false,
+    "id": "Nimbu__Page__5dca75078bf74735c9000165",
+    "internal": Object {
+      "contentDigest": "7ffa9a81068c5ea849551f3eb106cc61",
+      "type": "NimbuPage",
+    },
+    "items": Object {
+      "Blokken": Object {
+        "content": null,
+        "created_at": "2019-11-12T09:01:59.753Z",
+        "repeatables": Array [],
+        "slug": "Blokken",
+        "translations": Object {
+          "de": Object {
+            "content": null,
+          },
+          "en": Object {
+            "content": null,
+          },
+          "fr": Object {
+            "content": null,
+          },
+        },
+        "type": "canvas",
+        "updated_at": "2019-11-12T09:01:59.753Z",
+      },
+    },
+    "locales": Array [],
+    "nimbuId": "5dca75078bf74735c9000165",
+    "nimbuParent": "54a9a3d9676f6e38f50c3500",
+    "og_image": null,
+    "parent": "__SOURCE__",
+    "parent_path": "/homepage/navigatie1/subnavigatie1",
+    "public_url": "https://speeltuin.nimbu.io/homepage/navigatie1/subnavigatie1/dubbel",
+    "published": false,
+    "security_mechanism": "none",
+    "seo_description": null,
+    "seo_keywords": null,
+    "seo_title": null,
+    "slug": "dubbel",
+    "template": "page.liquid",
+    "title": "dubbel",
+    "translations": Object {
+      "de": Object {
+        "fullpath": "/homepage/navigatie1/subnavigatie1/dubbel",
+        "public_url": "https://speeltuin.nimbu.io/de/homepage/navigatie1/subnavigatie1/dubbel",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "dubbel",
+        "title": "dubbel",
+      },
+      "en": Object {
+        "fullpath": "/homepage/navigatie1/subnavigatie1/dubbel",
+        "public_url": "https://speeltuin.nimbu.io/homepage/navigatie1/subnavigatie1/dubbel",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "dubbel",
+        "title": "dubbel",
+      },
+      "fr": Object {
+        "fullpath": "/homepage/navigatie1/subnavigatie1/dubbel",
+        "public_url": "https://speeltuin.nimbu.io/fr/homepage/navigatie1/subnavigatie1/dubbel",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "dubbel",
+        "title": "dubbel",
+      },
+    },
+    "updated_at": "2020-08-20T06:39:58.930Z",
+    "url": "https://api.nimbu.io/pages/homepage/navigatie1/subnavigatie1/dubbel",
+  },
+  "Nimbu__Page__5e677b0b8bf747740600016e": Object {
+    "channel": null,
+    "children": Array [],
+    "created_at": "2020-03-10T11:33:48.000Z",
+    "depth": 0,
+    "fixed_locale": null,
+    "fullpath": "/bjorn_env",
+    "homepage": false,
+    "id": "Nimbu__Page__5e677b0b8bf747740600016e",
+    "internal": Object {
+      "contentDigest": "e2551106055e52ab76f1bf315f7bc65b",
+      "type": "NimbuPage",
+    },
+    "items": Object {
+      "Blokken": Object {
+        "content": null,
+        "created_at": "2020-03-10T11:33:39.296Z",
+        "repeatables": Array [
+          Object {
+            "created_at": "2020-03-10T11:33:32.727Z",
+            "id": "5e677b0b8bf747740600017f",
+            "items": Object {
+              "Background Image": Object {
+                "content": null,
+                "created_at": "2020-03-10T11:33:32.723Z",
+                "file": null,
+                "slug": "Background Image",
+                "translations": Object {
+                  "de": Object {
+                    "content": null,
+                  },
+                  "en": Object {
+                    "content": null,
+                  },
+                  "fr": Object {
+                    "content": null,
+                  },
+                },
+                "type": "file",
+                "updated_at": "2020-03-10T11:33:32.723Z",
+              },
+              "Background Overlay Color": Object {
+                "content": "Black",
+                "created_at": "2020-03-10T11:33:32.722Z",
+                "slug": "Background Overlay Color",
+                "translations": Object {
+                  "de": Object {
+                    "content": "Black",
+                  },
+                  "en": Object {
+                    "content": "Black",
+                  },
+                  "fr": Object {
+                    "content": "Black",
+                  },
+                },
+                "type": "select",
+                "updated_at": "2020-03-10T12:41:42.365Z",
+              },
+              "Background Overlay Opacity": Object {
+                "content": "normal",
+                "created_at": "2020-03-10T11:33:32.723Z",
+                "slug": "Background Overlay Opacity",
+                "translations": Object {
+                  "de": Object {
+                    "content": "normal",
+                  },
+                  "en": Object {
+                    "content": "normal",
+                  },
+                  "fr": Object {
+                    "content": "normal",
+                  },
+                },
+                "type": "select",
+                "updated_at": "2020-03-10T12:41:42.365Z",
+              },
+              "Button Link": Object {
+                "content": null,
+                "created_at": "2020-03-10T11:33:32.726Z",
+                "slug": "Button Link",
+                "translations": Object {
+                  "de": Object {
+                    "content": null,
+                  },
+                  "en": Object {
+                    "content": null,
+                  },
+                  "fr": Object {
+                    "content": null,
+                  },
+                },
+                "type": "field",
+                "updated_at": "2020-03-10T11:33:32.726Z",
+              },
+              "Button Text": Object {
+                "content": null,
+                "created_at": "2020-03-10T11:33:32.725Z",
+                "slug": "Button Text",
+                "translations": Object {
+                  "de": Object {
+                    "content": null,
+                  },
+                  "en": Object {
+                    "content": null,
+                  },
+                  "fr": Object {
+                    "content": null,
+                  },
+                },
+                "type": "field",
+                "updated_at": "2020-03-10T11:33:32.725Z",
+              },
+              "Subtitle": Object {
+                "content": "Test@tester.be",
+                "created_at": "2020-03-10T11:33:32.724Z",
+                "slug": "Subtitle",
+                "translations": Object {
+                  "de": Object {
+                    "content": "Test@tester.be",
+                  },
+                  "en": Object {
+                    "content": "Test@tester.be",
+                  },
+                  "fr": Object {
+                    "content": "Test@tester.be",
+                  },
+                },
+                "type": "field",
+                "updated_at": "2020-03-10T11:37:41.791Z",
+              },
+              "Title": Object {
+                "content": "Testpage",
+                "created_at": "2020-03-10T11:33:32.724Z",
+                "slug": "Title",
+                "translations": Object {
+                  "de": Object {
+                    "content": "Testpage",
+                  },
+                  "en": Object {
+                    "content": "Testpage",
+                  },
+                  "fr": Object {
+                    "content": "Testpage",
+                  },
+                },
+                "type": "field",
+                "updated_at": "2020-03-10T11:37:41.791Z",
+              },
+            },
+            "position": 0,
+            "slug": "header",
+            "updated_at": "2020-03-10T12:41:42.365Z",
+          },
+          Object {
+            "created_at": "2020-03-10T11:37:41.782Z",
+            "id": "5e677c052c06e870f6002df9",
+            "items": Object {
+              "Columns": Object {
+                "content": null,
+                "created_at": "2020-03-10T12:41:42.366Z",
+                "fallback_content": "1",
+                "slug": "Columns",
+                "translations": Object {
+                  "de": Object {
+                    "content": null,
+                    "fallback_content": "1",
+                  },
+                  "en": Object {
+                    "content": null,
+                    "fallback_content": "1",
+                  },
+                  "fr": Object {
+                    "content": null,
+                    "fallback_content": "1",
+                  },
+                },
+                "type": "select",
+                "updated_at": "2020-03-10T12:41:42.366Z",
+              },
+              "Content": Object {
+                "content": "<p>This a hello world test environment.</p>",
+                "created_at": "2020-03-10T11:37:41.780Z",
+                "slug": "Content",
+                "translations": Object {
+                  "de": Object {
+                    "content": "<p>This a hello world test environment.</p>",
+                  },
+                  "en": Object {
+                    "content": "<p>This a hello world test environment.</p>",
+                  },
+                  "fr": Object {
+                    "content": "<p>This a hello world test environment.</p>",
+                  },
+                },
+                "type": "text",
+                "updated_at": "2020-03-10T11:37:41.780Z",
+              },
+              "Spacing options": Object {
+                "content": "Both",
+                "created_at": "2020-03-10T11:37:41.781Z",
+                "slug": "Spacing options",
+                "translations": Object {
+                  "de": Object {
+                    "content": "Both",
+                  },
+                  "en": Object {
+                    "content": "Both",
+                  },
+                  "fr": Object {
+                    "content": "Both",
+                  },
+                },
+                "type": "select",
+                "updated_at": "2020-03-10T12:41:42.366Z",
+              },
+              "Text Width": Object {
+                "content": "Default",
+                "created_at": "2020-03-10T11:37:41.781Z",
+                "slug": "Text Width",
+                "translations": Object {
+                  "de": Object {
+                    "content": "Default",
+                  },
+                  "en": Object {
+                    "content": "Default",
+                  },
+                  "fr": Object {
+                    "content": "Default",
+                  },
+                },
+                "type": "select",
+                "updated_at": "2020-03-10T12:41:42.366Z",
+              },
+              "Theme": Object {
+                "content": "Auto",
+                "created_at": "2020-03-10T11:37:41.781Z",
+                "slug": "Theme",
+                "translations": Object {
+                  "de": Object {
+                    "content": "Auto",
+                  },
+                  "en": Object {
+                    "content": "Auto",
+                  },
+                  "fr": Object {
+                    "content": "Auto",
+                  },
+                },
+                "type": "select",
+                "updated_at": "2020-03-10T12:41:42.366Z",
+              },
+            },
+            "position": 3,
+            "slug": "text",
+            "updated_at": "2020-03-10T12:41:42.366Z",
+          },
+        ],
+        "slug": "Blokken",
+        "translations": Object {
+          "de": Object {
+            "content": null,
+          },
+          "en": Object {
+            "content": null,
+          },
+          "fr": Object {
+            "content": null,
+          },
+        },
+        "type": "canvas",
+        "updated_at": "2020-03-10T12:41:42.366Z",
+      },
+    },
+    "locales": Array [],
+    "nimbuId": "5e677b0b8bf747740600016e",
+    "nimbuParent": null,
+    "og_image": null,
+    "parent": "__SOURCE__",
+    "parent_path": null,
+    "public_url": "https://speeltuin.nimbu.io/bjorn_env",
+    "published": true,
+    "security_mechanism": "none",
+    "seo_description": null,
+    "seo_keywords": null,
+    "seo_title": null,
+    "slug": "bjorn_env",
+    "template": "bjorn.liquid",
+    "title": "bjorn_env",
+    "translations": Object {
+      "de": Object {
+        "fullpath": "/bjorn_env",
+        "public_url": "https://speeltuin.nimbu.io/de/bjorn_env",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "bjorn_env",
+        "title": "bjorn_env",
+      },
+      "en": Object {
+        "fullpath": "/bjorn_env",
+        "public_url": "https://speeltuin.nimbu.io/bjorn_env",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "bjorn_env",
+        "title": "bjorn_env",
+      },
+      "fr": Object {
+        "fullpath": "/bjorn_env",
+        "public_url": "https://speeltuin.nimbu.io/fr/bjorn_env",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "bjorn_env",
+        "title": "bjorn_env",
+      },
+    },
+    "updated_at": "2020-03-10T12:41:42.339Z",
+    "url": "https://api.nimbu.io/pages/bjorn_env",
+  },
+  "Nimbu__Page__5e7a2d568bf74711c4003763": Object {
+    "channel": null,
+    "children": Array [],
+    "created_at": "2020-03-24T15:55:02.166Z",
+    "depth": 0,
+    "fixed_locale": "de",
+    "fullpath": "/l-oreal-skoda",
+    "homepage": false,
+    "id": "Nimbu__Page__5e7a2d568bf74711c4003763",
+    "internal": Object {
+      "contentDigest": "a3f1623be6e6126683f034c4956a3ea9",
+      "type": "NimbuPage",
+    },
+    "items": Object {
+      "Blokken": Object {
+        "content": null,
+        "created_at": "2020-03-24T15:55:02.166Z",
+        "repeatables": Array [
+          Object {
+            "created_at": "2020-09-03T10:51:25.055Z",
+            "id": "5f50caad2c06e8141100022d",
+            "items": Object {
+              "Content": Object {
+                "content": "<p>this is english</p>",
+                "created_at": "2020-09-03T10:51:25.054Z",
+                "slug": "Content",
+                "translations": Object {
+                  "de": Object {
+                    "content": "<p>this is german</p>",
+                  },
+                  "en": Object {
+                    "content": "<p>this is english</p>",
+                  },
+                  "fr": Object {
+                    "content": "<p>this is english</p>",
+                  },
+                },
+                "type": "text",
+                "updated_at": "2020-09-03T10:51:41.906Z",
+              },
+              "Spacing options": Object {
+                "content": "Both",
+                "created_at": "2020-09-03T10:51:25.055Z",
+                "slug": "Spacing options",
+                "translations": Object {
+                  "de": Object {
+                    "content": "Both",
+                  },
+                  "en": Object {
+                    "content": "Both",
+                  },
+                  "fr": Object {
+                    "content": "Both",
+                  },
+                },
+                "type": "select",
+                "updated_at": "2020-09-03T10:51:41.907Z",
+              },
+              "Text Width": Object {
+                "content": "Default",
+                "created_at": "2020-09-03T10:51:25.055Z",
+                "slug": "Text Width",
+                "translations": Object {
+                  "de": Object {
+                    "content": "Default",
+                  },
+                  "en": Object {
+                    "content": "Default",
+                  },
+                  "fr": Object {
+                    "content": "Default",
+                  },
+                },
+                "type": "select",
+                "updated_at": "2020-09-03T10:51:41.907Z",
+              },
+              "Theme": Object {
+                "content": "Auto",
+                "created_at": "2020-09-03T10:51:25.055Z",
+                "slug": "Theme",
+                "translations": Object {
+                  "de": Object {
+                    "content": "Auto",
+                  },
+                  "en": Object {
+                    "content": "Auto",
+                  },
+                  "fr": Object {
+                    "content": "Auto",
+                  },
+                },
+                "type": "select",
+                "updated_at": "2020-09-03T10:51:41.907Z",
+              },
+            },
+            "position": 0,
+            "slug": "text",
+            "updated_at": "2020-09-03T10:51:41.908Z",
+          },
+        ],
+        "slug": "Blokken",
+        "translations": Object {
+          "de": Object {
+            "content": null,
+          },
+          "en": Object {
+            "content": null,
+          },
+          "fr": Object {
+            "content": null,
+          },
+        },
+        "type": "canvas",
+        "updated_at": "2020-06-24T11:19:09.925Z",
+      },
+    },
+    "locales": Array [],
+    "nimbuId": "5e7a2d568bf74711c4003763",
+    "nimbuParent": null,
+    "og_image": null,
+    "parent": "__SOURCE__",
+    "parent_path": null,
+    "public_url": "https://speeltuin.nimbu.io/l-oreal-skoda",
+    "published": true,
+    "security_mechanism": "none",
+    "seo_description": null,
+    "seo_keywords": null,
+    "seo_title": null,
+    "slug": "l-oreal-skoda",
+    "template": "page.liquid",
+    "title": "L'Oréal ŠKODA",
+    "translations": Object {
+      "de": Object {
+        "fullpath": "/l-oreal-skoda",
+        "public_url": "https://speeltuin.nimbu.io/de/l-oreal-skoda",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "l-oreal-skoda",
+        "title": "L'Oréal ŠKODA",
+      },
+      "en": Object {
+        "fullpath": "/l-oreal-skoda",
+        "public_url": "https://speeltuin.nimbu.io/l-oreal-skoda",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "l-oreal-skoda",
+        "title": "L'Oréal ŠKODA",
+      },
+      "fr": Object {
+        "fullpath": "/l-oreal-skoda",
+        "public_url": "https://speeltuin.nimbu.io/fr/l-oreal-skoda",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "l-oreal-skoda",
+        "title": "L'Oréal ŠKODA",
+      },
+    },
+    "updated_at": "2020-09-03T10:51:41.909Z",
+    "url": "https://api.nimbu.io/pages/l-oreal-skoda",
+  },
+  "Nimbu__Page__5ede66738bf7472c07000002": Object {
+    "channel": null,
+    "children": Array [],
+    "created_at": "2020-06-08T16:25:23.856Z",
+    "depth": 0,
+    "fixed_locale": null,
+    "fullpath": "/duplicate-test",
+    "homepage": false,
+    "id": "Nimbu__Page__5ede66738bf7472c07000002",
+    "internal": Object {
+      "contentDigest": "5747ce43e99ed8a59177ae03b6ff8acf",
+      "type": "NimbuPage",
+    },
+    "items": Object {
+      "Blokken": Object {
+        "content": null,
+        "created_at": "2020-06-08T16:25:23.855Z",
+        "repeatables": Array [],
+        "slug": "Blokken",
+        "translations": Object {
+          "de": Object {
+            "content": null,
+          },
+          "en": Object {
+            "content": null,
+          },
+          "fr": Object {
+            "content": null,
+          },
+        },
+        "type": "canvas",
+        "updated_at": "2020-06-08T16:25:23.855Z",
+      },
+    },
+    "locales": Array [],
+    "nimbuId": "5ede66738bf7472c07000002",
+    "nimbuParent": null,
+    "og_image": null,
+    "parent": "__SOURCE__",
+    "parent_path": null,
+    "public_url": "https://speeltuin.nimbu.io/duplicate-test",
+    "published": false,
+    "security_mechanism": "none",
+    "seo_description": null,
+    "seo_keywords": null,
+    "seo_title": null,
+    "slug": "duplicate-test",
+    "template": "page.liquid",
+    "title": "Duplicate Test",
+    "translations": Object {
+      "de": Object {
+        "fullpath": "/duplicate-test",
+        "public_url": "https://speeltuin.nimbu.io/de/duplicate-test",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "duplicate-test",
+        "title": "Duplicate Test",
+      },
+      "en": Object {
+        "fullpath": "/duplicate-test",
+        "public_url": "https://speeltuin.nimbu.io/duplicate-test",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "duplicate-test",
+        "title": "Duplicate Test",
+      },
+      "fr": Object {
+        "fullpath": "/duplicate-test",
+        "public_url": "https://speeltuin.nimbu.io/fr/duplicate-test",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "duplicate-test",
+        "title": "Duplicate Test",
+      },
+    },
+    "updated_at": "2020-08-20T06:39:59.009Z",
+    "url": "https://api.nimbu.io/pages/duplicate-test",
+  },
+  "Nimbu__Page__5ede669c2c06e82c3f000002": Object {
+    "channel": null,
+    "children": Array [],
+    "created_at": "2020-06-08T16:26:04.871Z",
+    "depth": 0,
+    "fixed_locale": null,
+    "fullpath": "/duplicate-two",
+    "homepage": false,
+    "id": "Nimbu__Page__5ede669c2c06e82c3f000002",
+    "internal": Object {
+      "contentDigest": "f1d42523911b7c677b6b4507027b9311",
+      "type": "NimbuPage",
+    },
+    "items": Object {
+      "Blokken": Object {
+        "content": null,
+        "created_at": "2020-06-08T16:26:04.870Z",
+        "repeatables": Array [],
+        "slug": "Blokken",
+        "translations": Object {
+          "de": Object {
+            "content": null,
+          },
+          "en": Object {
+            "content": null,
+          },
+          "fr": Object {
+            "content": null,
+          },
+        },
+        "type": "canvas",
+        "updated_at": "2020-06-08T16:26:04.870Z",
+      },
+    },
+    "locales": Array [],
+    "nimbuId": "5ede669c2c06e82c3f000002",
+    "nimbuParent": null,
+    "og_image": null,
+    "parent": "__SOURCE__",
+    "parent_path": null,
+    "public_url": "https://speeltuin.nimbu.io/duplicate-two",
+    "published": false,
+    "security_mechanism": "none",
+    "seo_description": null,
+    "seo_keywords": null,
+    "seo_title": null,
+    "slug": "duplicate-two",
+    "template": "page.liquid",
+    "title": "Duplicate Two Save van Page",
+    "translations": Object {
+      "de": Object {
+        "fullpath": "/duplicate-two",
+        "public_url": "https://speeltuin.nimbu.io/de/duplicate-two",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "duplicate-two",
+        "title": "Duplicate Two Save van Page",
+      },
+      "en": Object {
+        "fullpath": "/duplicate-two",
+        "public_url": "https://speeltuin.nimbu.io/duplicate-two",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "duplicate-two",
+        "title": "Duplicate Two Save van Page",
+      },
+      "fr": Object {
+        "fullpath": "/duplicate-two",
+        "public_url": "https://speeltuin.nimbu.io/fr/duplicate-two",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "duplicate-two",
+        "title": "Duplicate Two Save van Page",
+      },
+    },
+    "updated_at": "2020-08-20T06:39:59.022Z",
+    "url": "https://api.nimbu.io/pages/duplicate-two",
+  },
+  "Nimbu__Page__5ede66ad8bf747334c000074": Object {
+    "channel": null,
+    "children": Array [],
+    "created_at": "2020-06-08T16:26:21.663Z",
+    "depth": 0,
+    "fixed_locale": null,
+    "fullpath": "/newerdenew",
+    "homepage": false,
+    "id": "Nimbu__Page__5ede66ad8bf747334c000074",
+    "internal": Object {
+      "contentDigest": "f648dbb1cd96a59ac8c8b58d99072e27",
+      "type": "NimbuPage",
+    },
+    "items": Object {
+      "Blokken": Object {
+        "content": null,
+        "created_at": "2020-06-08T16:26:21.663Z",
+        "repeatables": Array [],
+        "slug": "Blokken",
+        "translations": Object {
+          "de": Object {
+            "content": null,
+          },
+          "en": Object {
+            "content": null,
+          },
+          "fr": Object {
+            "content": null,
+          },
+        },
+        "type": "canvas",
+        "updated_at": "2020-06-08T16:26:44.034Z",
+      },
+    },
+    "locales": Array [],
+    "nimbuId": "5ede66ad8bf747334c000074",
+    "nimbuParent": null,
+    "og_image": null,
+    "parent": "__SOURCE__",
+    "parent_path": null,
+    "public_url": "https://speeltuin.nimbu.io/newerdenew",
+    "published": false,
+    "security_mechanism": "none",
+    "seo_description": null,
+    "seo_keywords": null,
+    "seo_title": null,
+    "slug": "newerdenew",
+    "template": "page.liquid",
+    "title": "Newerdenew",
+    "translations": Object {
+      "de": Object {
+        "fullpath": "/newerdenew",
+        "public_url": "https://speeltuin.nimbu.io/de/newerdenew",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "newerdenew",
+        "title": "Newerdenew",
+      },
+      "en": Object {
+        "fullpath": "/newerdenew",
+        "public_url": "https://speeltuin.nimbu.io/newerdenew",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "newerdenew",
+        "title": "Newerdenew",
+      },
+      "fr": Object {
+        "fullpath": "/newerdenew",
+        "public_url": "https://speeltuin.nimbu.io/fr/newerdenew",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "newerdenew",
+        "title": "Newerdenew",
+      },
+    },
+    "updated_at": "2020-08-20T06:39:59.039Z",
+    "url": "https://api.nimbu.io/pages/newerdenew",
+  },
+  "Nimbu__Page__5f71d4088bf7475b3e0097c7": Object {
+    "channel": null,
+    "children": Array [],
+    "created_at": "2020-09-28T12:16:08.556Z",
+    "depth": 0,
+    "fixed_locale": null,
+    "fullpath": "/liquid-error",
+    "homepage": false,
+    "id": "Nimbu__Page__5f71d4088bf7475b3e0097c7",
+    "internal": Object {
+      "contentDigest": "ec444b7c639feb2916059484aac7566b",
+      "type": "NimbuPage",
+    },
+    "items": Object {},
+    "locales": Array [],
+    "nimbuId": "5f71d4088bf7475b3e0097c7",
+    "nimbuParent": null,
+    "og_image": null,
+    "parent": "__SOURCE__",
+    "parent_path": null,
+    "public_url": "https://speeltuin.nimbu.io/liquid-error",
+    "published": true,
+    "security_mechanism": "none",
+    "seo_description": null,
+    "seo_keywords": null,
+    "seo_title": null,
+    "slug": "liquid-error",
+    "template": "liquid_error.liquid",
+    "title": "liquid-error",
+    "translations": Object {
+      "de": Object {
+        "fullpath": "/liquid-error",
+        "public_url": "https://speeltuin.nimbu.io/de/liquid-error",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "liquid-error",
+        "title": "liquid-error",
+      },
+      "en": Object {
+        "fullpath": "/liquid-error",
+        "public_url": "https://speeltuin.nimbu.io/liquid-error",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "liquid-error",
+        "title": "liquid-error",
+      },
+      "fr": Object {
+        "fullpath": "/liquid-error",
+        "public_url": "https://speeltuin.nimbu.io/fr/liquid-error",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "liquid-error",
+        "title": "liquid-error",
+      },
+    },
+    "updated_at": "2020-09-28T12:16:08.556Z",
+    "url": "https://api.nimbu.io/pages/liquid-error",
+  },
+  "Nimbu__Page__5f900dea8bf7471fad0019ff": Object {
+    "channel": null,
+    "children": Array [],
+    "created_at": "2020-10-21T10:31:06.718Z",
+    "depth": 0,
+    "fixed_locale": null,
+    "fullpath": "/account",
+    "homepage": false,
+    "id": "Nimbu__Page__5f900dea8bf7471fad0019ff",
+    "internal": Object {
+      "contentDigest": "70525b71079f8a082c4b78deda0a32e0",
+      "type": "NimbuPage",
+    },
+    "items": Object {
+      "testing": Object {
+        "content": null,
+        "created_at": "2020-10-21T10:31:06.718Z",
+        "slug": "testing",
+        "translations": Object {
+          "de": Object {
+            "content": "testing",
+          },
+          "en": Object {
+            "content": null,
+          },
+          "fr": Object {
+            "content": null,
+          },
+        },
+        "type": "field",
+        "updated_at": "2020-10-21T10:36:00.123Z",
+      },
+    },
+    "locales": Array [],
+    "nimbuId": "5f900dea8bf7471fad0019ff",
+    "nimbuParent": null,
+    "og_image": null,
+    "parent": "__SOURCE__",
+    "parent_path": null,
+    "public_url": "https://speeltuin.nimbu.io/account",
+    "published": true,
+    "security_mechanism": "none",
+    "seo_description": null,
+    "seo_keywords": null,
+    "seo_title": null,
+    "slug": "account",
+    "template": "customers/account.liquid",
+    "title": "Account",
+    "translations": Object {
+      "de": Object {
+        "fullpath": "/account",
+        "public_url": "https://speeltuin.nimbu.io/de/account",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "account",
+        "title": "Account",
+      },
+      "en": Object {
+        "fullpath": "/account",
+        "public_url": "https://speeltuin.nimbu.io/account",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "account",
+        "title": "Account",
+      },
+      "fr": Object {
+        "fullpath": "/account",
+        "public_url": "https://speeltuin.nimbu.io/fr/account",
+        "seo_description": null,
+        "seo_keywords": null,
+        "seo_title": null,
+        "slug": "account",
+        "title": "Account",
+      },
+    },
+    "updated_at": "2020-10-21T10:36:31.869Z",
+    "url": "https://api.nimbu.io/pages/account",
+  },
+  "Nimbu__Translation__5a390224d1798f427a009360": Object {
+    "children": Array [],
+    "created_at": "2017-12-19T12:12:20.228Z",
+    "from_template": true,
+    "id": "Nimbu__Translation__5a390224d1798f427a009360",
+    "internal": Object {
+      "contentDigest": "9514e43503b0f8e081ffdb327cffb4a8",
+      "type": "NimbuTranslation",
+    },
+    "key": "account.password.reset.intro",
+    "nimbuId": "5a390224d1798f427a009360",
+    "parent": "__SOURCE__",
+    "updated_at": "2017-12-19T12:12:20.228Z",
+    "url": "https://api.nimbu.io/translations/account.password.reset.intro",
+    "values": Object {
+      "de": null,
+      "en": "No problem, these things happen. Just enter your email and we'll send you a link to reset your password.",
+      "fr": null,
+    },
+  },
+  "Nimbu__Translation__5c6ab7233de07449d40079fa": Object {
+    "children": Array [],
+    "created_at": "2019-02-18T13:46:11.232Z",
+    "from_template": true,
+    "id": "Nimbu__Translation__5c6ab7233de07449d40079fa",
+    "internal": Object {
+      "contentDigest": "9069f0765b36f1d078266fed39651b74",
+      "type": "NimbuTranslation",
+    },
+    "key": "blog.related_articles",
+    "nimbuId": "5c6ab7233de07449d40079fa",
+    "parent": "__SOURCE__",
+    "updated_at": "2019-02-18T13:46:11.232Z",
+    "url": "https://api.nimbu.io/translations/blog.related_articles",
+    "values": Object {
+      "de": null,
+      "en": "Laatste artikels",
+      "fr": null,
+    },
+  },
+  "Nimbu__Translation__5c7e4597d1798f662600213e": Object {
+    "children": Array [],
+    "created_at": "2019-03-05T09:47:03.921Z",
+    "from_template": true,
+    "id": "Nimbu__Translation__5c7e4597d1798f662600213e",
+    "internal": Object {
+      "contentDigest": "3ef860cd70ee321d451a430a997d9ada",
+      "type": "NimbuTranslation",
+    },
+    "key": "checkout.address.labels.city",
+    "nimbuId": "5c7e4597d1798f662600213e",
+    "parent": "__SOURCE__",
+    "updated_at": "2019-03-05T09:47:03.921Z",
+    "url": "https://api.nimbu.io/translations/checkout.address.labels.city",
+    "values": Object {
+      "de": null,
+      "en": "City",
+      "fr": null,
+    },
+  },
+  "Nimbu__Translation__5c7e4597d1798f6626002141": Object {
+    "children": Array [],
+    "created_at": "2019-03-05T09:47:04.005Z",
+    "from_template": true,
+    "id": "Nimbu__Translation__5c7e4597d1798f6626002141",
+    "internal": Object {
+      "contentDigest": "4e6e17f7a5884b095f02ce08de39ff19",
+      "type": "NimbuTranslation",
+    },
+    "key": "checkout.address.labels.company",
+    "nimbuId": "5c7e4597d1798f6626002141",
+    "parent": "__SOURCE__",
+    "updated_at": "2019-03-05T09:47:04.005Z",
+    "url": "https://api.nimbu.io/translations/checkout.address.labels.company",
+    "values": Object {
+      "de": null,
+      "en": "Company",
+      "fr": null,
+    },
+  },
+  "Nimbu__Translation__5c7e4598d1798f11e30141c3": Object {
+    "children": Array [],
+    "created_at": "2019-03-05T09:47:04.415Z",
+    "from_template": true,
+    "id": "Nimbu__Translation__5c7e4598d1798f11e30141c3",
+    "internal": Object {
+      "contentDigest": "0c585251e0641136b026f7ae26c85cf5",
+      "type": "NimbuTranslation",
+    },
+    "key": "cart.labels.product",
+    "nimbuId": "5c7e4598d1798f11e30141c3",
+    "parent": "__SOURCE__",
+    "updated_at": "2019-03-05T09:47:04.415Z",
+    "url": "https://api.nimbu.io/translations/cart.labels.product",
+    "values": Object {
+      "de": null,
+      "en": "Product",
+      "fr": null,
+    },
+  },
+  "Nimbu__Translation__5c7e4598d1798f11e30141c4": Object {
+    "children": Array [],
+    "created_at": "2019-03-05T09:47:04.491Z",
+    "from_template": true,
+    "id": "Nimbu__Translation__5c7e4598d1798f11e30141c4",
+    "internal": Object {
+      "contentDigest": "1c3f1084a5c4d98046352fec1c6eb63e",
+      "type": "NimbuTranslation",
+    },
+    "key": "cart.labels.price_product",
+    "nimbuId": "5c7e4598d1798f11e30141c4",
+    "parent": "__SOURCE__",
+    "updated_at": "2019-03-05T09:47:04.491Z",
+    "url": "https://api.nimbu.io/translations/cart.labels.price_product",
+    "values": Object {
+      "de": null,
+      "en": "Price",
+      "fr": null,
+    },
+  },
+  "Nimbu__Translation__5c7e4598d1798f11e30141c5": Object {
+    "children": Array [],
+    "created_at": "2019-03-05T09:47:04.540Z",
+    "from_template": true,
+    "id": "Nimbu__Translation__5c7e4598d1798f11e30141c5",
+    "internal": Object {
+      "contentDigest": "f90b935fca0a104d9266f11b0cecaa89",
+      "type": "NimbuTranslation",
+    },
+    "key": "cart.labels.quantity",
+    "nimbuId": "5c7e4598d1798f11e30141c5",
+    "parent": "__SOURCE__",
+    "updated_at": "2019-03-05T09:47:04.540Z",
+    "url": "https://api.nimbu.io/translations/cart.labels.quantity",
+    "values": Object {
+      "de": null,
+      "en": "Quantity",
+      "fr": null,
+    },
+  },
+  "Nimbu__Translation__5c7e4598d1798f11e30141c6": Object {
+    "children": Array [],
+    "created_at": "2019-03-05T09:47:04.584Z",
+    "from_template": true,
+    "id": "Nimbu__Translation__5c7e4598d1798f11e30141c6",
+    "internal": Object {
+      "contentDigest": "b29f732f8fbbf7154075396862307022",
+      "type": "NimbuTranslation",
+    },
+    "key": "cart.labels.price_subtotal",
+    "nimbuId": "5c7e4598d1798f11e30141c6",
+    "parent": "__SOURCE__",
+    "updated_at": "2019-03-05T09:47:04.584Z",
+    "url": "https://api.nimbu.io/translations/cart.labels.price_subtotal",
+    "values": Object {
+      "de": null,
+      "en": "Subtotal",
+      "fr": null,
+    },
+  },
+  "Nimbu__Translation__5c7e4598d1798f11e30141c7": Object {
+    "children": Array [],
+    "created_at": "2019-03-05T09:47:04.637Z",
+    "from_template": true,
+    "id": "Nimbu__Translation__5c7e4598d1798f11e30141c7",
+    "internal": Object {
+      "contentDigest": "d6c7de42db94a5aada13fea80660b321",
+      "type": "NimbuTranslation",
+    },
+    "key": "cart.totals.subtotal",
+    "nimbuId": "5c7e4598d1798f11e30141c7",
+    "parent": "__SOURCE__",
+    "updated_at": "2019-03-05T09:47:04.637Z",
+    "url": "https://api.nimbu.io/translations/cart.totals.subtotal",
+    "values": Object {
+      "de": null,
+      "en": "Subtotal",
+      "fr": null,
+    },
+  },
+  "Nimbu__Translation__5c7e4598d1798f11e30141c8": Object {
+    "children": Array [],
+    "created_at": "2019-03-05T09:47:04.690Z",
+    "from_template": true,
+    "id": "Nimbu__Translation__5c7e4598d1798f11e30141c8",
+    "internal": Object {
+      "contentDigest": "dd38fee897875f740e28f9f1ad4d84b4",
+      "type": "NimbuTranslation",
+    },
+    "key": "cart.totals.coupon",
+    "nimbuId": "5c7e4598d1798f11e30141c8",
+    "parent": "__SOURCE__",
+    "updated_at": "2019-03-05T09:47:04.690Z",
+    "url": "https://api.nimbu.io/translations/cart.totals.coupon",
+    "values": Object {
+      "de": null,
+      "en": "Coupons",
+      "fr": null,
+    },
+  },
+  "Nimbu__Translation__5c7e4598d1798f11e30141c9": Object {
+    "children": Array [],
+    "created_at": "2019-03-05T09:47:04.743Z",
+    "from_template": true,
+    "id": "Nimbu__Translation__5c7e4598d1798f11e30141c9",
+    "internal": Object {
+      "contentDigest": "f9a1e68f228509a497f01976722af3ea",
+      "type": "NimbuTranslation",
+    },
+    "key": "cart.totals.shipping",
+    "nimbuId": "5c7e4598d1798f11e30141c9",
+    "parent": "__SOURCE__",
+    "updated_at": "2019-03-05T09:47:04.743Z",
+    "url": "https://api.nimbu.io/translations/cart.totals.shipping",
+    "values": Object {
+      "de": null,
+      "en": "Shipping",
+      "fr": null,
+    },
+  },
+  "Nimbu__Translation__5c7e4598d1798f11e30141ca": Object {
+    "children": Array [],
+    "created_at": "2019-03-05T09:47:04.789Z",
+    "from_template": true,
+    "id": "Nimbu__Translation__5c7e4598d1798f11e30141ca",
+    "internal": Object {
+      "contentDigest": "5d031a6fcd11b37b6d029295f047add2",
+      "type": "NimbuTranslation",
+    },
+    "key": "cart.totals.shipping.free",
+    "nimbuId": "5c7e4598d1798f11e30141ca",
+    "parent": "__SOURCE__",
+    "updated_at": "2019-03-05T09:47:04.789Z",
+    "url": "https://api.nimbu.io/translations/cart.totals.shipping.free",
+    "values": Object {
+      "de": null,
+      "en": "Free",
+      "fr": null,
+    },
+  },
+  "Nimbu__Translation__5c7e4598d1798f11e30141cb": Object {
+    "children": Array [],
+    "created_at": "2019-03-05T09:47:04.844Z",
+    "from_template": true,
+    "id": "Nimbu__Translation__5c7e4598d1798f11e30141cb",
+    "internal": Object {
+      "contentDigest": "b21f129e047cf9f8a8ccf314d95ea486",
+      "type": "NimbuTranslation",
+    },
+    "key": "cart.totals.total",
+    "nimbuId": "5c7e4598d1798f11e30141cb",
+    "parent": "__SOURCE__",
+    "updated_at": "2019-03-05T09:47:04.844Z",
+    "url": "https://api.nimbu.io/translations/cart.totals.total",
+    "values": Object {
+      "de": null,
+      "en": "Total",
+      "fr": null,
+    },
+  },
+  "Nimbu__Translation__5c7e4598d1798f11e30141cc": Object {
+    "children": Array [],
+    "created_at": "2019-03-05T09:47:04.903Z",
+    "from_template": true,
+    "id": "Nimbu__Translation__5c7e4598d1798f11e30141cc",
+    "internal": Object {
+      "contentDigest": "7b535cf7dfeba10eb0a9ddd8f8827bf6",
+      "type": "NimbuTranslation",
+    },
+    "key": "cart.totals.taxt_included",
+    "nimbuId": "5c7e4598d1798f11e30141cc",
+    "parent": "__SOURCE__",
+    "updated_at": "2019-03-05T09:47:04.903Z",
+    "url": "https://api.nimbu.io/translations/cart.totals.taxt_included",
+    "values": Object {
+      "de": null,
+      "en": "21% tax included",
+      "fr": null,
+    },
+  },
+  "Nimbu__Translation__5c7e4598d1798f6626002145": Object {
+    "children": Array [],
+    "created_at": "2019-03-05T09:47:04.121Z",
+    "from_template": true,
+    "id": "Nimbu__Translation__5c7e4598d1798f6626002145",
+    "internal": Object {
+      "contentDigest": "30096f561fb5c1c0646f635648fd4142",
+      "type": "NimbuTranslation",
+    },
+    "key": "checkout.address.billing.title",
+    "nimbuId": "5c7e4598d1798f6626002145",
+    "parent": "__SOURCE__",
+    "updated_at": "2019-03-05T09:47:04.121Z",
+    "url": "https://api.nimbu.io/translations/checkout.address.billing.title",
+    "values": Object {
+      "de": null,
+      "en": "Facturation address",
+      "fr": null,
+    },
+  },
+  "Nimbu__Translation__5c7e45a3d1798f642500067f": Object {
+    "children": Array [],
+    "created_at": "2019-03-05T09:47:15.696Z",
+    "from_template": true,
+    "id": "Nimbu__Translation__5c7e45a3d1798f642500067f",
+    "internal": Object {
+      "contentDigest": "3492ececb8aef085400b171532b96745",
+      "type": "NimbuTranslation",
+    },
+    "key": "account.overview",
+    "nimbuId": "5c7e45a3d1798f642500067f",
+    "parent": "__SOURCE__",
+    "updated_at": "2019-03-05T09:47:15.696Z",
+    "url": "https://api.nimbu.io/translations/account.overview",
+    "values": Object {
+      "de": null,
+      "en": "Overview",
+      "fr": null,
+    },
+  },
+  "Nimbu__Translation__5c7e45a3d1798f6425000680": Object {
+    "children": Array [],
+    "created_at": "2019-03-05T09:47:15.757Z",
+    "from_template": true,
+    "id": "Nimbu__Translation__5c7e45a3d1798f6425000680",
+    "internal": Object {
+      "contentDigest": "efe58f3b076c9d6225520db17839c5d5",
+      "type": "NimbuTranslation",
+    },
+    "key": "account.addresses",
+    "nimbuId": "5c7e45a3d1798f6425000680",
+    "parent": "__SOURCE__",
+    "updated_at": "2019-03-05T09:47:15.757Z",
+    "url": "https://api.nimbu.io/translations/account.addresses",
+    "values": Object {
+      "de": null,
+      "en": "My addresses",
+      "fr": null,
+    },
+  },
+  "Nimbu__Translation__5c7e45a3d1798f6425000681": Object {
+    "children": Array [],
+    "created_at": "2019-03-05T09:47:15.785Z",
+    "from_template": true,
+    "id": "Nimbu__Translation__5c7e45a3d1798f6425000681",
+    "internal": Object {
+      "contentDigest": "f51bca0738205f2fecdec87b94a49a75",
+      "type": "NimbuTranslation",
+    },
+    "key": "account.orders",
+    "nimbuId": "5c7e45a3d1798f6425000681",
+    "parent": "__SOURCE__",
+    "updated_at": "2019-03-05T09:47:15.785Z",
+    "url": "https://api.nimbu.io/translations/account.orders",
+    "values": Object {
+      "de": null,
+      "en": "My orders",
+      "fr": null,
+    },
+  },
+  "Nimbu__Translation__5c7e45a5d1798f0e030054cd": Object {
+    "children": Array [],
+    "created_at": "2019-03-05T09:47:17.975Z",
+    "from_template": true,
+    "id": "Nimbu__Translation__5c7e45a5d1798f0e030054cd",
+    "internal": Object {
+      "contentDigest": "b613829a076f68eea7a9f21df982e0dc",
+      "type": "NimbuTranslation",
+    },
+    "key": "cart.clear",
+    "nimbuId": "5c7e45a5d1798f0e030054cd",
+    "parent": "__SOURCE__",
+    "updated_at": "2019-05-23T08:33:35.475Z",
+    "url": "https://api.nimbu.io/translations/cart.clear",
+    "values": Object {
+      "de": null,
+      "en": "Delete all products",
+      "fr": null,
+    },
+  },
+  "Nimbu__Translation__5c7e45a6d1798f0e030054ce": Object {
+    "children": Array [],
+    "created_at": "2019-03-05T09:47:18.029Z",
+    "from_template": true,
+    "id": "Nimbu__Translation__5c7e45a6d1798f0e030054ce",
+    "internal": Object {
+      "contentDigest": "7670b8df14cfe21d818d271b79077de0",
+      "type": "NimbuTranslation",
+    },
+    "key": "cart.continue_shopping",
+    "nimbuId": "5c7e45a6d1798f0e030054ce",
+    "parent": "__SOURCE__",
+    "updated_at": "2019-03-05T09:47:18.029Z",
+    "url": "https://api.nimbu.io/translations/cart.continue_shopping",
+    "values": Object {
+      "de": null,
+      "en": "Continue shopping",
+      "fr": null,
+    },
+  },
+  "Nimbu__Translation__5c7e45a6d1798f0e030054cf": Object {
+    "children": Array [],
+    "created_at": "2019-03-05T09:47:18.053Z",
+    "from_template": true,
+    "id": "Nimbu__Translation__5c7e45a6d1798f0e030054cf",
+    "internal": Object {
+      "contentDigest": "ff698865f2237a22e0509b160586f68a",
+      "type": "NimbuTranslation",
+    },
+    "key": "cart.coupon.label",
+    "nimbuId": "5c7e45a6d1798f0e030054cf",
+    "parent": "__SOURCE__",
+    "updated_at": "2019-03-05T09:47:18.053Z",
+    "url": "https://api.nimbu.io/translations/cart.coupon.label",
+    "values": Object {
+      "de": null,
+      "en": "Got a coupon code?",
+      "fr": null,
+    },
+  },
+  "Nimbu__Translation__5c7e45a6d1798f0e030054d0": Object {
+    "children": Array [],
+    "created_at": "2019-03-05T09:47:18.084Z",
+    "from_template": true,
+    "id": "Nimbu__Translation__5c7e45a6d1798f0e030054d0",
+    "internal": Object {
+      "contentDigest": "0d10d8495e651f7b1d75463a2b78925e",
+      "type": "NimbuTranslation",
+    },
+    "key": "cart.coupon.button",
+    "nimbuId": "5c7e45a6d1798f0e030054d0",
+    "parent": "__SOURCE__",
+    "updated_at": "2019-03-05T09:47:18.084Z",
+    "url": "https://api.nimbu.io/translations/cart.coupon.button",
+    "values": Object {
+      "de": null,
+      "en": "Apply Coupon",
+      "fr": null,
+    },
+  },
+  "Nimbu__Translation__5c7e45a6d1798f0e030054d1": Object {
+    "children": Array [],
+    "created_at": "2019-03-05T09:47:18.121Z",
+    "from_template": true,
+    "id": "Nimbu__Translation__5c7e45a6d1798f0e030054d1",
+    "internal": Object {
+      "contentDigest": "7fd9a445df3d500a3476af8b2e15252f",
+      "type": "NimbuTranslation",
+    },
+    "key": "cart.go_to_checkout",
+    "nimbuId": "5c7e45a6d1798f0e030054d1",
+    "parent": "__SOURCE__",
+    "updated_at": "2019-03-05T09:47:18.121Z",
+    "url": "https://api.nimbu.io/translations/cart.go_to_checkout",
+    "values": Object {
+      "de": null,
+      "en": "Go to checkout",
+      "fr": null,
+    },
+  },
+  "Nimbu__Translation__5c8658843de0741cd8004444": Object {
+    "children": Array [],
+    "created_at": "2019-03-11T12:45:56.154Z",
+    "from_template": true,
+    "id": "Nimbu__Translation__5c8658843de0741cd8004444",
+    "internal": Object {
+      "contentDigest": "d1e7b91d21feb9d83d877c517d92054b",
+      "type": "NimbuTranslation",
+    },
+    "key": "account.addresses.tav",
+    "nimbuId": "5c8658843de0741cd8004444",
+    "parent": "__SOURCE__",
+    "updated_at": "2019-03-11T12:45:56.154Z",
+    "url": "https://api.nimbu.io/translations/account.addresses.tav",
+    "values": Object {
+      "de": null,
+      "en": "t.a.v.",
+      "fr": null,
+    },
+  },
+  "Nimbu__Translation__5c866de3d1798f157a005a9e": Object {
+    "children": Array [],
+    "created_at": "2019-03-11T14:17:07.320Z",
+    "from_template": true,
+    "id": "Nimbu__Translation__5c866de3d1798f157a005a9e",
+    "internal": Object {
+      "contentDigest": "209976ea9d968d6aeb9ed90efd871065",
+      "type": "NimbuTranslation",
+    },
+    "key": "account.addresses.default_shipping",
+    "nimbuId": "5c866de3d1798f157a005a9e",
+    "parent": "__SOURCE__",
+    "updated_at": "2019-03-11T14:17:07.320Z",
+    "url": "https://api.nimbu.io/translations/account.addresses.default_shipping",
+    "values": Object {
+      "de": null,
+      "en": "Default shipping address",
+      "fr": null,
+    },
+  },
+  "Nimbu__Translation__5c866de3d1798f157a005a9f": Object {
+    "children": Array [],
+    "created_at": "2019-03-11T14:17:07.366Z",
+    "from_template": true,
+    "id": "Nimbu__Translation__5c866de3d1798f157a005a9f",
+    "internal": Object {
+      "contentDigest": "5da8e5470bd11c3468f499bf3a5fdc2d",
+      "type": "NimbuTranslation",
+    },
+    "key": "account.addresses.no_default_shipping",
+    "nimbuId": "5c866de3d1798f157a005a9f",
+    "parent": "__SOURCE__",
+    "updated_at": "2019-03-11T14:17:07.366Z",
+    "url": "https://api.nimbu.io/translations/account.addresses.no_default_shipping",
+    "values": Object {
+      "de": null,
+      "en": "You don't have a default shipping address.",
+      "fr": null,
+    },
+  },
+  "Nimbu__Translation__5c866de3d1798f157a005aa0": Object {
+    "children": Array [],
+    "created_at": "2019-03-11T14:17:07.414Z",
+    "from_template": true,
+    "id": "Nimbu__Translation__5c866de3d1798f157a005aa0",
+    "internal": Object {
+      "contentDigest": "ec40defb109ae0dcc9f6ee089d03f5f3",
+      "type": "NimbuTranslation",
+    },
+    "key": "account.addresses.edit",
+    "nimbuId": "5c866de3d1798f157a005aa0",
+    "parent": "__SOURCE__",
+    "updated_at": "2019-03-11T14:17:07.414Z",
+    "url": "https://api.nimbu.io/translations/account.addresses.edit",
+    "values": Object {
+      "de": null,
+      "en": "edit",
+      "fr": null,
+    },
+  },
+  "Nimbu__Translation__5c866de3d1798f157a005aa1": Object {
+    "children": Array [],
+    "created_at": "2019-03-11T14:17:07.465Z",
+    "from_template": true,
+    "id": "Nimbu__Translation__5c866de3d1798f157a005aa1",
+    "internal": Object {
+      "contentDigest": "b6f243d261f6c58b110b30d90b4ca868",
+      "type": "NimbuTranslation",
+    },
+    "key": "account.addresses.default_billing",
+    "nimbuId": "5c866de3d1798f157a005aa1",
+    "parent": "__SOURCE__",
+    "updated_at": "2019-03-11T14:17:07.465Z",
+    "url": "https://api.nimbu.io/translations/account.addresses.default_billing",
+    "values": Object {
+      "de": null,
+      "en": "Default billing address",
+      "fr": null,
+    },
+  },
+  "Nimbu__Translation__5c866de3d1798f157a005aa2": Object {
+    "children": Array [],
+    "created_at": "2019-03-11T14:17:07.508Z",
+    "from_template": true,
+    "id": "Nimbu__Translation__5c866de3d1798f157a005aa2",
+    "internal": Object {
+      "contentDigest": "37d77d8902b879ddc1cf4097a34fd7ce",
+      "type": "NimbuTranslation",
+    },
+    "key": "account.addresses.no_default_billing",
+    "nimbuId": "5c866de3d1798f157a005aa2",
+    "parent": "__SOURCE__",
+    "updated_at": "2019-03-11T14:17:07.508Z",
+    "url": "https://api.nimbu.io/translations/account.addresses.no_default_billing",
+    "values": Object {
+      "de": null,
+      "en": "You don't have a default billing address.",
+      "fr": null,
+    },
+  },
+  "Nimbu__Translation__5c8bbc3a3de0743cbb002fa3": Object {
+    "children": Array [],
+    "created_at": "2019-03-15T14:52:42.096Z",
+    "from_template": true,
+    "id": "Nimbu__Translation__5c8bbc3a3de0743cbb002fa3",
+    "internal": Object {
+      "contentDigest": "1d6e6c40c7cbbcbd713ee583a7107f24",
+      "type": "NimbuTranslation",
+    },
+    "key": "cart.coupon.remove",
+    "nimbuId": "5c8bbc3a3de0743cbb002fa3",
+    "parent": "__SOURCE__",
+    "updated_at": "2019-03-15T14:52:42.096Z",
+    "url": "https://api.nimbu.io/translations/cart.coupon.remove",
+    "values": Object {
+      "de": null,
+      "en": "Remove coupons",
+      "fr": null,
+    },
+  },
+}
+`;
