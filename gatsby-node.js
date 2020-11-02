@@ -29,7 +29,9 @@ const sourceNodes = async ({
   accessToken,
   verbose = true,
   paginationSize = 250,
-  includeCollections = [_constants.CONTENT, _constants.SHOP]
+  includeCollections = [_constants.CONTENT, _constants.SHOP, _constants.CHANNELS],
+  includeChannels = [],
+  excludeChannels = []
 }) => {
   const client = (0, _api.createClient)(accessToken);
   const sites = await client.get('/sites');
@@ -65,12 +67,10 @@ const sourceNodes = async ({
 
     if (includeCollections.includes(_constants.CONTENT)) {
       promises = promises.concat([createNodes((0, _api.mapEndPoint)(_constants.BLOG), _nodes.BlogNode, args, {
-        cacheImages: true,
         preProcess: async blog => {
           return await createNodes((0, _api.mapEndPoint)(_constants.ARTICLE, {
             blog: blog.slug
           }), _nodes.ArticleNode, args, {
-            cacheImages: true,
             preProcess: async article => {
               // Add a link between the article and blog nodes.
               if (!blog.articles) blog.articles = [];
@@ -82,7 +82,69 @@ const sourceNodes = async ({
             }
           });
         }
-      }), createNodes((0, _api.mapEndPoint)(_constants.MENU), _nodes.MenuNode, args), createNodes((0, _api.mapEndPoint)(_constants.TRANSLATION), _nodes.TranslationNode, args), createPageNodes((0, _api.mapEndPoint)(_constants.PAGE), _nodes.PageNode, args)]);
+      }), createNodes((0, _api.mapEndPoint)(_constants.MENU, {}, {
+        nested: 1
+      }), _nodes.MenuNode, args), createNodes((0, _api.mapEndPoint)(_constants.TRANSLATION), _nodes.TranslationNode, args), createNodes((0, _api.mapEndPoint)(_constants.PAGE), _nodes.PageNode, args)]);
+    }
+
+    if (includeCollections.includes(_constants.SHOP)) {
+      let productCollections = {};
+      await createNodes((0, _api.mapEndPoint)(_constants.PRODUCT), _nodes.ProductNode, args, {
+        proProcess: async product => {
+          if (product.collections) {
+            product.collections.forEach(c => {
+              if (!productCollections[c.id]) {
+                productCollections[c.id] = [];
+              }
+
+              productCollections[c.id].push(product.id);
+            });
+          }
+        },
+        postProcess: async (product, productNode) => {
+          if (product.variants) await (0, _pIteration.forEach)(product.variants, async variant => {
+            createNode(await (0, _nodes.ProductVariantNode)(imageArgs, productNode)(variant));
+          });
+        }
+      });
+      await createNodes((0, _api.mapEndPoint)(_constants.COLLECTION), _nodes.CollectionNode, args, {
+        proProcess: async collection => {
+          if (productCollections[collection.id]) {
+            collection.products = productCollections[collection.id];
+          }
+        }
+      });
+    }
+
+    if (includeCollections.includes(_constants.CHANNELS)) {
+      let query = {};
+
+      if (includeChannels && includeChannels.length > 0) {
+        query = {
+          'slug.in': includeChannels.join(',')
+        };
+      } else if (excludeChannels && excludeChannels.length > 0) {
+        query = {
+          'slug.nin': excludeChannels.join(',')
+        };
+      }
+
+      promises = promises.concat([createNodes((0, _api.mapEndPoint)(_constants.CHANNEL, {}, query), _nodes.ChannelNode, args, {
+        preProcess: async (channel) => createNodes((0, _api.mapEndPoint)((0, _api.mapNodeType)(channel.slug), {
+          channel: channel.slug
+        }), (0, _nodes.ChannelEntryNode)(channel.slug), args, {
+          preProcess: async entry => {
+            // Add a link between the article and channel nodes.
+            if (!channel.entries) channel.entries = [];
+            channel.entries.push(entry.id);
+            entry.channel = {
+              id: channel.id,
+              customizations: channel.customizations
+            };
+            return entry;
+          }
+        })
+      })]);
     }
 
     console.time(msg);
@@ -92,7 +154,7 @@ const sourceNodes = async ({
     console.error(e);
     console.error((0, _chalk.default)`\n{red error} an error occurred while sourcing data`); // If not a request error, let Gatsby print the error.
 
-    if (!e.hasOwnProperty(`request`)) throw e; // printGraphQLError(e);
+    if (!e.hasOwnProperty(`request`)) throw e;
   }
 };
 /**
@@ -110,7 +172,6 @@ const createNodes = async (endpoint, nodeFactory, {
   imageArgs,
   paginationSize
 }, {
-  cacheImages = false,
   preProcess = async () => {},
   postProcess = async () => {}
 } = {}) => {
@@ -118,35 +179,10 @@ const createNodes = async (endpoint, nodeFactory, {
   const msg = formatMsg(`fetched and processed ${endpoint} nodes`);
   if (verbose) console.time(msg);
   await (0, _pIteration.forEach)(await (0, _api.queryAll)(client, endpoint, {}, paginationSize), async entity => {
-    let node;
     await preProcess(entity);
-
-    if (cacheImages) {
-      node = await nodeFactory(imageArgs)(entity);
-    } else {
-      node = await nodeFactory(entity);
-    }
-
+    let node = await nodeFactory(imageArgs)(entity);
     createNode(node);
     await postProcess(entity, node);
-  });
-  if (verbose) console.timeEnd(msg);
-};
-
-const createPageNodes = async (endpoint, nodeFactory, {
-  client,
-  createNode,
-  formatMsg,
-  verbose,
-  paginationSize
-}, f = async () => {}) => {
-  // Message printed when fetching is complete.
-  const msg = formatMsg(`fetched and processed ${endpoint} nodes`);
-  if (verbose) console.time(msg);
-  await (0, _pIteration.forEach)(await (0, _api.queryAll)(client, endpoint, {}, paginationSize), async entity => {
-    const node = await nodeFactory(entity);
-    createNode(node);
-    await f(entity);
   });
   if (verbose) console.timeEnd(msg);
 };

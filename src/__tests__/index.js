@@ -11,11 +11,7 @@ jest.mock(`../client`, () => {
         get: async (path) => {
           console.log('path', path);
           // Hack alert. match query text, from that get query name (like SHOP_POLICIES_QUERY) and convert to filename like policies.json
-          const jsonFile = `${path
-            .replace(/(\?[^\.]+)/g, '')
-            .split('/')
-            .slice(1)
-            .join('_')}.json`;
+          const jsonFile = `${path.split('?').shift().split('/').slice(1).join('_')}.json`;
           return require(`./fixtures/${jsonFile}`);
         },
       };
@@ -54,11 +50,13 @@ describe(`gatsby-source-nimbu`, () => {
     actions,
     reporter,
     cache,
-    // getNode: id => nodes[id],
   };
 
   beforeAll(async () => {
-    await sourceNodes(args, { accessToken: `123456789` });
+    await sourceNodes(args, {
+      accessToken: `123456789`,
+      includeChannels: ['gatsby_one', 'gatsby_two'],
+    });
   });
 
   it(`Generates nodes`, () => {

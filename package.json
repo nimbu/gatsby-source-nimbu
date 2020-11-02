@@ -24,7 +24,8 @@
     "gatsby-node-helpers": "^0.3.0",
     "gatsby-source-filesystem": "^2.3.35",
     "nimbu-client": "^1.0.7",
-    "p-iteration": "^1.1.8"
+    "p-iteration": "^1.1.8",
+    "query-string": "^6.13.6"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.1",

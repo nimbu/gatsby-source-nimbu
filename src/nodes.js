@@ -1,8 +1,22 @@
 import createNodeHelpers from 'gatsby-node-helpers';
-import { map } from 'p-iteration';
+import { forEach, map } from 'p-iteration';
 import { createRemoteFileNode } from 'gatsby-source-filesystem';
 
-import { TYPE_PREFIX, ARTICLE, BLOG, PAGE, MENU, TRANSLATION } from './constants';
+import {
+  TYPE_PREFIX,
+  ARTICLE,
+  BLOG,
+  CHANNEL_ENTRY,
+  CHANNEL,
+  COLLECTION,
+  MENU,
+  PAGE,
+  PRODUCT,
+  TRANSLATION,
+  PRODUCT_VARIANT,
+} from './constants';
+
+import { mapNodeType } from './api';
 
 const { createNodeFactory, generateNodeId } = createNodeHelpers({
   typePrefix: TYPE_PREFIX,
@@ -43,7 +57,50 @@ const downloadImageAndCreateFileNode = async (
   return undefined;
 };
 
-export const PageNode = createNodeFactory(PAGE);
+const processFields = async (node, imageArgs) => {
+  return forEach(Object.keys(node), async (key) => {
+    if (node[key] && node[key]['__type']) {
+      let className, nodeType;
+      // special field, process reference, file or gallery field
+      switch (node[key]['__type']) {
+        case 'Reference':
+          className = node[key].className;
+          nodeType = mapNodeType(className);
+
+          node[`${key}___NODE`] = generateNodeId(nodeType, node[key].id);
+          delete node[key];
+
+          break;
+        case 'Relation':
+          className = node[key].className;
+          nodeType = mapNodeType(className);
+
+          node[`${key}___NODE`] = node[key].objects.map((o) => generateNodeId(nodeType, o.id));
+          delete node[key];
+
+          break;
+        case 'File':
+          if (node[key].url) {
+            node[key].localFile___NODE = await downloadImageAndCreateFileNode(node[key], imageArgs);
+          }
+          break;
+        case 'Gallery':
+          // node[key] = await map(
+          //   node[key].images,
+          //   async (image) => await downloadImageAndCreateFileNode(image, imageArgs)
+          // );
+          break;
+      }
+    }
+  });
+};
+
+export const PageNode = (imageArgs) =>
+  createNodeFactory(PAGE, async (node) => {
+    // download images
+    return node;
+  });
+
 export const BlogNode = (imageArgs) =>
   createNodeFactory(BLOG, async (node) => {
     if (node.articles) {
@@ -75,5 +132,85 @@ export const ArticleNode = (imageArgs) =>
 
     return node;
   });
-export const MenuNode = createNodeFactory(MENU);
-export const TranslationNode = createNodeFactory(TRANSLATION);
+export const MenuNode = () => createNodeFactory(MENU);
+export const TranslationNode = () => createNodeFactory(TRANSLATION);
+
+export const ProductNode = (imageArgs) =>
+  createNodeFactory(PRODUCT, async (node) => {
+    if (node.variants) {
+      if (!node.variants___NODE) {
+        node.variants___NODE = [];
+      }
+      node.variants.forEach((v) =>
+        node.variants___NODE.push(generateNodeId(PRODUCT_VARIANT, v.id))
+      );
+
+      delete node.variants;
+    }
+
+    if (node.collections) {
+      if (!node.collections___NODE) {
+        node.collections___NODE = [];
+      }
+      node.collections.forEach((c) =>
+        node.collections___NODE.push(generateNodeId(COLLECTION, c.id))
+      );
+
+      delete node.collections;
+    }
+
+    await processFields(node, imageArgs);
+
+    return node;
+  });
+
+export const ProductVariantNode = (_imageArgs, productNode) =>
+  createNodeFactory(PRODUCT_VARIANT, async (node) => {
+    node.product___NODE = productNode.id;
+    return node;
+  });
+
+export const CollectionNode = (imageArgs) =>
+  createNodeFactory(COLLECTION, async (node) => {
+    if (node.products) {
+      if (!node.products___NODE) {
+        node.products___NODE = [];
+      }
+
+      node.products.forEach((p) => node.products___NODE.push(generateNodeId(PRODUCT_VARIANT, p)));
+
+      delete node.products;
+    }
+
+    await processFields(node, imageArgs);
+
+    return node;
+  });
+
+export const ChannelNode = () =>
+  createNodeFactory(CHANNEL, async (node) => {
+    if (node.entries) {
+      if (!node.entries___NODE) {
+        node.entries___NODE = [];
+      }
+      node.entries.forEach((e) =>
+        node.entries___NODE.push(generateNodeId(mapNodeType(node.slug), e))
+      );
+
+      delete node.entries;
+    }
+    return node;
+  });
+
+export const ChannelEntryNode = (className) => (imageArgs) =>
+  createNodeFactory(mapNodeType(className), async (node) => {
+    if (node.channel) {
+      node.channel___NODE = generateNodeId(CHANNEL, node.channel.id);
+
+      delete node.channel;
+    }
+
+    await processFields(node, imageArgs);
+
+    return node;
+  });

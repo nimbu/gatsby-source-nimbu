@@ -5,6 +5,7 @@ export const TYPE_PREFIX = `Nimbu`;
 export const ARTICLE = `Article`;
 export const BLOG = `Blog`;
 export const CHANNEL = `Channel`;
+export const CHANNEL_ENTRY = `ChannelEntry`;
 export const COLLECTION = `Collection`;
 export const MENU = `Menu`;
 export const PAGE = `Page`;
@@ -24,7 +25,13 @@ export const NODE_TO_ENDPOINT_MAPPING = {
   [COLLECTION]: `/collections`,
   [PRODUCT]: `/products`,
   [PAGE]: `/pages`,
-  [MENU]: `/menus?nested=1`,
+  [MENU]: `/menus`,
   [TRANSLATION]: `/translations`,
   [CHANNEL]: `/channels`,
+  [CHANNEL_ENTRY]: `/channels/:channel/entries`,
+};
+
+export const CLASSNAME_TO_NODE_MAPPING = {
+  pages: PAGE,
+  products: PRODUCT,
 };

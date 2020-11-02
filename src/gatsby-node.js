@@ -1,13 +1,44 @@
 import chalk from 'chalk';
-import { ArticleNode, BlogNode, PageNode, MenuNode, TranslationNode } from './nodes';
-import { createClient, queryAll, mapEndPoint } from './api';
+import {
+  ArticleNode,
+  BlogNode,
+  ChannelEntryNode,
+  ChannelNode,
+  CollectionNode,
+  MenuNode,
+  PageNode,
+  ProductNode,
+  ProductVariantNode,
+  TranslationNode,
+} from './nodes';
+import { createClient, queryAll, mapEndPoint, mapNodeType } from './api';
 import { forEach } from 'p-iteration';
 
-import { SHOP, CONTENT, ARTICLE, BLOG, PAGE, MENU, TRANSLATION } from './constants';
+import {
+  ARTICLE,
+  BLOG,
+  CHANNEL_ENTRY,
+  CHANNEL,
+  CHANNELS,
+  CONTENT,
+  COLLECTION,
+  MENU,
+  PAGE,
+  PRODUCT,
+  SHOP,
+  TRANSLATION,
+} from './constants';
 
 export const sourceNodes = async (
   { actions: { createNode, touchNode }, createNodeId, store, cache, getCache, reporter },
-  { accessToken, verbose = true, paginationSize = 250, includeCollections = [CONTENT, SHOP] }
+  {
+    accessToken,
+    verbose = true,
+    paginationSize = 250,
+    includeCollections = [CONTENT, SHOP, CHANNELS],
+    includeChannels = [],
+    excludeChannels = [],
+  }
 ) => {
   const client = createClient(accessToken);
   const sites = await client.get('/sites');
@@ -49,10 +80,8 @@ export const sourceNodes = async (
     if (includeCollections.includes(CONTENT)) {
       promises = promises.concat([
         createNodes(mapEndPoint(BLOG), BlogNode, args, {
-          cacheImages: true,
           preProcess: async (blog) => {
             return await createNodes(mapEndPoint(ARTICLE, { blog: blog.slug }), ArticleNode, args, {
-              cacheImages: true,
               preProcess: async (article) => {
                 // Add a link between the article and blog nodes.
                 if (!blog.articles) blog.articles = [];
@@ -64,9 +93,70 @@ export const sourceNodes = async (
             });
           },
         }),
-        createNodes(mapEndPoint(MENU), MenuNode, args),
+        createNodes(mapEndPoint(MENU, {}, { nested: 1 }), MenuNode, args),
         createNodes(mapEndPoint(TRANSLATION), TranslationNode, args),
-        createPageNodes(mapEndPoint(PAGE), PageNode, args),
+        createNodes(mapEndPoint(PAGE), PageNode, args),
+      ]);
+    }
+
+    if (includeCollections.includes(SHOP)) {
+      let productCollections = {};
+
+      await createNodes(mapEndPoint(PRODUCT), ProductNode, args, {
+        proProcess: async (product) => {
+          if (product.collections) {
+            product.collections.forEach((c) => {
+              if (!productCollections[c.id]) {
+                productCollections[c.id] = [];
+              }
+              productCollections[c.id].push(product.id);
+            });
+          }
+        },
+        postProcess: async (product, productNode) => {
+          if (product.variants)
+            await forEach(product.variants, async (variant) => {
+              createNode(await ProductVariantNode(imageArgs, productNode)(variant));
+            });
+        },
+      });
+
+      await createNodes(mapEndPoint(COLLECTION), CollectionNode, args, {
+        proProcess: async (collection) => {
+          if (productCollections[collection.id]) {
+            collection.products = productCollections[collection.id];
+          }
+        },
+      });
+    }
+
+    if (includeCollections.includes(CHANNELS)) {
+      let query = {};
+      if (includeChannels && includeChannels.length > 0) {
+        query = { 'slug.in': includeChannels.join(',') };
+      } else if (excludeChannels && excludeChannels.length > 0) {
+        query = { 'slug.nin': excludeChannels.join(',') };
+      }
+
+      promises = promises.concat([
+        createNodes(mapEndPoint(CHANNEL, {}, query), ChannelNode, args, {
+          preProcess: async (channel) =>
+            createNodes(
+              mapEndPoint(mapNodeType(channel.slug), { channel: channel.slug }),
+              ChannelEntryNode(channel.slug),
+              args,
+              {
+                preProcess: async (entry) => {
+                  // Add a link between the article and channel nodes.
+                  if (!channel.entries) channel.entries = [];
+                  channel.entries.push(entry.id);
+
+                  entry.channel = { id: channel.id, customizations: channel.customizations };
+                  return entry;
+                },
+              }
+            ),
+        }),
       ]);
     }
 
@@ -80,8 +170,6 @@ export const sourceNodes = async (
 
     // If not a request error, let Gatsby print the error.
     if (!e.hasOwnProperty(`request`)) throw e;
-
-    // printGraphQLError(e);
   }
 };
 
@@ -92,7 +180,7 @@ const createNodes = async (
   endpoint,
   nodeFactory,
   { client, createNode, formatMsg, verbose, imageArgs, paginationSize },
-  { cacheImages = false, preProcess = async () => {}, postProcess = async () => {} } = {}
+  { preProcess = async () => {}, postProcess = async () => {} } = {}
 ) => {
   // Message printed when fetching is complete.
   const msg = formatMsg(`fetched and processed ${endpoint} nodes`);
@@ -100,38 +188,12 @@ const createNodes = async (
   if (verbose) console.time(msg);
 
   await forEach(await queryAll(client, endpoint, {}, paginationSize), async (entity) => {
-    let node;
-
     await preProcess(entity);
 
-    if (cacheImages) {
-      node = await nodeFactory(imageArgs)(entity);
-    } else {
-      node = await nodeFactory(entity);
-    }
-
+    let node = await nodeFactory(imageArgs)(entity);
     createNode(node);
 
     await postProcess(entity, node);
-  });
-  if (verbose) console.timeEnd(msg);
-};
-
-const createPageNodes = async (
-  endpoint,
-  nodeFactory,
-  { client, createNode, formatMsg, verbose, paginationSize },
-  f = async () => {}
-) => {
-  // Message printed when fetching is complete.
-  const msg = formatMsg(`fetched and processed ${endpoint} nodes`);
-
-  if (verbose) console.time(msg);
-
-  await forEach(await queryAll(client, endpoint, {}, paginationSize), async (entity) => {
-    const node = await nodeFactory(entity);
-    createNode(node);
-    await f(entity);
   });
   if (verbose) console.timeEnd(msg);
 };
