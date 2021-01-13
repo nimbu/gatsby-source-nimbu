@@ -24,7 +24,7 @@ export const NODE_TO_ENDPOINT_MAPPING = {
   [BLOG]: `/blogs`,
   [COLLECTION]: `/collections`,
   [PRODUCT]: `/products`,
-  [PAGE]: `/pages`,
+  [PAGE]: `/pages?resolve=1`,
   [MENU]: `/menus`,
   [TRANSLATION]: `/translations`,
   [CHANNEL]: `/channels`,

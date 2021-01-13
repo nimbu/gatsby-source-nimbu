@@ -98,6 +98,17 @@ const processFields = async (node, imageArgs) => {
 export const PageNode = (imageArgs) =>
   createNodeFactory(PAGE, async (node) => {
     // download images
+    //const headers = []
+    const headers = node.items.Blokken.repeatables.filter((r) => {
+      return r.slug == 'header';
+    });
+    console.log('Amount of headers:');
+    console.log(headers.length);
+    // errors
+    //headers.forEach((h) => node.items___NODE.push(generateNodeId('Header', h)));
+    // Doesn't work. Cause GraphQL schema should be altered for that?
+    //node.items.Blokken.headers = headers;
+    //node.test = 'TEST';
     return node;
   });
 
