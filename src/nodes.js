@@ -28,6 +28,7 @@ const downloadImageAndCreateFileNode = async (
 ) => {
   let fileNodeID;
 
+  console.log('---------DOWNLOAD--------');
   const mediaDataCacheKey = `${TYPE_PREFIX}__Media__${url}`;
   const cacheMediaData = await cache.get(mediaDataCacheKey);
 
@@ -81,7 +82,11 @@ const processFields = async (node, imageArgs) => {
           break;
         case 'File':
           if (node[key].url) {
+            console.log('FILE');
+            console.log(node[key]);
             node[key].localFile___NODE = await downloadImageAndCreateFileNode(node[key], imageArgs);
+            console.log('AFTER');
+            console.log(node[key]);
           }
           break;
         case 'Gallery':
@@ -95,20 +100,55 @@ const processFields = async (node, imageArgs) => {
   });
 };
 
+const recursiveDownload = async (node, imageArgs) => {
+  return forEach(Object.keys(node), async (key) => {
+    //FIXME: debugging this forkbomb
+    console.log(key);
+    if (node[key] && node[key]['__type']) {
+      if (node[key].url) {
+        node[key].localFile___NODE = await downloadImageAndCreateFileNode(node[key], imageArgs);
+        console.log('FOUND');
+      }
+    }
+    await recursiveDownload(node[key], imageArgs);
+  });
+};
+
 export const PageNode = (imageArgs) =>
   createNodeFactory(PAGE, async (node) => {
     // download images
     //const headers = []
+    /*
     const headers = node.items.Blokken.repeatables.filter((r) => {
       return r.slug == 'header';
     });
+    */
     console.log('Amount of headers:');
     console.log(headers.length);
+    const testNode = node.items.Blokken.repeatables;
+    //const testNode = node.items.Blokken.repeatables[0].items;
+    /*
+    const fileNode = node.items.Blokken.repeatables[0].items[`Background Image`];
+    console.log(fileNode);
+    console.log(fileNode.content);
+    if (fileNode.content) {
+      fileNode.file.localFile___NODE = await downloadImageAndCreateFileNode(
+        fileNode.file,
+        imageArgs
+      );
+      console.log(fileNode);
+    }*/
+    /*
+    console.log('TESTNODE');
+    console.log(testNode);
+    forEach(Object.keys(testNode), async (key) => {
+      console.log(testNode[key]);
+      forEach(Object.keys(node[key]), async (k) => {
+        console.log(testNode[key][k]);
+      });
+    }); */
+    //await recursiveDownload(node.items.Blokken.repeatables[0], imageArgs);
     // errors
-    //headers.forEach((h) => node.items___NODE.push(generateNodeId('Header', h)));
-    // Doesn't work. Cause GraphQL schema should be altered for that?
-    //node.items.Blokken.headers = headers;
-    //node.test = 'TEST';
     return node;
   });
 
@@ -137,6 +177,7 @@ export const ArticleNode = (imageArgs) =>
     }
 
     await map(['header', 'thumbnail', 'og_image'], async (attr) => {
+      console.log('MAPPING 3');
       if (node[attr])
         node[attr].localFile___NODE = await downloadImageAndCreateFileNode(node[attr], imageArgs);
     });
