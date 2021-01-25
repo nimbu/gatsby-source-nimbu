@@ -101,16 +101,27 @@ const processFields = async (node, imageArgs) => {
 };
 
 const recursiveDownload = async (node, imageArgs) => {
+  //FIXME: debugging this forkbomb & testing
   return forEach(Object.keys(node), async (key) => {
-    //FIXME: debugging this forkbomb
-    console.log(key);
+    if (node[key] && node[key]['__type']) {
+      if (node[key].url) {
+        node[key].localFile___NODE = await downloadImageAndCreateFileNode(node[key], imageArgs);
+        console.log('FOUND');
+        return;
+      }
+    } else {
+      if (typeof node[key] == 'object') {
+        recursiveDownload(node[key]);
+      }
+    }
+    /* console.log(key);
     if (node[key] && node[key]['__type']) {
       if (node[key].url) {
         node[key].localFile___NODE = await downloadImageAndCreateFileNode(node[key], imageArgs);
         console.log('FOUND');
       }
     }
-    await recursiveDownload(node[key], imageArgs);
+    await recursiveDownload(node[key], imageArgs); */
   });
 };
 
@@ -123,9 +134,9 @@ export const PageNode = (imageArgs) =>
       return r.slug == 'header';
     });
     */
-    console.log('Amount of headers:');
-    console.log(headers.length);
-    const testNode = node.items.Blokken.repeatables;
+    //console.log('Amount of headers:');
+    //console.log(headers.length);
+    //const testNode = node.items.Blokken.repeatables;
     //const testNode = node.items.Blokken.repeatables[0].items;
     /*
     const fileNode = node.items.Blokken.repeatables[0].items[`Background Image`];
@@ -149,6 +160,9 @@ export const PageNode = (imageArgs) =>
     }); */
     //await recursiveDownload(node.items.Blokken.repeatables[0], imageArgs);
     // errors
+    console.log(node.items);
+    // TODO: testing
+    // recursiveDownload(node.items.Blokken);
     return node;
   });
 
