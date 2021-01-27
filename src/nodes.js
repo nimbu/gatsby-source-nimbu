@@ -1,5 +1,5 @@
 import createNodeHelpers from 'gatsby-node-helpers';
-import { forEach, map } from 'p-iteration';
+import { forEach, forEachSeries, map } from 'p-iteration';
 import { createRemoteFileNode } from 'gatsby-source-filesystem';
 
 import {
@@ -35,6 +35,7 @@ const downloadImageAndCreateFileNode = async (
   if (cacheMediaData) {
     fileNodeID = cacheMediaData.fileNodeID;
     touchNode({ nodeId: fileNodeID });
+    console.log(fileNodeID);
     return fileNodeID;
   }
 
@@ -101,27 +102,19 @@ const processFields = async (node, imageArgs) => {
 };
 
 const recursiveDownload = async (node, imageArgs) => {
-  //FIXME: debugging this forkbomb & testing
   return forEach(Object.keys(node), async (key) => {
-    if (node[key] && node[key]['__type']) {
+    if (node[key] && node[key]['__type'] == 'File') {
       if (node[key].url) {
-        node[key].localFile___NODE = await downloadImageAndCreateFileNode(node[key], imageArgs);
         console.log('FOUND');
+        console.log(node[key]);
+        node[key].localFile___NODE = await downloadImageAndCreateFileNode(node[key], imageArgs);
         return;
       }
     } else {
-      if (typeof node[key] == 'object') {
-        recursiveDownload(node[key]);
+      if (node[key] && typeof node[key] == 'object') {
+        await recursiveDownload(node[key], imageArgs);
       }
     }
-    /* console.log(key);
-    if (node[key] && node[key]['__type']) {
-      if (node[key].url) {
-        node[key].localFile___NODE = await downloadImageAndCreateFileNode(node[key], imageArgs);
-        console.log('FOUND');
-      }
-    }
-    await recursiveDownload(node[key], imageArgs); */
   });
 };
 
@@ -160,9 +153,11 @@ export const PageNode = (imageArgs) =>
     }); */
     //await recursiveDownload(node.items.Blokken.repeatables[0], imageArgs);
     // errors
-    console.log(node.items);
-    // TODO: testing
-    // recursiveDownload(node.items.Blokken);
+    //console.log(node.items);
+    await recursiveDownload(node.items.Blokken, imageArgs);
+    //recursiveDownload(node.items.Blokken, imageArgs);
+    //const fileNode = node.items.Blokken.repeatables[0].items[`Background Image`];
+    //console.log(fileNode);
     return node;
   });
 
