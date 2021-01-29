@@ -110,6 +110,25 @@ const processPageItems = async (node, imageArgs) => {
       // this is a regular page item
       if (itemType === 'file' && item.file != null && item.file.url != null) {
         item.file.localFile___NODE = await downloadImageAndCreateFileNode(item.file, imageArgs);
+      } else if (itemType === 'reference') {
+        // this is a reference
+        if (item.reference_id != null) {
+          // this is a single reference
+          const className = item.reference_type;
+          const nodeType = mapNodeType(className);
+
+          node.items[`${key}___NODE`] = generateNodeId(nodeType, item.reference_id);
+          delete node.items[key];
+        } else if (item.reference_ids != null) {
+          // this is a multi reference
+          const className = item.reference_type;
+          const nodeType = mapNodeType(className);
+
+          node.items[`${key}___NODE`] = item.reference_ids.map((id) =>
+            generateNodeId(nodeType, id)
+          );
+          delete node.items[key];
+        }
       }
     }
   });
