@@ -9,8 +9,6 @@ jest.mock(`../client`, () => {
     createClient: jest.fn(() => {
       return {
         get: async (path) => {
-          // console.log('path', path);
-          // Hack alert. match query text, from that get query name (like SHOP_POLICIES_QUERY) and convert to filename like policies.json
           const jsonFile = `${path.split('?').shift().split('/').slice(1).join('_')}.json`;
           return require(`./fixtures/${jsonFile}`);
         },
