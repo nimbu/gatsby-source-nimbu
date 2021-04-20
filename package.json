@@ -1,6 +1,6 @@
 {
   "name": "gatsby-source-nimbu",
-  "version": "1.0.0-0",
+  "version": "1.0.0",
   "description": "Gatsby source plugin for building websites using Nimbu as a data source.",
   "main": "index.js",
   "scripts": {
