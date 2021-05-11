@@ -36,6 +36,7 @@ export const sourceNodes = async (
     verbose = true,
     paginationSize = 250,
     includeCollections = [CONTENT, SHOP, CHANNELS],
+    downloadImages = true,
     includeChannels = [],
     excludeChannels = [],
   }
@@ -59,6 +60,7 @@ export const sourceNodes = async (
       cache,
       getCache,
       reporter,
+      downloadImages,
     };
 
     //   // Arguments used for node creation.

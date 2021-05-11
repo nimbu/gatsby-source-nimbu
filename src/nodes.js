@@ -24,8 +24,10 @@ const { createNodeFactory, generateNodeId } = createNodeHelpers({
 
 const downloadImageAndCreateFileNode = async (
   { url, filename, version },
-  { createNode, createNodeId, touchNode, store, cache, getCache, reporter }
+  { createNode, createNodeId, touchNode, store, cache, getCache, getNode, reporter, downloadImages }
 ) => {
+  if (!downloadImages) return undefined;
+
   let fileNodeID;
 
   const mediaDataCacheKey = `${TYPE_PREFIX}__Media__${url}`;
@@ -33,7 +35,7 @@ const downloadImageAndCreateFileNode = async (
 
   if (cacheMediaData) {
     fileNodeID = cacheMediaData.fileNodeID;
-    touchNode({ nodeId: fileNodeID });
+    touchNode(getNode(fileNodeID));
     return fileNodeID;
   }
 
@@ -55,6 +57,13 @@ const downloadImageAndCreateFileNode = async (
   }
 
   return undefined;
+};
+
+const processContent = async (content, imageArgs) => {
+  if (content && typeof content === 'string') {
+  } else {
+    return content;
+  }
 };
 
 const processFields = async (node, imageArgs) => {
@@ -89,6 +98,9 @@ const processFields = async (node, imageArgs) => {
           //   node[key].images,
           //   async (image) => await downloadImageAndCreateFileNode(image, imageArgs)
           // );
+          break;
+        default:
+          node[key] = await processContent(node[key], imageArgs);
           break;
       }
     }

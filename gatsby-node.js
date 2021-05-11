@@ -30,6 +30,7 @@ const sourceNodes = async ({
   verbose = true,
   paginationSize = 250,
   includeCollections = [_constants.CONTENT, _constants.SHOP, _constants.CHANNELS],
+  downloadImages = true,
   includeChannels = [],
   excludeChannels = []
 }) => {
@@ -49,7 +50,8 @@ const sourceNodes = async ({
       store,
       cache,
       getCache,
-      reporter
+      reporter,
+      downloadImages
     }; //   // Arguments used for node creation.
 
     const args = {
