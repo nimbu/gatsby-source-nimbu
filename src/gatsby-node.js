@@ -30,7 +30,7 @@ import {
 } from './constants';
 
 export const sourceNodes = async (
-  { actions: { createNode, touchNode }, createNodeId, store, cache, getCache, reporter },
+  { actions: { createNode, touchNode }, createNodeId, store, cache, getCache, reporter, getNode },
   {
     accessToken,
     verbose = true,
@@ -59,6 +59,7 @@ export const sourceNodes = async (
       store,
       cache,
       getCache,
+      getNode,
       reporter,
       downloadImages,
     };
