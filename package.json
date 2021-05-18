@@ -8,6 +8,11 @@
     "prepare": "cross-env NODE_ENV=production npm run build",
     "watch": "npm run build -- --watch"
   },
+  "homepage": "https://github.com/nimbu/gatsby-source-nimbu",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nimbu/gatsby-source-nimbu.git"
+  },
   "keywords": [
     "gatsby",
     "gatsby-plugin",
