@@ -1,12 +1,13 @@
 import createNodeHelpers from 'gatsby-node-helpers';
 import { forEach, forEachSeries, map } from 'p-iteration';
-import { createRemoteFileNode } from 'gatsby-source-filesystem';
+import { createRemoteFileNode, createFilePath } from 'gatsby-source-filesystem';
+import cheerio from 'cheerio';
+import URIParser from 'urijs';
 
 import {
   TYPE_PREFIX,
   ARTICLE,
   BLOG,
-  CHANNEL_ENTRY,
   CHANNEL,
   COLLECTION,
   MENU,
@@ -23,7 +24,7 @@ const { createNodeFactory, generateNodeId } = createNodeHelpers({
 });
 
 const downloadImageAndCreateFileNode = async (
-  { url, filename, version },
+  { url, filename, version, returnNode = false },
   { createNode, createNodeId, touchNode, store, cache, getCache, getNode, reporter, downloadImages }
 ) => {
   if (!downloadImages) return undefined;
@@ -35,8 +36,14 @@ const downloadImageAndCreateFileNode = async (
 
   if (cacheMediaData) {
     fileNodeID = cacheMediaData.fileNodeID;
+    let fileNode = getNode(fileNodeID);
     touchNode(getNode(fileNodeID));
-    return fileNodeID;
+
+    if (returnNode) {
+      return fileNode;
+    } else {
+      return fileNodeID;
+    }
   }
 
   const fileNode = await createRemoteFileNode({
@@ -53,14 +60,125 @@ const downloadImageAndCreateFileNode = async (
   if (fileNode) {
     fileNodeID = fileNode.id;
     await cache.set(mediaDataCacheKey, { fileNodeID });
-    return fileNodeID;
+
+    if (returnNode) {
+      return fileNode;
+    } else {
+      return fileNodeID;
+    }
   }
 
   return undefined;
 };
 
 const processContent = async (content, imageArgs) => {
+  const { downloadImages } = imageArgs;
+  if (!downloadImages) return content;
+
   if (content && typeof content === 'string') {
+    // scan for html reference to <a> or <img> tags
+    const $ = cheerio.load(content, { xmlMode: true, decodeEntities: false });
+
+    let refs = [];
+    let swapSrc = new Map();
+
+    $('a, img').each((i, item) => {
+      let url = item.attribs.href || item.attribs.src;
+      let urlKey = url;
+
+      if (!url) {
+        return;
+      }
+
+      // removes protocol to handle mixed content in a page
+      let urlNoProtocol = url.replace(/^https?:/i, '');
+
+      // handling relative url
+      const urlParsed = new URIParser(url);
+      const isUrlRelative = urlParsed.is('relative');
+      const isCDNFile = urlNoProtocol.startsWith('//cdn.nimbu.io');
+
+      // if not relative root url or not matches content delivery domain, skip processing
+      if (!isUrlRelative && !isCDNFile) {
+        return;
+      }
+
+      if (refs.some(({ url: storedUrl }) => storedUrl === url)) {
+        return;
+      }
+
+      // console.log(isCDNFile ? 'found image:' : 'found internal link', url);
+
+      refs.push({
+        url,
+        urlKey,
+        relativeLink: isUrlRelative,
+        isFile: isCDNFile,
+        name: item.name,
+        elem: $(item),
+      });
+    });
+
+    await Promise.all(
+      refs.map(async (item) => {
+        if (item.isFile) {
+          const url = item.url;
+          const urlParts = url.split('/');
+          const filenameAndVersion = urlParts[urlParts.length - 1];
+          const filenameAndVersionParts = filenameAndVersion.split('?');
+          const filename = filenameAndVersionParts[0];
+          const version = filenameAndVersionParts[1] || 'latest';
+
+          try {
+            const fileNode = await downloadImageAndCreateFileNode(
+              {
+                url,
+                filename,
+                version,
+                returnNode: true,
+              },
+              imageArgs
+            );
+
+            if (fileNode) {
+              const staticUrl = `/static/${fileNode.internal.contentDigest}/${fileNode.base}`;
+
+              swapSrc.set(item.urlKey, {
+                src: staticUrl,
+                id: fileNode.id,
+              });
+            }
+          } catch (error) {
+            console.error(`Could not download "${url}":`, error);
+          }
+        }
+      })
+    );
+
+    $('img').each((i, item) => {
+      let url = item.attribs.src;
+      let swapVal = swapSrc.get(url);
+      if (!swapVal) {
+        return;
+      }
+
+      $(item).attr('src', swapVal.src);
+      $(item).removeAttr('srcset');
+      $(item).removeAttr('sizes');
+    });
+
+    $('a').each((i, item) => {
+      let url = item.attribs.href;
+      let swapVal = swapSrc.get(url);
+      if (!swapVal) {
+        return;
+      }
+
+      $(item).attr('href', swapVal.src);
+      $(item).attr('data-gts-swapped-href', 'gts-swapped-href');
+    });
+
+    return $.html();
   } else {
     return content;
   }
@@ -140,6 +258,9 @@ const processPageItems = async (node, imageArgs) => {
           );
           delete node.items[key];
         }
+      } else {
+        // search for references to cdn.nimbu.io and download
+        item.content = await processContent(item.content, imageArgs);
       }
     }
   });

@@ -24,7 +24,8 @@ const sourceNodes = async ({
   store,
   cache,
   getCache,
-  reporter
+  reporter,
+  getNode
 }, {
   accessToken,
   verbose = true,
@@ -50,6 +51,7 @@ const sourceNodes = async ({
       store,
       cache,
       getCache,
+      getNode,
       reporter,
       downloadImages
     }; //   // Arguments used for node creation.
