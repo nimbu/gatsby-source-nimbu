@@ -34,4 +34,5 @@ export const NODE_TO_ENDPOINT_MAPPING = {
 export const CLASSNAME_TO_NODE_MAPPING = {
   pages: PAGE,
   products: PRODUCT,
+  navigation: MENU,
 };
