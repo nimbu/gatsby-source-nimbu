@@ -3,6 +3,7 @@ import { forEach, forEachSeries, map } from 'p-iteration';
 import { createRemoteFileNode, createFilePath } from 'gatsby-source-filesystem';
 import cheerio from 'cheerio';
 import URIParser from 'urijs';
+import chalk from 'chalk';
 
 import {
   TYPE_PREFIX,
@@ -76,8 +77,12 @@ const processContent = async (content, imageArgs) => {
   if (!downloadImages) return content;
 
   if (content && typeof content === 'string') {
-    // scan for html reference to <a> or <img> tags
-    const $ = cheerio.load(content, { xmlMode: true, decodeEntities: false });
+    // replace all carriage returns
+    // let debug = false;
+    const $ = cheerio.load(content, {
+      xmlMode: false,
+      decodeEntities: false,
+    });
 
     let refs = [];
     let swapSrc = new Map();
@@ -178,7 +183,14 @@ const processContent = async (content, imageArgs) => {
       $(item).attr('data-gts-swapped-href', 'gts-swapped-href');
     });
 
-    return $.html();
+    const transformed = $.html()
+      .replace('<html><head></head><body>', '')
+      .replace('</body></html>', '');
+
+    // if (debug) {
+    //   console.log(chalk`{blue ${transformed}}`);
+    // }
+    return transformed;
   } else {
     return content;
   }
