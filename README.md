@@ -1,5 +1,9 @@
 # gatsby-source-nimbu
 
+> [!WARNING]
+> **Deprecated.** This package is no longer maintained and receives no security updates.
+> Use the [Nimbu Go CLI](https://github.com/nimbu/cli) or call the Nimbu REST API directly.
+
 Source plugin for pulling data into [Gatsby][gatsby] from a [Nimbu][nimbu] project via the [Nimbu
 API][nimbu-api].
 
